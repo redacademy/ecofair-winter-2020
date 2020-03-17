@@ -21,15 +21,22 @@
 
 // Grids
 
+
+@mixin grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6.5%;
+}
+
 @mixin grid-12 {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap: 24px;
+	gap: 1.8%;
 }
 
 @mixin grid-18 {
 	display: grid;
 	grid-template-columns: repeat(18, 1fr);
-	gap: 24px;
+	gap: 1.25%;
 }
 

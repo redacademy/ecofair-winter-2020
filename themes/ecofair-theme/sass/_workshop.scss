@@ -1,0 +1,11 @@
+.post-type-archive-workshop{
+    .hfeed{
+	@include grid-3;
+	@include desktop {
+	    @include grid-12;
+	}
+	.site-content {
+	    grid-column: span 3;
+	}
+    } 
+}
