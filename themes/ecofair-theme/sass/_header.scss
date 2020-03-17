@@ -1,10 +1,18 @@
 .site-header {
+    @include desktop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    }
     .site-branding {
 	display: flex;
 	align-items: center;
 	padding: 1.4rem;    
 	justify-content: space-between;
 	i {
+	    @include desktop {
+		display: none;
+	    }
 	    font-size: 3rem;
 	}
     }
@@ -14,23 +22,61 @@
     }
     .menu-menu-container {
 	width:100vw;
+	@include desktop {
+	    width: auto;
+	}
     }
     .menu {
 	display: none;
-	width: 0vw;
+	position: absolute;
+	@include desktop {
+	    width: auto;
+	    display: flex;
+	    position: relative
+	}
 	text-align: right;
 	a {
-	    padding: 1.4rem;
+	    margin: 1.4rem;
+	    @include desktop {
+		margin: 1.4rem 2.25rem;
+	    }
 	    text-transform: uppercase;
 	    color: $color__text-main;
+	    @include desktop {
+		padding-bottom: .2rem;
+		&:active,
+		&:hover {
+		    border-bottom: solid $color__green-1 .15rem;
+		}
+	    }
+	}
+	li {
+	    display: flex;
+	    justify-content: end;
+	    &:last-child > a {
+		border: solid $color__green-1 .15rem;
+		color: $color__green-1;
+		font-weight: 900;
+		width: 20%;
+		padding: .4rem;
+		text-align: center;
+		@include desktop {
+		    margin: .7rem; 
+		    width: 100%;
+		    padding: .7rem 2.25rem;
+		}
+	    }
 	}
     }
     .menu-show {
 	display: block;
 	width: 100vw;
-	background-color: white;
+	background-color: $color__background-white;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	transition-duration: 4s;
     }
 }
