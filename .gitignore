@@ -31,6 +31,7 @@ access_log
 plugins/*
 !plugins/ecofair-functionality/
 !plugins/stepup4earth-workshops/
+!plugins/contact-info-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
