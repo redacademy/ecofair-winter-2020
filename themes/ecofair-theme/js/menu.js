@@ -4,7 +4,7 @@
     const menuList = document.getElementById('primary-menu');
 
     menu.addEventListener('click', (e) => {
-	menuList.classList.toggle('menu-hide');
+	menuList.classList.toggle('menu-show');
 	console.log("Clicked");
     })
 })();

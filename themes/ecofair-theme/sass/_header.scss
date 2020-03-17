@@ -16,11 +16,8 @@
 	width:100vw;
     }
     .menu {
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: 100vw;
+	display: none;
+	width: 0vw;
 	text-align: right;
 	a {
 	    padding: 1.4rem;
@@ -28,8 +25,12 @@
 	    color: $color__text-main;
 	}
     }
-    .menu-hide {
-	display: none;
-	width: 0vw;
+    .menu-show {
+	display: block;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
     }
 }
