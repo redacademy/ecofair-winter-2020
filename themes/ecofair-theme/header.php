@@ -22,7 +22,9 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-				<img src="<?php echo get_template_directory_uri() . "/build/assets/logos/GlobeLogo.svg"?>"></img>
+				<a href="<?php echo get_home_url() ?>">
+				    <img src="<?php echo get_template_directory_uri() . "/build/assets/logos/GlobeLogo.svg"?>"></img>
+				</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 				<div class="menu-icon-wrapper">
