@@ -3,6 +3,7 @@
     width: 100%;
     z-index: 1;
     background-color: $color__background-white;
+    top: 0;
     @include desktop {
 	position: fixed;
 	width: 100%;
