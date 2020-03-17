@@ -550,7 +550,6 @@ a {
   clear: both;
   display: block; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -793,3 +792,5 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .site-header img {
+    height: 5rem; }
