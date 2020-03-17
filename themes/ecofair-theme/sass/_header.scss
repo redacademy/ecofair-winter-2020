@@ -1,9 +1,36 @@
 .site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    img {
-	height: 5rem;
+    .site-branding {
+	display: flex;
+	align-items: center;
+	padding: 1.4rem;    
+	justify-content: space-between;
+	i {
+	    font-size: 3rem;
+	}
     }
-
+    position: relative;
+    img {
+	height: 3rem;
+    }
+    .menu-menu-container {
+	width:100vw;
+    }
+    .menu {
+	display: none;
+	width: 0vw;
+	text-align: right;
+	a {
+	    padding: 1.4rem;
+	    text-transform: uppercase;
+	    color: $color__text-main;
+	}
+    }
+    .menu-show {
+	display: block;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    }
 }
