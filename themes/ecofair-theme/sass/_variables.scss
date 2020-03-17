@@ -2,55 +2,57 @@
 
 $base__space-unit: 1.5rem;
 
+// Media Queries 
+
+$desktop: 1080px;
+
 // Color Blocks 
 
-$color__block-green: #00B46E;
-$color__block-green-li: #C1D96D;
-$color__block-orange: #FF5B00;
-$color__block-cyan: #00D4C5;
-$color__block-mint: #95F3CF;
+$color__mint-1: #95F3CF;
+$color__mint-2: #45CF9B;
+$color__mint-3: #6BE5B7;
+$color__mint-4: #C8FCE8;
+
+$color__cyan-1: #00D4C5;
+$color__cyan-2: #038076;
+$color__cyan-3: #01B1A4;
+$color__cyan-4: #2AD8CC; 
+$color__cyan-5: #55DED5;
+
+$color__green-light-1: #C1D96D;
+$color__green-light-2: #76901F;
+$color__green-light-3: #99B240;
+$color__green-light-4: #E2F6A2;
+$color__green-light-5: #EFFAC9;
+
+$color__green-1: #00B46E;
+$color__green-2: #006E46;
+$color__green-3: #038C58;
+$color__green-4: #27B983;
+$color__green-5: #4DC799;
+
+$color__orange-1: #FF5B00;
+$color__orange-2: #B83E07;
+$color__orange-3: #F35711;
+$color__orange-4: #FF9564;
+$color__orange-5: #FFB28F;
+
+$color__orange-dark-1: #FF5B00;
+$color__orange-dark-2: #9B3800;
+$color__orange-dark-3: #C64701;
+$color__orange-dark-4: #FF8139;
+$color__orange-dark-5: #FF9C65;
+
+// Background colors 
+
+$color__background-white: #FDFDFD;
+$color__background-green: #D9EEE6;
+$color__background-orange: #F4F0ED;
+$color__background-black: #000000;
 
 // Lines
 
 $line_green: 8px solid #00B46E;
-
-// Brand Colors 
-
-$color__marine-mint-1: #95F3CF;
-$color__marine-mint-2: #45CF9B;
-$color__marine-mint-3: #6BE5B7;
-$color__marine-mint-4: #C8FCE8;
-
-$color__wave-cyan-1: #00D4C5;
-$color__wave-cyan-2: #038076;
-$color__wave-cyan-3: #01B1A4;
-$color__wave-cyan-4: #2AD8CC; 
-$color__wave-cyan-5: #55DED5;
-
-$color__autumn-meadow-1: #C1D96D;
-$color__autumn-meadow-2: #76901F;
-$color__autumn-meadow-3: #99B240;
-$color__autumn-meadow-4: #E2F6A2;
-$color__autumn-meadow-5: #EFFAC9;
-
-$color__cascade-green-1: #00B46E;
-$color__cascade-green-2: #006E46;
-$color__cascade-green-3: #038C58;
-$color__cascade-green-4: #27B983;
-$color__cascade-green-5: #4DC799;
-
-$color__saffron-sunrise-1: #FF5B00;
-$color__saffron-sunrise-2: #B83E07;
-$color__saffron-sunrise-3: #F35711;
-$color__saffron-sunrise-4: #FF9564;
-$color__saffron-sunrise-5: #FFB28F;
-
-$color__citrus-sunset-1: #FF5B00;
-$color__citrus-sunset-2: #9B3800;
-$color__citrus-sunset-3: #C64701;
-$color__citrus-sunset-4: #FF8139;
-$color__citrus-sunset-5: #FF9C65;
-
 
 // Typography
 
@@ -61,10 +63,10 @@ $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
 
-// Colors
+// Underscore variables
 
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: #000000;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
