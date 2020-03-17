@@ -21,9 +21,11 @@ get_header(); ?>
 
 				<div class="sqr-orange">
 				</div>
-
-				<img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" />
-
+				
+				<div class="front-banner-img-box">
+					<img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" />
+				</div>
+				
 			</div> <!-- front-banner-grid -->
 			<h1>Step Up 4 Earth</h1>
 
