@@ -10,32 +10,27 @@
 /* Front page */
 
 .front-banner-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  @include grid-3;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: $base__space-unit;
 }
 
+
 .front-banner-img-box {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
   transform: rotate(-90deg);
   height: 30vh;
 }
 
 .sqr-light-green {
-  display: flex;
-  justify-content: flex-start;
   height: 10vh;
   width: 10vh;
   background-color: $color__green-light-1;
 }
 
 .sqr-dr-green {
-  height: 10vh;
-  width: 10vh;
+  grid-column: 1 / span 2;
+  grid-row: second-line / 3;
+  height: 20vh;
+  width: 20vh;
   background-color: $color__green-1;
 }
 
