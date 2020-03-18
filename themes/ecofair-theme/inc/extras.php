@@ -25,3 +25,15 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// Filter the archive title
+function remove_archive_from_title($title){
+	if('workshop' == get_post_type()){
+		$title = post_type_archive_title();
+		return $title;
+	} 
+	else{
+		return $title;
+	}
+}
+add_filter('get_the_archive_title', 'remove_archive_from_title');
