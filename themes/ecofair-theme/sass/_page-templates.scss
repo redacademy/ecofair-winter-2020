@@ -4,38 +4,63 @@
 
 /* All pages */
 
-.site-main {
-  padding-top: 15rem;
-}
+// .site-main {
+//   padding-top: 10rem;
+// }
 /* Front page */
 
 .front-banner-grid {
   @include grid-3;
+  grid-gap: 0;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 95%;
+  margin: 0 auto;
+  height: 50vh;
 }
 
-
-.front-banner-img-box {
+.front-banner-img {
   transform: rotate(-90deg);
-  height: 30vh;
+  width: 90vw;
+  position: relative;
+  top: -252px;
+  left: 65px;
 }
 
 .sqr-light-green {
-  height: 10vh;
-  width: 10vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: right;
+  align-self: flex-end;
+  height: 5vh;
+  width: 5vh;
   background-color: $color__green-light-1;
+  margin-right: 2rem;
+  // position: relative;
 }
 
 .sqr-dr-green {
-  grid-column: 1 / span 2;
-  grid-row: second-line / 3;
-  height: 20vh;
-  width: 20vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: right;
+  align-self: center;
+  height: 10vh;
+  width: 10vh;
   background-color: $color__green-1;
+  margin-right: 2rem;
 }
 
 .sqr-orange {
-  height: 10vh;
-  width: 10vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: right;
+  height: 5vh;
+  width: 5vh;
   background-color: $color__orange-1;
+  margin-right: 2rem;
 }
