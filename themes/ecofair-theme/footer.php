@@ -10,12 +10,16 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+				<div class="footer-container">
+				  <div class="widget-area">
+					<?php dynamic_sidebar(); ?>
+				  </div><!-- .widget-area -->
+					<p class="rights-reserved" >© 2020 STEP UP 4 EARTHALL RIGHTS RESERVED.</p>
+				</div><!-- .footer-container -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
+		<?php get_sidebar(); ?>
 		<?php wp_footer(); ?>
 
 	</body>

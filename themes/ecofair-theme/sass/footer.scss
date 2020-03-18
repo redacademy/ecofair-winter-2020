@@ -1,3 +1,35 @@
-footer {
-  color: white;
-}
+/*Footer */
+  .site-footer {
+    border-top: 1px solid #b8b8b8;
+   padding-left: 7px;
+   padding-right: 7px;
+   padding-top: 18px;
+    .widget-area {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    
+      .Contact-Info-class{
+        .widget-title {
+          font-size: 20px;
+        }
+      }
+
+      .media-Info-class {
+        .widget-title{
+          display: none;
+        }
+        .social-media-widget {
+          a{
+           color: black;
+           font-size: 40px;
+         }
+        }
+      }
+
+    } 
+    .rights-reserved {
+     text-align: center;
+    }
+  }
