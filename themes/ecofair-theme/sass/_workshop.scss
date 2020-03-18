@@ -6,6 +6,9 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-row: repeat(3, 1fr);
+		@include desktop {
+		    grid-template-columns: repeat(12, 1fr);
+		}
 		.workshop-order-number {
 		    display: flex;
 		    flex-direction: column;
