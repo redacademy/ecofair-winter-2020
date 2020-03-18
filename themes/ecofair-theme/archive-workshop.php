@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<?php if (!wp_is_mobile()) : ?>
 			<header class="page-header">
-			    <h1>
+			    <h1 class="archive-title">
 				<?php the_archive_title();?>
 			    </h1>
 			</header><!-- .page-header -->
