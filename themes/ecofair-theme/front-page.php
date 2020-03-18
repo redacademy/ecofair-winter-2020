@@ -35,6 +35,16 @@ get_header(); ?>
 			<h4>We are positive-minded, result-driven, and community-caring.</h4>
 			<p class="event-description"><?php the_field('event_description'); ?></p>
 
+			<?php
+				if ( ! is_active_sidebar( 'event-features' ) ) {
+				return; }
+			?>
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'event-features' ); ?>
+		</div><!-- #secondary -->
+
+
 		</header>
 
 		</main><!-- #main -->
