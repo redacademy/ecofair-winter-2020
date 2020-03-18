@@ -21,15 +21,7 @@
 
 // Grids
 
-<<<<<<< HEAD
 
-=======
-@mixin grid-3 {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 24px;
-    }
->>>>>>> 1e9d9918eb2b5090e5802c625adbcd47682ce2a4
 @mixin grid-3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
