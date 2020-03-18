@@ -1,11 +1,58 @@
 .post-type-archive-workshop{
     .hfeed{
-	@include grid-3;
-	@include desktop {
-	    @include grid-12;
-	}
 	.site-content {
-	    grid-column: span 3;
+	    margin: 6.25rem 1rem 1rem;
+	    .workshop {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr) ;
+		grid-template-row: repeat(3, 1fr);
+		.workshop-order-number {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    p {
+			font-size: 7.5rem;
+			text-align: center;
+			margin: 0;
+			font-weight: 900;
+		    }
+		}
+		.workshop-title-image {
+		    grid-column: span 2;
+		    height: 100%;
+		    background-position: center;
+		    background-size: cover;
+		}
+		.entry-header {
+		    grid-column: span 3;
+		    h2 {
+			margin: 1rem 0;
+			a {
+			    text-decoration: none;
+			    color: $color__text-main;
+			    line-height: 1;
+			}
+		    }
+		}
+		.workshop-secondary-image {
+		    grid-column: 2 / span 2;
+		    height: 11.25rem;
+		    background-position: center;
+		    background-size: cover;
+		}
+		.entry-content {
+		    grid-column: span 3;
+		}
+		.volunteer-button {
+		    text-decoration: none;
+		    grid-column: span 2;
+		    text-align: center;
+		    font-weight: 700;
+		    color: white;
+		    background-color: $color__green-1;
+		    padding: .5rem;
+		}
+	    }
 	}
     } 
 }

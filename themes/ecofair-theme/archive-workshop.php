@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php if (!wp_is_mobile()) : ?>
 			<header class="page-header">
 			    <h1 class="archive-title">
-				<?php the_archive_title();?>
+				<?php //the_archive_title();?>
 			    </h1>
 			</header><!-- .page-header -->
 			<?php endif; ?>
@@ -22,13 +22,22 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			    <header class="entry-header">
+			<div class="workshop-order-number">
+			    <p>1</p>
+			</div>
+			<div class="workshop-title-image" style="background-image: url(<?php echo get_field("title_image") ?>)">
+			</div>
+			<header class="entry-header">
 			    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-			    </header><!-- .entry-header -->
-			    <div class="entry-content">
-				<?php the_excerpt(); ?>
-			    </div><!-- .entry-content -->
+			</header><!-- .entry-header -->
+			<div class="workshop-secondary-image" style="background-image: url(<?php echo get_field("secondary_image") ?>)">
+			</div>
+			<div class="carrousell-pagination">
+			</div>
+			<div class="entry-content">
+			    <?php the_excerpt(); ?>
+			</div><!-- .entry-content -->
+			<a class="volunteer-button" href="#">Volunteer</a>
 			</article><!-- #post-## -->
 
 			<?php endwhile; ?>
