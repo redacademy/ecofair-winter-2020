@@ -16,12 +16,13 @@ get_header(); ?>
 			    $args = array( 
 				'post_type'       => 'page', 
 				'posts_per_page'  => 1,
-				'title'           => 'Workshops'
+				'title'           => 'Workshops',
+				'order'           => 'DESC',
 			    );
 			    $workshop_page = get_posts( $args ); // returns an array of posts
 			
 			?>
-			<div class='inhabitent-journal-post-cards-container'>
+			<div class='workshops-container'>
 				<?php foreach ( $workshop_page as $post ) : setup_postdata( $post ); ?>
 				<header class="page-header entry-content">		    
 				    <div class="workshop-page-content">
