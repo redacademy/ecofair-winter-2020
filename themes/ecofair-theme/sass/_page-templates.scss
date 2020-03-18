@@ -12,45 +12,20 @@
 .front-banner-grid {
   @include grid-3;
   grid-gap: 0;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 7vh 12vh 7vh;
   width: 95%;
   margin: 0 auto;
+  padding-top: 5rem;
   height: 50vh;
 }
 
 .front-banner-img {
-  transform: rotate(-90deg);
-  width: 100px;
-  position: relative;
-  top: -252px;
-  left: 65px;
-}
-
-.sqr-light-green {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2;
-  justify-self: right;
-  align-self: flex-end;
-  height: 5vh;
-  width: 5vh;
-  background-color: $color__green-light-1;
-  margin-right: 2rem;
-  // position: relative;
-}
+  grid-row-end: 4;
+  width: 200px;
 
-.sqr-dr-green {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  justify-self: right;
-  align-self: center;
-  height: 10vh;
-  width: 10vh;
-  background-color: $color__green-1;
-  margin-right: 2rem;
 }
 
 .sqr-orange {
@@ -62,5 +37,31 @@
   height: 5vh;
   width: 5vh;
   background-color: $color__orange-1;
+  margin-right: 2rem;
+}
+
+.sqr-dr-green {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: right;
+  align-self: flex-start;
+  height: 10vh;
+  width: 10vh;
+  background-color: $color__green-1;
+  margin-right: 2rem;
+}
+
+.sqr-light-green {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: right;
+  align-self: flex-start;
+  height: 5vh;
+  width: 5vh;
+  background-color: $color__green-light-1;
   margin-right: 2rem;
 }
