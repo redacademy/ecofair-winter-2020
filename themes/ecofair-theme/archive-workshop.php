@@ -51,6 +51,10 @@ get_header(); ?>
 			    <?php the_excerpt(); ?>
 			    <a class="volunteer-button" href="#">Volunteer</a>
 			</div><!-- .entry-content -->
+			<div class="light-green-box"></div>
+			<div class="dark-green-box"></div>
+			<div class="orange-green-box"></div>
+			<div class="green-line"></div>
 			</article><!-- #post-## -->
 
 			<?php endwhile; ?>
