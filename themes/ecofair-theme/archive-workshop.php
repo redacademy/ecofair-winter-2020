@@ -12,11 +12,24 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<?php if (!wp_is_mobile()) : ?>
-			<header class="page-header">
-			    <h1 class="archive-title">
-				<?php //the_archive_title();?>
-			    </h1>
-			</header><!-- .page-header -->
+			<?php
+			    $args = array( 
+				'post_type'       => 'page', 
+				'posts_per_page'  => 1,
+				'title'           => 'Workshops'
+			    );
+			    $workshop_page = get_posts( $args ); // returns an array of posts
+			
+			?>
+			<div class='inhabitent-journal-post-cards-container'>
+				<?php foreach ( $workshop_page as $post ) : setup_postdata( $post ); ?>
+				<header class="page-header entry-content">		    
+				    <div class="workshop-page-content">
+					<?php the_content(); ?>
+				    </div>
+				</header><!-- .page-header -->
+				<?php endforeach; wp_reset_postdata(); ?>     
+			</div>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
@@ -36,8 +49,8 @@ get_header(); ?>
 			</div>
 			<div class="entry-content">
 			    <?php the_excerpt(); ?>
+			    <a class="volunteer-button" href="#">Volunteer</a>
 			</div><!-- .entry-content -->
-			<a class="volunteer-button" href="#">Volunteer</a>
 			</article><!-- #post-## -->
 
 			<?php endwhile; ?>

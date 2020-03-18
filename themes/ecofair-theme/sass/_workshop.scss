@@ -2,11 +2,27 @@
     .hfeed{
 	.site-content {
 	    margin: 6.25rem 1rem 1rem;
+	    .page-header {
+		display: grid;
+		grid-template-columns: 1fr 6fr 5fr;
+		.workshop-page-content {
+		    grid-column: 2 / 3; 
+		    h2 {
+			font-size: 2.25rem;
+		    }
+		}
+	    }
 	    .workshop {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-row: repeat(3, 1fr);
+		@include desktop {
+		    grid-template-columns: repeat(12, 1fr);
+		}
 		.workshop-order-number {
+		    @include desktop {
+			grid-column: 2;
+		    }
 		    display: flex;
 		    flex-direction: column;
 		    justify-content: center;
@@ -19,12 +35,20 @@
 		}
 		.workshop-title-image {
 		    grid-column: span 2;
+		    @include desktop {
+			grid-column: 2 / 7;
+			grid-row: 2;
+			height: 19rem;
+		    }
 		    height: 100%;
 		    background-position: center;
 		    background-size: cover;
 		}
 		.entry-header {
 		    grid-column: span 3;
+		    @include desktop {
+			grid-column: 3/7;
+		    }
 		    h2 {
 			margin: 1rem 0;
 			a {
@@ -36,21 +60,32 @@
 		}
 		.workshop-secondary-image {
 		    grid-column: 2 / span 2;
+		    @include desktop {
+			grid-column: 8/13;
+			height: 19rem;
+		    }
 		    height: 11.25rem;
 		    background-position: center;
 		    background-size: cover;
 		}
 		.entry-content {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: space-between;
 		    grid-column: span 3;
-		}
-		.volunteer-button {
-		    text-decoration: none;
-		    grid-column: span 2;
-		    text-align: center;
-		    font-weight: 700;
-		    color: white;
-		    background-color: $color__green-1;
-		    padding: .5rem;
+		    @include desktop {
+			grid-column: 8/13;
+			grid-row: 2;
+		    }
+		    .volunteer-button {
+			text-decoration: none;
+			grid-column: span 2;
+			text-align: center;
+			font-weight: 700;
+			color: white;
+			background-color: $color__green-1;
+			padding: .5rem;
+		    }
 		}
 	    }
 	}
