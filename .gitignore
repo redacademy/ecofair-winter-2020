@@ -32,7 +32,7 @@ plugins/*
 !plugins/ecofair-functionality/
 !plugins/stepup4earth-workshops/
 !plugins/contact-info-widget/
-!plugins/media-info-widget/
+!plugins/event-feature-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
