@@ -15,3 +15,22 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+.cta-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	background: $color__green-1;
+}
+
+.cta-text {
+	color: $color__background-white;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	p {
+		margin: 0px;
+	}
+}

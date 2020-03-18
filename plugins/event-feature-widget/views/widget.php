@@ -1,17 +1,11 @@
 <!-- This file is used to markup the public-facing widget. -->
 
-<p>   
-   <?php if (strlen(trim($title)) > 0) : ?>
-   <?php echo $title; ?>
-   <?php endif; ?>
-</p>
 
-
-<p>   
+<h4>   
    <?php if (strlen(trim($tagline)) > 0) : ?>
    <?php echo $tagline; ?>
    <?php endif; ?>
-</p>
+</h4>
 
 
 <p>   
@@ -21,8 +15,10 @@
 </p>
 
 
-<button>   
-   <?php if (strlen(trim($cta)) > 0) : ?>
-   <?php echo $cta; ?>
-   <?php endif; ?>
-</button>
+<div class="cta-button">
+   <a class="cta-text" href="<?php echo $cta; ?>">
+      <?php if (strlen($cta) > 0) : ?> 
+         <p>Learn More</p>
+      <?php endif; ?> 
+   </a>
+</div>

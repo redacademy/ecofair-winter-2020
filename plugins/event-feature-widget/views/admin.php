@@ -2,19 +2,19 @@
 
 <div class="widget-content">
 
-   <h3><label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
+   <p><label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>">
-   </h3>
+   </p>
 
-   <h4><label for="<?php echo $this->get_field_id('tagline'); ?>">Tagline:</label>
+   <p><label for="<?php echo $this->get_field_id('tagline'); ?>">Tagline:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('tagline'); ?>" name="<?php echo $this->get_field_name('tagline'); ?>" type="text" value="<?php echo $tagline; ?>">
-   </h4>
+   </p>
 
    <p><label for="<?php echo $this->get_field_id('description'); ?>">Description:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo $description; ?>">
    </p>
 
-   <p><label for="<?php echo $this->get_field_id('cta'); ?>">Call to Action:</label>
+   <p><label for="<?php echo $this->get_field_id('cta'); ?>">Call to Action Link:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('cta'); ?>" name="<?php echo $this->get_field_name('cta'); ?>" type="text" value="<?php echo $cta; ?>">
    </p>
 
