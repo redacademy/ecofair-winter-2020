@@ -24,7 +24,9 @@ get_header(); ?>
 			<div class='inhabitent-journal-post-cards-container'>
 				<?php foreach ( $workshop_page as $post ) : setup_postdata( $post ); ?>
 				<header class="page-header entry-content">		    
-				    <?php the_content(); ?>
+				    <div class="workshop-page-content">
+					<?php the_content(); ?>
+				    </div>
 				</header><!-- .page-header -->
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
@@ -47,8 +49,8 @@ get_header(); ?>
 			</div>
 			<div class="entry-content">
 			    <?php the_excerpt(); ?>
+			    <a class="volunteer-button" href="#">Volunteer</a>
 			</div><!-- .entry-content -->
-			<a class="volunteer-button" href="#">Volunteer</a>
 			</article><!-- #post-## -->
 
 			<?php endwhile; ?>
