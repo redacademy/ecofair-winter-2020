@@ -44,6 +44,10 @@ get_header(); ?>
 			<?php dynamic_sidebar( 'event-features' ); ?>
 		</div><!-- #secondary -->
 
+			<h3>Our Priorities</h3>
+			<h4>Create an impact you can be proud of.</h4>
+			<p>We work to meet this goal by focusing on these important areas of conservation.</p>
+
 
 		</header>
 
