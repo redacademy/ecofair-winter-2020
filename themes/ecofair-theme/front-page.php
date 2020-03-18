@@ -31,6 +31,10 @@ get_header(); ?>
 			<p class="location"><?php the_field('location_of_event'); ?></p>
 			<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
 
+			<h3>Our Mission</h3>
+			<p>We are positive-minded, result-driven, and community-caring.</p>
+			<p class="event-description"><?php the_field('event_description'); ?></p>
+
 		</header>
 
 		</main><!-- #main -->
