@@ -6,3 +6,5 @@
  */
 
 // Add your custom post types here...
+
+// Register Custom Post Type

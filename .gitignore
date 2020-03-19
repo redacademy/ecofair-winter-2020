@@ -34,6 +34,7 @@ plugins/*
 !plugins/contact-info-widget/
 !plugins/event-feature-widget/
 !plugins/social-info-widget/
+!plugins/ecofair-sponsors/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #

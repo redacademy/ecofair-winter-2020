@@ -2,15 +2,15 @@
  /**
  *
  * @package   EcoFair Functionality
- * @author    Your Name <your_email@email.com>
+ * @author    Hillary McLean <hilldmc@gmail.com>
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright 2020 Hillary McLean
  *
  * @wordpress-plugin
- * Plugin Name: [SITE NAME] Functionality
- * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
+ * Plugin Name: EcoFair Functionality
+ * Description: This plugin is for the functionality of EcoFair
  * Version:     1.0.0
- * Author:      Your Name
+ * Author:      Hillary McLean
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
