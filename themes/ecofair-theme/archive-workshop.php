@@ -17,7 +17,8 @@ get_header(); ?>
 				'post_type'       => 'page', 
 				'posts_per_page'  => 1,
 				'title'           => 'Workshops',
-				'order'           => 'DESC',
+				'orderby'         => 'date',
+				'order'           => 'ASC',
 			    );
 			    $workshop_page = get_posts( $args ); // returns an array of posts
 			
@@ -45,13 +46,24 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+
 			<!-- Start the variables for carousel ids and counter -->
 			<?php 
 			    $workshop_carousel_links = array(); 
 			    $counter = 0;
 			?>
 			<div class="carousel">
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			    $args = array( 
+				'post_type'       => 'workshop', 
+				'posts_per_page'  => -1,
+				'orderby'         => 'date',
+				'order'           => 'ASC',
+			    );
+			    $workshops_post = get_posts( $args ); // returns an array of posts
+			
+			?>
+			<?php foreach ( $workshops_post as $post ) : setup_postdata( $post ); ?>
 			<!-- Execute the counter -->
 			<?php 
 			    $counter = $counter + 1;
@@ -97,7 +109,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 			</div>
 			<?php array_push($workshop_carousel_links, '#carousel-cell'.$counter); ?>
-			<?php endwhile; ?>
+			<?php endforeach ; ?>
 			</div>
 			<!-- Create the links for the carousel -->
 			<div class="carousel-generator">
