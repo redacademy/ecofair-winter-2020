@@ -50,14 +50,9 @@ get_header(); ?>
 	
 			<div class="three-col-img-grid">
 
-			<div class="lions-gate-img"></div>
-			<div class="false-creek-img"></div>
+				<div class="lions-gate-img"></div>
+				<div class="false-creek-img"></div>
 
-				
-				<!-- <img class="lions-gate-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/vancouver01.jpeg" alt="a tropical beach" />
-
-				<img class="false-creek-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/vancouver02.jpeg" alt="a tropical beach" /> -->
-				
 			</div> <!-- 3-col-img-grid -->
 
 

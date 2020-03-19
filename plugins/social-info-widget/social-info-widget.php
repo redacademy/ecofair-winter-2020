@@ -105,11 +105,11 @@ class Social_info_widget extends WP_Widget {
 
 		ob_start();
 
-		if ( $title ){
-			$widget_string .= $before_title;
-			$widget_string .= $title;
-			$widget_string .= $after_title;
-		}
+		// if ( $title ){
+		// 	$widget_string .= $before_title;
+		// 	$widget_string .= $title;
+		// 	$widget_string .= $after_title;
+		// }
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
 		$widget_string .= ob_get_clean();
