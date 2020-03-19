@@ -40,7 +40,7 @@
 		}
 		.carousel-pagination-numbers {
 		    display: flex;
-		    justify-content: end;
+		    justify-content: flex-end;
 		    a {
 			padding: 0 1rem;
 			font-size: 1.5rem;
@@ -48,7 +48,7 @@
 		}
 		.carousel-pagination-buttons {
 		    display: flex;
-		    justify-content: end;
+		    justify-content: flex-end;
 		    margin-top: 1rem;
 		    .carousel-pagination-prev,
 		    .carousel-pagination-next {
@@ -164,12 +164,12 @@
 		    }
 		    .volunteer-button {
 			text-decoration: none;
-			grid-column: span 2;
 			text-align: center;
 			font-weight: 700;
 			color: white;
 			background-color: $color__green-1;
 			padding: .5rem;
+			width: 70%;
 		    }
 		}
 		.dark-green-box {

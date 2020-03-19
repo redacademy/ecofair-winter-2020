@@ -1,7 +1,8 @@
 (function() {
     const carousel = document.querySelector('.carousel');
     const flkty = new Flickity(carousel, {
-	hash: true
+	hash: true,
+	draggable: false
     });
     const buttonPrev = document.querySelectorAll('.carousel-pagination-prev');
     buttonPrev.forEach( button => {
