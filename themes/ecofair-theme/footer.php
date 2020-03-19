@@ -11,6 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-container">
+					<?php wp_nav_menu();?>
 				  <div class="widget-area">
 					<?php dynamic_sidebar('footer_sidebar'); ?>
 				  </div><!-- .widget-area -->

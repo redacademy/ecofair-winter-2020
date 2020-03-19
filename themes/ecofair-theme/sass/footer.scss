@@ -1,9 +1,22 @@
 /*Footer */
   .site-footer {
-    border-top: 1px solid #b8b8b8;
    padding-left: 7px;
-   padding-right: 7px;
    padding-top: 18px;
+
+   .menu {
+     padding-bottom: 25px;
+     padding-top: 20px;
+     border-top: 1px solid #b8b8b8; 
+     border-bottom: 1px solid #b8b8b8; 
+     list-style: none;
+     a {
+       text-decoration: none;
+       color: $color__border-abbr;
+      }
+      li {
+        margin-bottom: 45px; 
+     }
+   }
     .widget-area {
       display: flex;
       width: 100%;

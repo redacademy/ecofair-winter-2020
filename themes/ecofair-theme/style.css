@@ -1098,6 +1098,58 @@ object {
     display: none; }
   .post-type-archive-workshop .hfeed .site-content .flickity-prev-next-button {
     display: none; }
+  .post-type-archive-workshop .hfeed .site-content .carousel-generator {
+    display: none; }
+  .post-type-archive-workshop .hfeed .site-content .carousel-pagination {
+    grid-column: 1 / 4;
+    grid-row: 8 / 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0; }
+    @media screen and (min-width: 1080px) {
+      .post-type-archive-workshop .hfeed .site-content .carousel-pagination {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; } }
+    .post-type-archive-workshop .hfeed .site-content .carousel-pagination a {
+      text-decoration: none;
+      color: #000000; }
+      .post-type-archive-workshop .hfeed .site-content .carousel-pagination a:active {
+        border-bottom: 1px solid black; }
+    .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-numbers {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-numbers a {
+        padding: 0 1rem;
+        font-size: 1.5rem; }
+    .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-top: 1rem; }
+      .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev,
+      .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next {
+        margin: 0 .5rem;
+        border: 0.2rem solid #00B46E;
+        border-radius: 100%;
+        padding: 1.5rem; }
+        .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev i,
+        .post-type-archive-workshop .hfeed .site-content .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next i {
+          color: #00B46E;
+          font-size: 2rem; }
   .post-type-archive-workshop .hfeed .site-content .page-header {
     display: grid;
     grid-template-columns: 1fr 6fr 5fr; }
@@ -1114,7 +1166,7 @@ object {
     @media screen and (min-width: 1080px) {
       .post-type-archive-workshop .hfeed .site-content .workshop {
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(8, auto);
+        grid-template-rows: repeat(3, auto) 0.6rem repeat(5, auto);
         grid-column-gap: 1%; } }
     .post-type-archive-workshop .hfeed .site-content .workshop .workshop-order-number {
       display: -webkit-box;
@@ -1129,7 +1181,7 @@ object {
               justify-content: center; }
       @media screen and (min-width: 1080px) {
         .post-type-archive-workshop .hfeed .site-content .workshop .workshop-order-number {
-          grid-column: 1;
+          grid-column: 1 / 2;
           grid-row: 3 / 4; } }
       .post-type-archive-workshop .hfeed .site-content .workshop .workshop-order-number p {
         font-size: 7.5rem;
@@ -1138,7 +1190,8 @@ object {
         font-weight: 900; }
         @media screen and (min-width: 1080px) {
           .post-type-archive-workshop .hfeed .site-content .workshop .workshop-order-number p {
-            line-height: .5; } }
+            line-height: .5;
+            margin: unset; } }
     .post-type-archive-workshop .hfeed .site-content .workshop .workshop-title-image {
       grid-column: span 2;
       height: 100%;
@@ -1160,6 +1213,8 @@ object {
         margin: 1rem 0; }
         @media screen and (min-width: 1080px) {
           .post-type-archive-workshop .hfeed .site-content .workshop .entry-header h2 {
+            word-wrap: break-word;
+            width: 70%;
             margin: 0;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1205,12 +1260,12 @@ object {
           grid-row: 6 / 8; } }
       .post-type-archive-workshop .hfeed .site-content .workshop .entry-content .volunteer-button {
         text-decoration: none;
-        grid-column: span 2;
         text-align: center;
         font-weight: 700;
         color: white;
         background-color: #00B46E;
-        padding: .5rem; }
+        padding: .5rem;
+        width: 70%; }
     .post-type-archive-workshop .hfeed .site-content .workshop .dark-green-box {
       grid-column: 1 / 2;
       grid-row: 5 / 8;
@@ -1242,10 +1297,19 @@ object {
 
 /*Footer */
 .site-footer {
-  border-top: 1px solid #b8b8b8;
   padding-left: 7px;
-  padding-right: 7px;
   padding-top: 18px; }
+  .site-footer .menu {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+    list-style: none; }
+    .site-footer .menu a {
+      text-decoration: none;
+      color: #666; }
+    .site-footer .menu li {
+      margin-bottom: 45px; }
   .site-footer .widget-area {
     display: -webkit-box;
     display: -ms-flexbox;
