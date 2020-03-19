@@ -6,6 +6,17 @@
 		max-width: 1176px;
 		margin: 6.25rem auto 1rem;
 	    }
+	    // Flickity Style
+	    .carousel-cell {
+		width: 100%;
+	    }
+	    .flickity-page-dots {
+		display: none;
+	    }
+	    .flickity-prev-next-button {
+		display: none;
+	    }
+	    // Other styles
 	    .page-header {
 		display: grid;
 		grid-template-columns: 1fr 6fr 5fr;
@@ -17,11 +28,7 @@
 		}
 	    }
 	    .workshop {
-		width: 95vw;
 		margin: 1rem;
-		@include desktop {
-		    max-width: 1176px;
-		}
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: repeat(2, auto) .6rem repeat(6, auto);

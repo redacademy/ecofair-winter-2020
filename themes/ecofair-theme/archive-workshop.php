@@ -34,12 +34,22 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<div class="carousel" data-flickity='{"freeScroll": true}'>
+			<!-- Start the variables for carousel ids and counter -->
+			<?php 
+			    $workshop_carousel_links = array(); 
+			    $counter = 0;
+			?>
+			<div class="carousel" data-flickity='{"hash": true}'>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div class="carousel-cell">
+			<!-- Execute the counter -->
+			<?php 
+			    $counter = $counter + 1;
+			?>
+			<!-- Start the carousel cell -->
+			<div class="carousel-cell" id="<?php echo 'carousel-cell' . $counter; ?>">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="workshop-order-number">
-			    <p>1</p>
+			<p><?php echo $counter ;?></p>
 			</div>
 			<div class="workshop-title-image" style="background-image: url(<?php echo get_field("title_image") ?>)">
 			</div>
@@ -60,8 +70,18 @@ get_header(); ?>
 			<div class="green-line"></div>
 			</article><!-- #post-## -->
 			</div>
+			<?php array_push($workshop_carousel_links, '#carousel-cell'.$counter); ?>
 			<?php endwhile; ?>
 			</div>
+			<!-- Create the links for the carousel -->
+			<div class="carrousell-pagination">
+			<?php 
+			    foreach($workshop_carousel_links as $carousel_id) :
+			?>
+			<a href="<?php echo $carousel_id; ?>"><?php echo substr($carousel_id, -1); ?></a>
+			<?php endforeach; ?>
+			</div>
+    
 
 			<?php the_posts_navigation(); ?>
 
