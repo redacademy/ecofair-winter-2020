@@ -117,6 +117,42 @@
   }
 }
 
+// 3 column image grid
+
+.three-col-img-grid {
+  @include grid-3;
+  grid-gap: 1rem;
+  // grid-template-rows: 7vh 12vh 7vh;
+  width: 95%;
+  padding-top: 5rem;
+}
+
+.lions-gate-img {
+  background-image: url(../assets/images/vancouver01.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 200px;
+  height: 500px;
+  // grid-row-start: 1;
+  // grid-row-end: 4;
+  // width: 200px;
+}
+
+.false-creek-img {
+  background-image: url(../assets/images/vancouver02.jpeg);
+  background-size: cover;
+  background-position: right;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 200px;
+  height: 500px;
+  // grid-row-start: 1;
+  // grid-row-end: 4;
+  // width: 200px;
+}
+
 // event feature section
 
 .event-feature-widget {
