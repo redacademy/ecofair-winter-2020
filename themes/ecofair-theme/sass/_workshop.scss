@@ -22,7 +22,7 @@
 	    }
 	    .carousel-pagination {
 		grid-column: 1 / 4;
-		grid-row: 8 / 9;
+		grid-row: 9 / 10;
 		@include desktop {
 		    grid-column: 3 / 4;
 		    grid-row: 1 / 2;
@@ -78,7 +78,7 @@
 		margin: 1rem;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
-		grid-template-rows: repeat(2, auto) .6rem repeat(6, auto);
+		grid-template-rows: repeat(3, auto) .6rem repeat(6, auto);
 		grid-column-gap: 4%;
 		@include desktop {
 		    grid-template-columns: repeat(12, 1fr);
@@ -124,7 +124,7 @@
 		    }
 		    h2 {
 			height: 100%;
-			margin: 1rem 0;
+			margin: 0;
 			@include desktop {
 			    word-wrap: break-word;
 			    width: 70%;
@@ -140,9 +140,19 @@
 			}
 		    }
 		}
+		.workshop-owner {
+		    grid-column: 1/ 4;
+		    grid-row: 3 / 4;
+		    h3 {
+			font-weight: 700;
+			font-size: 1.2rem;
+			line-height: 1;
+			margin: .5rem;
+		    }
+		}
 		.workshop-secondary-image {
 		    grid-column: 2 / span 2;
-		    grid-row: 3 / 8;
+		    grid-row: 4 / 9;
 		    @include desktop {
 			grid-column: 8/13;
 			grid-row: 1 /4;
@@ -157,7 +167,7 @@
 		    flex-direction: column;
 		    justify-content: space-between;
 		    grid-column: span 3;
-		    grid-row: 9 / 10;
+		    grid-row: 10 / 11;
 		    @include desktop {
 			grid-column: 8/13;
 			grid-row: 6 / 8;
@@ -172,9 +182,10 @@
 			width: 70%;
 		    }
 		}
+		// Style for the boxes
 		.dark-green-box {
 		    grid-column: 1 / 2;
-		    grid-row: 5 / 8;
+		    grid-row: 6 / 9;
 		    background-color: $color__green-1;
 		    //height: 6.3rem;
 		    @include desktop {
@@ -185,7 +196,7 @@
 		}
 		.green-line {
 		    grid-column: 1 /  3;
-		    grid-row: 4 / 5;
+		    grid-row: 5 / 6;
 		    background-color: $color__green-1;
 		    height: .5rem;
 		}

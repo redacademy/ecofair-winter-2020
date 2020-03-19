@@ -64,9 +64,12 @@ get_header(); ?>
 			</div>
 			<div class="workshop-title-image" style="background-image: url(<?php echo get_field("title_image") ?>)">
 			</div>
-			<header class="entry-header">
-			    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-			</header><!-- .entry-header -->
+			    <header class="entry-header">
+				<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+			    </header><!-- .entry-header -->
+			    <div class="workshop-owner">
+				<h3><?php echo get_field("owner"); ?></h3>
+			    </div>
 			<div class="workshop-secondary-image" style="background-image: url(<?php echo get_field("secondary_image") ?>)">
 			</div>
 			<!-- If is not mobile, hide pagination -->
