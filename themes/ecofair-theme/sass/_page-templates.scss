@@ -9,6 +9,8 @@
 // }
 /* Front page */
 
+// banner
+
 .front-banner-grid {
   @include grid-3;
   grid-gap: 0;
@@ -64,4 +66,36 @@
   width: 5vh;
   background-color: $color__green-light-1;
   margin-right: 2rem;
+}
+
+// priority section
+
+.priorities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.priority-energy {
+  text-align: center;
+}
+
+.energy-icon {
+  width: 100px;
+}
+
+.priority-transport {
+  text-align: center;
+}
+
+.transport-icon {
+  width: 100px;
+}
+
+.priority-7rs {
+  text-align: center;
+}
+
+.rs-icon {
+  width: 100px;
 }

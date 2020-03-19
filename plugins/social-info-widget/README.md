@@ -1,4 +1,4 @@
-# RED Widget Boilerplate
+# Social Media Info Widget
 
 A template for a WordPress widget plugin for RED Academy students.
 

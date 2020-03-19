@@ -44,10 +44,29 @@ get_header(); ?>
 			<?php dynamic_sidebar( 'event-features' ); ?>
 		</div><!-- #secondary -->
 
+		<section class="priorities">
+
 			<h3>Our Priorities</h3>
 			<h4>Create an impact you can be proud of.</h4>
 			<p>We work to meet this goal by focusing on these important areas of conservation.</p>
 
+
+				<div class="priority-energy">
+					<img class="energy-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Energy.png" alt="energy icon" />
+					<h5>Energy Efficiencies</h5>
+				</div>
+
+				<div class="priority-transport">
+					<img class="transport-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Transport.png" alt="energy icon" />
+					<h5>Transport</h5>
+				</div>
+
+				<div class="priority-7rs">
+					<img class="rs-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/7Rs.png" alt="energy icon" />
+					<h5>7 Rs</h5>
+				</div>
+				
+			</section>		
 
 		</header>
 
