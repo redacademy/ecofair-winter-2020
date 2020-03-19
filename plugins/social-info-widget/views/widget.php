@@ -13,7 +13,7 @@
   <li>      
     <a href="<?php echo $instagram; ?>">
       <?php if (strlen($instagram) > 0) : ?> 
-        <i class="fab fa-google-plus-square"></i>
+        <i class="fab fa-instagram"></i>
       <?php endif; ?> 
     </a>
   </li>
@@ -21,7 +21,7 @@
   <li>
     <a href="<?php echo $twitter; ?>">
       <?php if (strlen($twitter) > 0) : ?> 
-        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-twitter"></i>
       <?php endif; ?> 
     </a>
   </li>
