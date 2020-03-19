@@ -28,6 +28,17 @@ get_header(); ?>
 				    <div class="workshop-page-content">
 					<?php the_content(); ?>
 				    </div>
+				    <div class="carousel-pagination">
+					<div class="carousel-pagination-numbers"></div>
+					<div class="carousel-pagination-buttons">
+					    <div class="carousel-pagination-prev">
+						<i class="fas fa-arrow-left"></i>
+					    </div>
+					    <div class="carousel-pagination-next">
+						<i class="fas fa-arrow-right"></i>
+					    </div>
+					</div>
+				    </div>
 				</header><!-- .page-header -->
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
@@ -58,6 +69,8 @@ get_header(); ?>
 			</header><!-- .entry-header -->
 			<div class="workshop-secondary-image" style="background-image: url(<?php echo get_field("secondary_image") ?>)">
 			</div>
+			<!-- If is not mobile, hide pagination -->
+			<?php if ( wp_is_mobile() ) : ?>
 			<div class="carousel-pagination">
 			    <div class="carousel-pagination-numbers"></div>
 			    <div class="carousel-pagination-buttons">
@@ -69,6 +82,7 @@ get_header(); ?>
 				</div>
 			    </div>
 			</div>
+			<?php endif; ?>
 			<div class="entry-content">
 			    <?php the_excerpt(); ?>
 			    <a class="volunteer-button" href="#">Volunteer</a>
