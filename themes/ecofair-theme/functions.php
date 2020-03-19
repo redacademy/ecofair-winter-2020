@@ -107,6 +107,8 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), false, true );
 	wp_enqueue_script( 'flickity-hash-js', 'https://unpkg.com/flickity-hash@1/hash.js', array(), false, true );
+	wp_enqueue_script( 'flickity-start-js', get_template_directory_uri() . '/build/js/start-carousel.min.js', array('flickity-js'), false, true );
+
 	wp_enqueue_script( 'menu-js', get_template_directory_uri() . '/build/js/menu.min.js', array(), false, true );
 	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
