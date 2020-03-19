@@ -60,7 +60,7 @@ get_header(); ?>
 			<div class="carousel-cell" id="<?php echo 'carousel-cell' . $counter; ?>">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="workshop-order-number">
-			<p><?php echo $counter ;?></p>
+			    <p><?php echo $counter ;?></p>
 			</div>
 			<div class="workshop-title-image" style="background-image: url(<?php echo get_field("title_image") ?>)">
 			</div>
