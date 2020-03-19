@@ -26,23 +26,39 @@ get_header(); ?>
 				
 			</div> <!-- front-banner-grid -->
 
-			<h1>Step Up 4 Earth</h1>
-			<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
-			<p class="location"><?php the_field('location_of_event'); ?></p>
-			<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
+		</header>
+			<section class="event-info">
+				<h1 class="site-title-heading">Step Up 4 Earth</h1>
+				<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
 
-			<h3>Our Mission</h3>
-			<h4>We are positive-minded, result-driven, and community-caring.</h4>
-			<p class="event-description"><?php the_field('event_description'); ?></p>
+				<div class="event-info-li"></div>
+
+				<p class="location"><?php the_field('location_of_event'); ?></p>
+				<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
+			</section>
+
+			<div class="hero-img-2"></div>
+
+			<section class="mission-statement">
+
+				<h2>Our Mission</h2>
+				<h4>We are positive-minded, result-driven, and community-caring.</h4>
+				<p class="event-description"><?php the_field('event_description'); ?></p>
+
+			</section>
 
 			<?php
 				if ( ! is_active_sidebar( 'event-features' ) ) {
 				return; }
 			?>
 
-		<div id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'event-features' ); ?>
-		</div><!-- #secondary -->
+			<section class="event-feature-widget">
+
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'event-features' ); ?>
+				</div><!-- #secondary -->
+			
+			</section>
 
 		<section class="priorities">
 
@@ -64,6 +80,18 @@ get_header(); ?>
 				<div class="priority-7rs">
 					<img class="rs-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/7Rs.png" alt="energy icon" />
 					<h5>7 Rs</h5>
+				</div>
+
+				<div class="volunteer-button">
+					<a class="volunteer-button-text" href="#">
+						<p>Volunteer</p>
+					</a>
+				</div>
+
+				<div class="donate-button">
+					<a class="donate-button-text" href="#">
+						<p>Donate</p>
+					</a>
 				</div>
 				
 			</section>		
