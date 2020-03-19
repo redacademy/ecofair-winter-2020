@@ -17,6 +17,11 @@
 		}
 	    }
 	    .workshop {
+		width: 95vw;
+		margin: 1rem;
+		@include desktop {
+		    max-width: 1176px;
+		}
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: repeat(2, auto) .6rem repeat(6, auto);

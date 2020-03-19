@@ -34,7 +34,9 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<div class="carousel" data-flickity='{"freeScroll": true}'>
 			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="carousel-cell">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="workshop-order-number">
 			    <p>1</p>
@@ -57,8 +59,9 @@ get_header(); ?>
 			<div class="orange-green-box"></div>
 			<div class="green-line"></div>
 			</article><!-- #post-## -->
-
+			</div>
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
