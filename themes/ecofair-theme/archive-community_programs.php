@@ -29,6 +29,7 @@ get_header(); ?>
 			?>
 			<?php foreach ( $community_post as $post ) : setup_postdata( $post ); ?>
 			<!-- Execute the counter -->
+			<?php $hold_post = $post ;?>
 			<?php 
 			    $counter = $counter + 1;
 			?>
@@ -44,9 +45,7 @@ get_header(); ?>
 				    $community_page = get_posts( $args ); // returns an array of posts
 				
 				?>
-				<?php foreach ( $community_page as $post ) : setup_postdata( $post ); ?>
-					<?php the_content(); ?>
-				<?php endforeach; wp_reset_postdata(); ?>     
+				<?php echo $community_page[0]->post_content; ?>
 				<div class="community-first-image" style="background-image: url(<?php echo get_field("first_image") ?>)">
 				</div>
 				<header class="entry-header">
