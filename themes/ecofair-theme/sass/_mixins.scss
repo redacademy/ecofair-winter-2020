@@ -40,3 +40,8 @@
 	gap: 1.25%;
 }
 
+// Align image center and cover
+@mixin background-image-center {
+    background-size: cover;
+    background-position: center;
+}

@@ -9,57 +9,95 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php if (!wp_is_mobile()) : ?>
+		<?php if ( have_posts() ) : ?>
+			<?php /* Start the Loop */ ?>
+			<!-- Start the variables for carousel ids and counter -->
+			<?php 
+			    $carousel_links = array(); 
+			    $counter = 0;
+			?>
+			<div class="carousel">
 			<?php
 			    $args = array( 
-				'post_type'       => 'page', 
-				'posts_per_page'  => 1,
-				'title'           => 'Community',
+				'post_type'       => 'community_programs', 
+				'posts_per_page'  => -1,
+				'orderby'         => 'date',
+				'order'           => 'ASC',
 			    );
-			    $community_page = get_posts( $args ); // returns an array of posts
+			    $community_post = get_posts( $args ); // returns an array of posts
 			
 			?>
-			<div class='community-container'>
+			<?php foreach ( $community_post as $post ) : setup_postdata( $post ); ?>
+			<!-- Execute the counter -->
+			<?php 
+			    $counter = $counter + 1;
+			?>
+			<!-- Start the carousel cell -->
+			<div class="carousel-cell" id="<?php echo 'carousel-cell' . $counter; ?>">
+			    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php
+				    $args = array( 
+					'post_type'       => 'page', 
+					'posts_per_page'  => 1,
+					'title'           => 'Community',
+				    );
+				    $community_page = get_posts( $args ); // returns an array of posts
+				
+				?>
 				<?php foreach ( $community_page as $post ) : setup_postdata( $post ); ?>
-				<header class="page-header entry-content">		    
-				    <div class="community-page-content">
 					<?php the_content(); ?>
-				    </div>
-				    <div class="carousel-pagination">
-					<div class="carousel-pagination-numbers"></div>
-					<div class="carousel-pagination-buttons">
-					    <div class="carousel-pagination-prev">
-						<i class="fas fa-arrow-left"></i>
-					    </div>
-					    <div class="carousel-pagination-next">
-						<i class="fas fa-arrow-right"></i>
-					    </div>
+				<?php endforeach; wp_reset_postdata(); ?>     
+				<div class="community-first-image" style="background-image: url(<?php echo get_field("first_image") ?>)">
+				</div>
+				<header class="entry-header">
+				    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+				</header><!-- .entry-header -->
+				<div class="community-owner">
+				    <h3><?php echo get_field("owner"); ?></h3>
+				</div>
+				<div class="community-secondary-image" style="background-image: url(<?php echo get_field("second_image") ?>)">
+				</div>
+				<!-- If is not mobile, hide pagination -->
+				<?php if ( wp_is_mobile() ) : ?>
+				<div class="carousel-pagination">
+				    <div class="carousel-pagination-numbers"></div>
+				    <div class="carousel-pagination-buttons">
+					<div class="carousel-pagination-prev">
+					    <i class="fas fa-arrow-left"></i>
+					</div>
+					<div class="carousel-pagination-next">
+					    <i class="fas fa-arrow-right"></i>
 					</div>
 				    </div>
-				</header><!-- .page-header -->
-				<?php endforeach; wp_reset_postdata(); ?>     
+				</div>
+				<?php endif; ?>
+				<div class="entry-content">
+				    <?php the_content(); ?>
+				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
+				</div><!-- .entry-content -->
+				<div class="light-grey-box"></div>
+			    </article><!-- #post-## -->
 			</div>
-			<?php endif; ?>
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+			<?php array_push($carousel_links, '#carousel-cell'.$counter); ?>
+			<!-- End ForEach -->
+			<?php endforeach ; ?>
+			</div>
+			<!-- Create the links for the carousel -->
+			<div class="carousel-generator">
+			<?php 
+			    foreach($carousel_links as $carousel_id) :
+			?>
+			    <a href="<?php echo $carousel_id; ?>"><?php echo substr($carousel_id, -1); ?></a>
+			<?php endforeach; ?>
+			<!-- Run script to add the navigation for specific DIVs -->
+			<script type="text/javascript">
+				const carouselLinks = document.querySelector(".carousel-generator").innerHTML;
+				const carouselDiv = document.querySelectorAll(".carousel-pagination-numbers");
+				carouselDiv.forEach( div => {
+				   div.innerHTML = carouselLinks; 
+				});
+			</script>
+			</div>
 
 		<?php else : ?>
 
