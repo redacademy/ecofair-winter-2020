@@ -17,8 +17,6 @@ get_header(); ?>
 				'post_type'       => 'page', 
 				'posts_per_page'  => 1,
 				'title'           => 'Workshops',
-				'orderby'         => 'date',
-				'order'           => 'ASC',
 			    );
 			    $workshop_page = get_posts( $args ); // returns an array of posts
 			
