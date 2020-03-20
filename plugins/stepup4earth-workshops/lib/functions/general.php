@@ -4,7 +4,7 @@
  *
  */
 
-class RF_General {
+class EW_General {
 
    /**
     * Add actions and filters
@@ -140,4 +140,4 @@ class RF_General {
 
 }
 
-new RF_General();
+new EW_General();
