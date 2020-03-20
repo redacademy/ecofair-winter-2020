@@ -4,30 +4,37 @@
 
 /* All pages */
 
-// .site-content {
-//   width: 90%;
-//   margin: 0 auto;
-// }
+.site-content {
+  background-color: $color__background-white;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* Front page */
 
 // banner
 
+
 .front-banner-grid {
   @include grid-3;
   grid-gap: 0;
-  grid-template-rows: 7vh 12vh 7vh;
-  width: 95%;
-  margin: 0 auto;
+  grid-template-rows: 7vh 12vh 28vh;
+  justify-self: right;
   padding-top: 5rem;
-
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 98%;
 }
 
 .front-banner-img {
+  background-image: url(../assets/images/heroimage01.jpeg);
+  background-size: cover;
+  background-position: right;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
-  width: 200px;
+  width: 100%;
 
 }
 
@@ -37,10 +44,10 @@
   grid-row-start: 3;
   grid-row-end: 4;
   justify-self: right;
-  height: 5vh;
-  width: 5vh;
+  height: 6vh;
+  width: 6vh;
   background-color: $color__orange-1;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .sqr-dr-green {
@@ -50,10 +57,10 @@
   grid-row-end: 3;
   justify-self: right;
   align-self: flex-start;
-  height: 10vh;
-  width: 10vh;
+  height: 11vh;
+  width: 11vh;
   background-color: $color__green-1;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .sqr-light-green {
@@ -63,22 +70,24 @@
   grid-row-end: 2;
   justify-self: right;
   align-self: flex-start;
-  height: 5vh;
-  width: 5vh;
+  height: 6vh;
+  width: 6vh;
   background-color: $color__green-light-1;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .event-info {
- margin-top: $base__space-unit;
- padding-top: $base__space-unit;
+ margin-left: $base__space-unit / 2;
 
 .site-title-heading {
   font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .event-title {
   font-size: 4.5rem;
   margin-top: .5rem;
+  margin-bottom: .5rem;
   line-height: 1.2;
 }
 .location {
@@ -97,12 +106,15 @@
   background-position: right;
   height: 351px;
   width: 351px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 // mission statement section
 
 .mission-statement {
-  background-color: $color__background-orange;
+  background-color: $color__background-grey;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -117,12 +129,16 @@
   }
 }
 
+.mission-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
 // 3 column image grid
 
 .three-col-img-grid {
   @include grid-3;
   grid-gap: 1rem;
-  // grid-template-rows: 7vh 12vh 7vh;
   width: 95%;
   padding-top: 5rem;
 }
@@ -133,11 +149,8 @@
   background-position: center;
   grid-column-start: 1;
   grid-column-end: 2;
-  width: 200px;
-  height: 500px;
-  // grid-row-start: 1;
-  // grid-row-end: 4;
-  // width: 200px;
+  width: 100%;
+  height: 288px;
 }
 
 .false-creek-img {
@@ -146,22 +159,52 @@
   background-position: right;
   grid-column-start: 2;
   grid-column-end: 4;
-  width: 200px;
-  height: 500px;
-  // grid-row-start: 1;
-  // grid-row-end: 4;
-  // width: 200px;
+  width: 100%;
+  height: 288px;
 }
+
+.three-col-img-grid-drone {
+  @include grid-3;
+  grid-gap: 1rem;
+  width: 95%;
+  padding-top: .5rem;
+}
+
+.drone-img-1 {
+  background-image: url(../assets/images/droneshot01.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: 360px;
+}
+
+.drone-img-2 {
+  background-image: url(../assets/images/droneshot02.jpeg);
+  background-size: cover;
+  background-position: right;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+  height: 360px;
+}
+
+
 
 // event feature section
 
 .event-feature-widget {
+  width: 98%;
+  margin-left: $base__space-unit / 2;
+
   h2 {
     font-size: 1.5rem;
   }
   h4{
     font-size: 2.25rem;
     margin-top: 0px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -172,6 +215,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: $color__background-grey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .priority-energy {
@@ -230,3 +276,22 @@
     margin: 0px;
     }
 }
+
+.hero-img-bkgd {
+  background-image: url(../assets/images/homescreendivider01.jpeg);
+  background-size: cover;
+  background-position: right;
+  height: 400px;
+  width: 100%;
+}
+<<<<<<< HEAD
+
+// speaker sponsor section
+
+.sponsor-logo-img {
+  width: 226px;
+  height: 226px;
+}
+
+=======
+>>>>>>> ea840e18dad779c8222a72d7151dfbcbdf0743a5

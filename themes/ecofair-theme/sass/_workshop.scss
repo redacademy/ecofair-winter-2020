@@ -1,25 +1,8 @@
 .post-type-archive-workshop{
     .hfeed{
 	.site-content {
-	    margin: 6.25rem .5rem 1rem;
-	    @include desktop {
-		max-width: 1176px;
-		margin: 6.25rem auto 1rem;
-	    }
 	    // Flickity Style
-	    .carousel-cell {
-		width: 100%;
-	    }
-	    .flickity-page-dots {
-		display: none;
-	    }
-	    .flickity-prev-next-button {
-		display: none;
-	    }
 	    // Classes for the pagination of Flickity
-	    .carousel-generator {
-		display: none;
-	    }
 	    .carousel-pagination {
 		grid-column: 1 / 4;
 		grid-row: 9 / 10;
@@ -75,7 +58,6 @@
 		}
 	    }
 	    .workshop {
-		margin: 1rem;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
 		grid-template-rows: repeat(3, auto) .6rem repeat(6, auto);
@@ -86,7 +68,6 @@
 		    grid-column-gap: 1%;
 		}
 		.workshop-order-number {
-		    //position: relative;
 		    @include desktop {
 			grid-column: 1 / 2;
 			grid-row: 3 / 4;

@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header>
+		<header class="front-page-header">
 			<div class="front-banner-grid">
 				
 				<div class="sqr-light-green">
@@ -22,31 +22,34 @@ get_header(); ?>
 				<div class="sqr-orange">
 				</div>
 
-				<img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" />
+				<div class="front-banner-img"></div>
+
+				<!-- <img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" /> -->
 				
 			</div> <!-- front-banner-grid -->
-
 		</header>
-			<section class="event-info">
-				<h1 class="site-title-heading">Step Up 4 Earth</h1>
-				<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
 
-				<div class="event-info-li"></div>
+		<section class="event-info">
+			<h1 class="site-title-heading">Step Up 4 Earth</h1>
+			<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
 
-				<p class="location"><?php the_field('location_of_event'); ?></p>
-				<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
-			</section>
+			<div class="event-info-li"></div>
+
+			<p class="location"><?php the_field('location_of_event'); ?></p>
+			<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
+		</section>
 
 			<div class="hero-img-2"></div>
 
-			<section class="mission-statement">
+		<section class="mission-statement">
 
+			<div class="mission-text">
 				<h2>Our Mission</h2>
 				<h4>We are positive-minded, result-driven, and community-caring.</h4>
 				<p class="event-description"><?php the_field('event_description'); ?></p>
+			<div class="mission-text">
 
-			</section>
-
+		</section>
 	
 			<div class="three-col-img-grid">
 
@@ -54,8 +57,6 @@ get_header(); ?>
 				<div class="false-creek-img"></div>
 
 			</div> <!-- 3-col-img-grid -->
-
-
 
 			<?php
 				if ( ! is_active_sidebar( 'event-features' ) ) {
@@ -69,6 +70,13 @@ get_header(); ?>
 				</div><!-- #secondary -->
 			
 			</section>
+
+			<div class="three-col-img-grid-drone">
+
+				<div class="drone-img-1"></div>
+				<div class="drone-img-2"></div>
+
+			</div> <!-- 3-col-img-grid -->
 
 		<section class="priorities">
 
@@ -104,9 +112,35 @@ get_header(); ?>
 					</a>
 				</div>
 				
-			</section>		
+		</section>		
 
-		</header>
+			<div class="hero-img-bkgd"></div>
+
+		<section class="speakers">
+	
+		</div> <!-- .sponsor-grid -->	
+
+			<?php 
+				$posts = get_field('sponsors_relationship');
+
+				if ($posts): ?>
+					<ul> 
+						<?php foreach($posts as $post): setup_postdata($post); ?>
+							<li>
+
+							<?php if( get_field('sponsor_logo') ): ?>
+							<div <?php  echo the_field('sponsor_logo'); ?>> </div>
+							<?php endif; ?>
+
+								<p><?php the_field('sponsor_name');?></p>
+								<p><?php  the_field('sponsor_specialty');?></p>
+							</li>
+						<?php endforeach; ?>
+						</ul>
+				<?php wp_reset_postdata(); ?>
+						<?php endif; ?>
+		</section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

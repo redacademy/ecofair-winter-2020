@@ -3,7 +3,7 @@
     width: 100%;
     z-index: 1;
     background-color: $color__background-white;
-    top: 0;
+		top: 0;
     @include desktop {
 	position: fixed;
 	width: 100%;
@@ -14,7 +14,8 @@
     .site-branding {
 	display: flex;
 	align-items: center;
-	padding: 1.4rem;    
+	padding: 1.4rem;   
+	width: 100%;
 	justify-content: space-between;
 	i {
 	    @include desktop {
