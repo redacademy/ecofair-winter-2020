@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header>
+		<header class="front-page-header">
 			<div class="front-banner-grid">
 				
 				<div class="sqr-light-green">
@@ -22,7 +22,9 @@ get_header(); ?>
 				<div class="sqr-orange">
 				</div>
 
-				<img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" />
+				<div class="front-banner-img"></div>
+
+				<!-- <img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" /> -->
 				
 			</div> <!-- front-banner-grid -->
 
@@ -70,6 +72,13 @@ get_header(); ?>
 			
 			</section>
 
+			<div class="three-col-img-grid-drone">
+
+				<div class="drone-img-1"></div>
+				<div class="drone-img-2"></div>
+
+			</div> <!-- 3-col-img-grid -->
+
 		<section class="priorities">
 
 			<h3>Our Priorities</h3>
@@ -105,6 +114,8 @@ get_header(); ?>
 				</div>
 				
 			</section>		
+
+			<div class="hero-img-bkgd"></div>
 
 		</header>
 
