@@ -129,7 +129,8 @@ get_header(); ?>
 							<li>
 
 							<?php if( get_field('sponsor_logo') ): ?>
-							<div <?php  echo the_field('sponsor_logo'); ?>> </div>
+							<div style="background: url('<?php  echo the_field('sponsor_logo'); ?>')"> 
+							</div>
 							<?php endif; ?>
 
 								<p><?php the_field('sponsor_name');?></p>
