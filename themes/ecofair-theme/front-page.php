@@ -119,27 +119,26 @@ get_header(); ?>
 		<section class="speakers">
 	
 		</div> <!-- .sponsor-grid -->	
-
-			<?php 
-				$posts = get_field('sponsors_relationship');
-
-				if ($posts): ?>
-					<ul> 
-						<?php foreach($posts as $post): setup_postdata($post); ?>
-							<li>
-
-							<?php if( get_field('sponsor_logo') ): ?>
-							<div style="background: url('<?php  echo the_field('sponsor_logo'); ?>')"> 
-							</div>
-							<?php endif; ?>
-
-								<p><?php the_field('sponsor_name');?></p>
-								<p><?php  the_field('sponsor_specialty');?></p>
-							</li>
-						<?php endforeach; ?>
-						</ul>
-				<?php wp_reset_postdata(); ?>
-						<?php endif; ?>
+			<?php
+			    $args = array( 
+				'post_type'       => 'sponsor_type', 
+				'posts_per_page'  => -1,
+				'orderby'         => 'date',
+				'order'           => 'ASC',
+			    );
+			    $sponsors_post = get_posts( $args ); // returns an array of posts
+			?>
+			<ul> 
+			<?php foreach ( $sponsors_post as $post ) : setup_postdata( $post ); ?>
+			    <li>
+				<div style="background-image: url(<?php  echo get_field('sponsor_logo'); ?>)"> 
+				</div>
+				<p><?php the_field('sponsor_name');?></p>
+				<p><?php  the_field('sponsor_specialty');?></p>
+			    </li>
+			<?php endforeach; ?>
+			</ul>
+			<?php wp_reset_postdata(); ?>
 		</section>
 
 
