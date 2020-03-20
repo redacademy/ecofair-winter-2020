@@ -129,12 +129,7 @@ get_header(); ?>
 					<li>
 
 					<?php if( get_field('sponsor_logo') ): ?>
-<<<<<<< HEAD
-							<div style="background-image: url('<?php  echo the_field('sponsor_logo'); ?>')"> 
-=======
-							<div <?php  echo the_field('sponsor_logo'); ?>> </div>
-							<div style="background: url(<?php  echo the_field('sponsor_logo'); ?>); background-size: cover; background-position: center; height: 10rem"> 
->>>>>>> b9fb27d296ed481163e9b83cccc52bcb5b83f4be
+						<div style="background: url(<?php  echo the_field('sponsor_logo'); ?>); background-size: cover; background-position: center; height: 10rem"> 
 							</div>
 							<?php endif; ?>
 
