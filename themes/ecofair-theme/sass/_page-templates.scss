@@ -287,12 +287,24 @@
 
 // speaker sponsor section
 
-.sponsor-logo-img {
-  width: 226px;
-  height: 226px;
+.speakers-carousel {
+  display: flex;
+  flex-direction: row;
+  background: $color__background-green;
+}
+
+.speakers-carousel-cell {
+  margin: 2rem;
+  p {
+    margin: 0px;
+  }
 }
 
 .speaker-img {
   height: 226px;
   width: 226px;
+}
+
+.sponsor-name {
+  font-family: 'montserratbold';
 }

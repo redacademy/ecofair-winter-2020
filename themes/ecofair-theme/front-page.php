@@ -116,35 +116,35 @@ get_header(); ?>
 
 			<div class="hero-img-bkgd"></div>
 
-		<section class="speakers">
-
 			<?php 
 			$posts = get_field('sponsors_relationship');
 
 			if ($posts): ?>
 
-			<div class="speakers-grid">
+		<section class="carousel">
 
-				<ul> 
-					<?php foreach($posts as $post): setup_postdata($post); ?>
-						
-					<li>
-						<?php if( get_field('sponsor_logo') ): ?>
-							<div class="speaker-img" style="background: url(<?php  echo the_field('sponsor_logo'); ?>); background-size: cover; background-position: center;"> 
-							</div>
-						<?php endif; ?>
-							<p><?php the_field('sponsor_name');?></p>
-							<p><?php  the_field('sponsor_specialty');?></p>
-					</li>
-					
-					<?php endforeach; ?>
-				</ul>
+			<div class="sponsor-title">
+			<h3>Our Partners</h3>
+			<h4><?php the_field('sponsor_section_title'); ?></h4>	
+			</div>
+
+				<?php foreach($posts as $post): setup_postdata($post); ?>
+
+				<div class="speakers-carousel-cell">
+				<?php if( get_field('sponsor_logo') ): ?>	
+					<div class="speaker-img" style="background: url(<?php  echo the_field('sponsor_logo'); ?>); background-size: cover; background-position: center;"> 
+					</div>
+					<p class="sponsor-name"><?php the_field('sponsor_name');?></p>
+					<p><?php  the_field('sponsor_specialty');?></p>
+				<?php endif; ?>
+				</div>
+				<?php endforeach; ?>
+	
 
 				<?php wp_reset_postdata(); ?>
-				<?php endif; ?>
-
-			</div> <!-- .speaker-grid -->
-
+				<?php endif; ?>			
+			<!-- </div> .speaker-carousel -->
+	
 		</section>
 
 		</main><!-- #main -->
