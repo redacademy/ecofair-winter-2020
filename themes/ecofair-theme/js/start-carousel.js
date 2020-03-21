@@ -2,6 +2,7 @@
     const carousel = document.querySelector('.carousel');
     const flkty = new Flickity(carousel, {
         hash: true,
+        cellAlign: "left",
         draggable: false
     });
     const buttonPrev = document.querySelectorAll('.carousel-pagination-prev');
