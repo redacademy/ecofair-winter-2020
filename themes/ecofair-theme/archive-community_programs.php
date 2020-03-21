@@ -49,7 +49,13 @@ get_header(); ?>
 				<div class="community-first-image" style="background-image: url(<?php echo get_field("first_image") ?>)">
 				</div>
 				<header class="entry-header">
+				    <?php if( wp_is_mobile() ) : ?>
+				    <h2 class="entry-title">
+					<?php echo get_field("company_name");?>
+				    </h2>
+				    <?php else : ?>
 				    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+				    <?php endif; ?>
 				</header><!-- .entry-header -->
 				<div class="community-secondary-image" style="background-image: url(<?php echo get_field("second_image") ?>)">
 				</div>
