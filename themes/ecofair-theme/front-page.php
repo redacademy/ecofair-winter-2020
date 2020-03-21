@@ -80,10 +80,11 @@ get_header(); ?>
 
 		<section class="priorities">
 
-			<h3>Our Priorities</h3>
+		<div class="priority-header">
+			<h2>Our Priorities</h2>
 			<h4>Create an impact you can be proud of.</h4>
 			<p>We work to meet this goal by focusing on these important areas of conservation.</p>
-
+		</div>
 
 				<div class="priority-energy">
 					<img class="energy-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Energy.png" alt="energy icon" />

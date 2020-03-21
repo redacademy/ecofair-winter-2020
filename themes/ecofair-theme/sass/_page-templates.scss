@@ -217,7 +217,18 @@
   text-align: center;
   background-color: $color__background-grey;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4.5rem;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.priority-header {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 2.25rem;
+  }
 }
 
 .priority-energy {
@@ -280,18 +291,13 @@
 .hero-img-bkgd {
   background-image: url(../assets/images/homescreendivider01.jpeg);
   background-size: cover;
-  background-position: right;
-  height: 400px;
+  background-position: center;
+  height: 592px;
   width: 100%;
 }
 
 // speaker sponsor section
 
-.speakers-carousel {
-  display: flex;
-  flex-direction: row;
-  background: $color__background-green;
-}
 
 .speakers-carousel-cell {
   margin: 2rem;
