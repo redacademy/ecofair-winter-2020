@@ -59,8 +59,9 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 				<div class="community-secondary-image" style="background-image: url(<?php echo get_field("second_image") ?>)">
 				</div>
+				<div class="community-third-image" style="background-image: url(<?php echo get_field("third_image") ?>)">
+				</div>
 				<!-- If is not mobile, hide pagination -->
-				<?php if ( wp_is_mobile() ) : ?>
 				<div class="carousel-pagination">
 				    <div class="carousel-pagination-buttons">
 					<div class="carousel-pagination-prev">
@@ -73,7 +74,6 @@ get_header(); ?>
 				    </div>
 				    <div class="carousel-pagination-numbers"></div>
 				</div>
-				<?php endif; ?>
 				<div class="entry-content">
 				    <?php the_content(); ?>
 				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
