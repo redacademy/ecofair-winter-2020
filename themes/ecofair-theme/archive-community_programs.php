@@ -51,23 +51,21 @@ get_header(); ?>
 				<header class="entry-header">
 				    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
 				</header><!-- .entry-header -->
-				<div class="community-owner">
-				    <h3><?php echo get_field("owner"); ?></h3>
-				</div>
 				<div class="community-secondary-image" style="background-image: url(<?php echo get_field("second_image") ?>)">
 				</div>
 				<!-- If is not mobile, hide pagination -->
 				<?php if ( wp_is_mobile() ) : ?>
 				<div class="carousel-pagination">
-				    <div class="carousel-pagination-numbers"></div>
 				    <div class="carousel-pagination-buttons">
 					<div class="carousel-pagination-prev">
 					    <i class="fas fa-arrow-left"></i>
 					</div>
+					<div class="community-project-logo" style="background-image: url(<?php echo get_field("community_project_logo") ?>)"></div>
 					<div class="carousel-pagination-next">
 					    <i class="fas fa-arrow-right"></i>
 					</div>
 				    </div>
+				    <div class="carousel-pagination-numbers"></div>
 				</div>
 				<?php endif; ?>
 				<div class="entry-content">

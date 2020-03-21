@@ -5,7 +5,7 @@
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
-		grid-template-rows: repeat(8, auto);
+		grid-template-rows: 8rem repeat(7, auto);
 		grid-column-gap: 4%;
 		@include desktop {
 		    grid-column-gap: 1%;
@@ -49,14 +49,59 @@
 		.entry-content {
 		    grid-column: 1 / 4;
 		    grid-row: 8 / 9;
+		    display: flex;
+		    flex-direction: column;
 		    p {
 			padding: 0 .5rem;
 			margin: 0;
+		    }
+		    a {
+			text-decoration: none;
+			text-align: center;
+			font-weight: 700;
+			color: white;
+			background-color: $color__green-1;
+			padding: .5rem;
+			width: 70%;
+			margin: .5rem 0 0 .5rem;
 		    }
 		}
 		.carousel-pagination {
 		    grid-column: 1 / 4;
 		    grid-row: 6;
+		    .carousel-pagination-numbers {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 3rem;
+			a {
+			    padding: 0 1rem;
+			    font-size: 1.5rem;
+			}
+		    }
+		    .carousel-pagination-buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.carousel-pagination-prev,
+			.carousel-pagination-next {
+			    margin: 0 auto;
+			    i {
+				padding: 1.5rem;
+				margin: .5rem;
+				border: .2rem solid $color__green-1;
+				border-radius: 100%;
+				color: $color__green-1;
+				font-size: 2rem;
+			    }
+			}
+			.community-project-logo {
+			    height: 8rem;
+			    width: 80%;
+			    background-position: center;
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			}
+		    }
 		}
 		.light-grey-box{
 		    grid-column: 1 / 4;
