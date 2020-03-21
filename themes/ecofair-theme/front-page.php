@@ -122,14 +122,28 @@ get_header(); ?>
 
 			if ($posts): ?>
 
-		<section class="carousel">
+		<section class="speaker-section">
 
 			<div class="sponsor-title">
-			<h3>Our Partners</h3>
-			<h4><?php the_field('sponsor_section_title'); ?></h4>	
+				<h3>Our Partners</h3>
+				<h4><?php the_field('sponsor_section_title'); ?></h4>	
 			</div>
 
-				<?php foreach($posts as $post): setup_postdata($post); ?>
+			<div class="carousel-pagination">
+		
+				<div class="carousel-pagination-buttons">
+					<div class="carousel-pagination-prev">
+						<i class="fas fa-arrow-left"></i>
+					</div>
+					<div class="carousel-pagination-next">
+						<i class="fas fa-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel">
+
+			<?php foreach($posts as $post): setup_postdata($post); ?>
 
 				<div class="speakers-carousel-cell">
 				<?php if( get_field('sponsor_logo') ): ?>	
@@ -144,9 +158,11 @@ get_header(); ?>
 
 				<?php wp_reset_postdata(); ?>
 				<?php endif; ?>			
-			<!-- </div> .speaker-carousel -->
 	
-		</section>
+	
+			</div> <!-- end of .carousel -->
+
+		</section> <!-- end of speaker section --> 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

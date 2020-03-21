@@ -298,7 +298,6 @@
 
 // speaker sponsor section
 
-
 .speakers-carousel-cell {
   margin: 2rem;
   p {
@@ -313,4 +312,45 @@
 
 .sponsor-name {
   font-family: 'montserratbold';
+}
+
+.speaker-section {
+  background-color: $color__background-green;
+  .carousel-pagination-buttons {
+    display: flex;
+  }
+  .carousel-pagination-prev {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border: 0.2rem solid $color__green-1;
+    border-radius: 50%;
+    color: $color__green-1;
+    font-size: 1.5rem;
+    width: 76px;
+    height: 76px;
+  }
+  .carousel-pagination-next {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      margin: 0.5rem;
+      border: 0.2rem solid $color__green-1;
+      border-radius: 50%;
+      color: $color__green-1;
+      font-size: 1.5rem;
+      width: 76px;
+      height: 76px;
+    }
+  .carousel {
+    .flickity-page-dots {
+      display: none;
+    }
+    .flickity-prev-next-button {
+		  display: none;
+	  }
+  }
 }
