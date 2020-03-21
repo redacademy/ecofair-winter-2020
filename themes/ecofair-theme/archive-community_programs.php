@@ -78,7 +78,9 @@ get_header(); ?>
 				    <?php the_content(); ?>
 				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
 				</div><!-- .entry-content -->
+				<div class="light-green-box"></div>
 				<div class="light-grey-box"></div>
+				<div class="green-line"></div>
 			    </article><!-- #post-## -->
 			</div>
 			<?php array_push($carousel_links, '#carousel-cell'.$counter); ?>
