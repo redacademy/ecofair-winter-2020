@@ -313,9 +313,10 @@
 }
 
 .speakers-carousel-cell {
-  margin: 2rem;
+  margin: 0.5rem;
   p {
     margin: 0px;
+    font-size: 1rem;
   }
 }
 
@@ -330,6 +331,7 @@
 
 .speaker-section {
   background-color: $color__background-green;
+  padding-bottom: 5rem;
   .carousel-pagination-buttons {
     display: flex;
   }
@@ -360,12 +362,14 @@
       height: 76px;
     }
   .carousel {
-    align-content: left;
     .flickity-page-dots {
       display: none;
     }
     .flickity-prev-next-button {
 		  display: none;
-	  }
+    }
+    .flickity-slider {
+      margin-left: .75rem;
+    }
   }
 }
