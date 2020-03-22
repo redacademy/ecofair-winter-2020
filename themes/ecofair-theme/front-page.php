@@ -139,6 +139,7 @@ get_header(); ?>
 						<i class="fas fa-arrow-right"></i>
 					</div>
 				</div>
+
 			</div>
 
 			<div class="carousel">
@@ -163,6 +164,24 @@ get_header(); ?>
 			</div> <!-- end of .carousel -->
 
 		</section> <!-- end of speaker section --> 
+
+		<section class="brought-by">
+		<?php if(get_field('host_logo_repeater')): ?>
+
+				<ul>
+
+				<?php while(has_sub_field('host_logo_repeater')): ?>
+
+					<li>
+						<img src="<?php the_sub_field('host_logo'); ?>">
+
+				<?php endwhile; ?>
+
+				</ul>
+
+				<?php endif; ?>
+
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
