@@ -24,22 +24,22 @@ get_header(); ?>
 
 				<div class="front-banner-img"></div>
 
-				<!-- <img class="front-banner-img" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/heroimage01.jpeg" alt="a tropical beach" /> -->
+				<div class="event-info">
+
+					<h1 class="site-title-heading">Step Up 4 Earth</h1>
+					<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
+
+					<div class="event-info-li"></div>
+
+					<p class="location"><?php the_field('location_of_event'); ?></p>
+					<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
+
+				</div> <!-- event-info -->
+
+				<div class="hero-img-2"></div>
 				
 			</div> <!-- front-banner-grid -->
 		</header>
-
-		<section class="event-info">
-			<h1 class="site-title-heading">Step Up 4 Earth</h1>
-			<h2 class="event-title"><?php the_field('name_of_event'); ?></h2>
-
-			<div class="event-info-li"></div>
-
-			<p class="location"><?php the_field('location_of_event'); ?></p>
-			<p class="date-time"><?php the_field('day_of_event');?>, <?php the_field('time_of_event'); ?></p>
-		</section>
-
-			<div class="hero-img-2"></div>
 
 		<section class="mission-statement">
 
