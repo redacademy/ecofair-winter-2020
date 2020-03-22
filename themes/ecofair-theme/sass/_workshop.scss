@@ -17,9 +17,6 @@
 		a {
 		    text-decoration: none;
 		    color: $color__text-main;
-		    &:active {
-			border-bottom: 1px solid black;
-		    }
 		}
 		.carousel-pagination-numbers {
 		    display: flex;

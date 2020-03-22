@@ -26,12 +26,12 @@
 		justify-content: space-around;
 		flex-direction: column;
 		margin: 1rem 0;
+		.active-number {
+		    border-bottom: .15rem solid $color__green-1;
+		}
 		a {
 		    text-decoration: none;
 		    color: $color__text-main;
-		    &:active {
-			border-bottom: 1px solid black;
-		    }
 		}
 	    }
 	}

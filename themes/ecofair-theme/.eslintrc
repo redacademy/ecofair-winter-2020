@@ -13,6 +13,7 @@
     "no-eq-null": 0,
     "guard-for-in": 1,
     "no-empty": 1,
+    "no-mixed-spaces-and-tabs": 0,
     "quotes": [
       1,
       "single"
