@@ -40,6 +40,12 @@
 	gap: 1.25%;
 }
 
+@mixin grid-20 {
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+}
+
+
 // Align image center and cover
 @mixin background-image-center {
     background-size: cover;
