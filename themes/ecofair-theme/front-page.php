@@ -181,8 +181,11 @@ get_header(); ?>
 
 		<section class="top-return">
 			<p>Back to top</p>
-<!--content here-->
-<a href="#top">Back to top</a>
+			<div class="return-arrow-up">
+			<a href="#top">
+			<i class="fas fa-arrow-up"></i>
+				</div>
+			</a>
 
 
 		</main><!-- #main -->
