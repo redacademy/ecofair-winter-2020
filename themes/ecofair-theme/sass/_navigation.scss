@@ -4,6 +4,10 @@
 
 /* Links */
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
 	color: $color__link;
 

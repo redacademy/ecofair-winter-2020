@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="front-page-header">
+		<header name="top" class="front-page-header">
 			<div class="front-banner-grid">
 				
 				<div class="sqr-light-green">
@@ -178,6 +178,12 @@ get_header(); ?>
 				<?php endif; ?>
 
 		</section> <!-- end of host section -->
+
+		<section class="top-return">
+			<p>Back to top</p>
+<!--content here-->
+<a href="#top">Back to top</a>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
