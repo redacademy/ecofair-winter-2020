@@ -22,9 +22,10 @@
   grid-template-rows: 7vh 12vh 25vh 44vh 45vh;
   justify-self: right;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3.8rem;
   margin: 0 auto;
   width: 98%;
+  position: relative;
 
   @include desktop {
     display: grid;
@@ -43,6 +44,7 @@
   grid-row-start: 1;
   grid-row-end: 4;
   width: 100%;
+  z-index: 2;
 
   @include desktop {
     grid-column-start: 1;
@@ -121,6 +123,7 @@
  grid-row-end: 5;
  padding-top: 0.5rem;
  padding-bottom: 0.5rem;
+ z-index: 2;
 
   @include desktop {
     grid-column-start: 5;
@@ -165,6 +168,7 @@
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  z-index: 2;
 
   @include desktop {
     grid-column-start: 9;
@@ -193,6 +197,18 @@
     width: 348px;
     margin: 0px;
   }  
+}
+
+.light-green-bkgrd {
+  background-color: $color__background-green;
+  width: 100%;
+  height: 1232px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  position: absolute;
+  top: -90px;
 }
 
 .sqr-dr-green-hidden {

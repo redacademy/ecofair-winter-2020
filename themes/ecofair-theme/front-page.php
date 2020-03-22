@@ -42,6 +42,9 @@ get_header(); ?>
 
 				<div class="sqr-dr-green-hidden">
 				</div>
+
+				<div class="light-green-bkgrd">
+				</div>
 				
 			</div> <!-- front-banner-grid -->
 		</header>
