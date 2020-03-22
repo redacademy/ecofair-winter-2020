@@ -11,11 +11,24 @@
 	arr.forEach(e => {
 	    if(e.getAttribute('href').slice(-1) === number){
 		e.classList.add('active-number');
-	    }else {
+	    }
+	    else {
 		e.classList.remove('active-number');
 	    }
 	});
+	if(number === '/'){
+	    arr.forEach(e => {
+		if(e.getAttribute('href').slice(-1) == 1) {
+		    e.classList.add('active-number');
+		}
+	    });
+	}
     }
+    // Run the script on page load
+    document.onload = getAttr(carouselNum);
+    // Add event listener to the numbers
+    carouselNum.forEach( e => e.addEventListener('click', () => getAttr(carouselNum)));
+    // Add event listener on the arrow clicks
     const buttonPrev = document.querySelectorAll('.carousel-pagination-prev');
     buttonPrev.forEach(button => {
 	button.addEventListener('click', () => {
