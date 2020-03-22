@@ -37,6 +37,11 @@ get_header(); ?>
 				</div> <!-- event-info -->
 
 				<div class="hero-img-2"></div>
+
+				<div class="hero-img-3"></div>
+
+				<div class="sqr-dr-green-hidden">
+				</div>
 				
 			</div> <!-- front-banner-grid -->
 		</header>
