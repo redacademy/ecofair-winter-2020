@@ -167,21 +167,17 @@ get_header(); ?>
 
 		<section class="brought-by">
 		<?php if(get_field('host_logo_repeater')): ?>
-
-				<ul>
+			<h3><?php the_field('brought_to_you_by'); ?></h3>
 
 				<?php while(has_sub_field('host_logo_repeater')): ?>
 
-					<li>
-						<img src="<?php the_sub_field('host_logo'); ?>">
+						<div class="host-logo-img" style="background: url(<?php  echo the_sub_field('host_logo'); ?>); background-size: cover; background-position: center;"></div> 
 
 				<?php endwhile; ?>
 
-				</ul>
-
 				<?php endif; ?>
 
-		</section>
+		</section> <!-- end of host section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

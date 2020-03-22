@@ -373,3 +373,21 @@
     }
   }
 }
+
+// host section 
+
+.brought-by {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.host-logo-img {
+  width: 351px;
+  height: 95px;
+ }
