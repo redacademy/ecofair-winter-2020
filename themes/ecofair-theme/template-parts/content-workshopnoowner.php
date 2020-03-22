@@ -43,6 +43,7 @@
 </div><!-- .entry-content -->
 <div class="light-green-box"></div>
 <div class="dark-green-box"></div>
+<div class="light-grey-box"></div>
 <div class="orange-green-box"></div>
 <div class="green-line"></div>
 </article><!-- #post-## -->
