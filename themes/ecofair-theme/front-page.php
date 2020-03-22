@@ -54,7 +54,8 @@ get_header(); ?>
 			<div class="mission-text">
 				<h2>Our Mission</h2>
 				<h4>We are positive-minded, result-driven, and community-caring.</h4>
-				<p class="event-description"><?php the_field('event_description'); ?></p>
+			
+				<div class="event-description"><?php the_field('event_description'); ?></div>
 			<div class="mission-text">
 
 		</section>

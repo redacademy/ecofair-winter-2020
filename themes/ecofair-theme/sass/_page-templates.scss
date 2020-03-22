@@ -34,6 +34,7 @@
     grid-template-rows: 1fr 1.5fr .5fr;
     max-width: 1920px;
     padding-top: 10rem;
+    margin: 0 auto;
 
   }
 }
@@ -253,6 +254,10 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+  @include desktop {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
   h2 {
     font-size: 1.5rem;
@@ -267,6 +272,17 @@
 .mission-text {
   width: 98%;
   margin: 0 auto;
+
+  @include desktop {
+    width: 40%;
+  }
+}
+
+.event-description {
+  @include desktop {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 // 3 column image grid
