@@ -156,6 +156,7 @@
 		    justify-content: space-between;
 		    grid-column: 1 / 4;
 		    grid-row: 10 / 11;
+		    padding:.5rem;
 		    @include desktop {
 			grid-column: 8/13;
 			grid-row: 6 / 8;
@@ -315,6 +316,7 @@
 		    justify-content: space-between;
 		    grid-column: 1 / 4;
 		    grid-row: 13 / 14;
+		    padding: .5rem;
 		    @include desktop {
 			grid-column: 8/13;
 			grid-row: 6 / 8;

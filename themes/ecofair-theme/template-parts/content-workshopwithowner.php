@@ -24,7 +24,7 @@
     <div class="workshop-secondary-image" style="background-image: url(<?php echo get_field("secondary_image") ?>)">
     </div>
     <!-- If is not mobile, hide pagination -->
-    <?php if ( wp_is_mobile() ) : ?>
+    <?php if ( wp_is_mobile() and !wp_is_mobile()) : ?>
     <div class="carousel-pagination">
 	<div class="carousel-pagination-numbers"></div>
 	<div class="carousel-pagination-buttons">

@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<?php if (!wp_is_mobile()) : ?>
+			<?php //if (!wp_is_mobile()) : ?>
 			<?php
 			    $args = array( 
 				'post_type'       => 'page', 
@@ -26,9 +26,11 @@ get_header(); ?>
 			<div class='workshops-container'>
 				<?php foreach ( $workshop_page as $post ) : setup_postdata( $post ); ?>
 				<header class="page-header entry-content">		    
+				    <?php if (!wp_is_mobile()): ?>
 				    <div class="workshop-page-content">
 					<?php the_content(); ?>
 				    </div>
+				    <?php endif; ?>
 				    <div class="carousel-pagination">
 					<div class="carousel-pagination-numbers"></div>
 					<div class="carousel-pagination-buttons">
@@ -43,7 +45,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
-			<?php endif; ?>
+			<?php //endif; ?>
 
 			<?php /* Start the Loop */ ?>
 

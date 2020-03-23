@@ -72,7 +72,7 @@
 	}
 	li {
 	    display: flex;
-	    justify-content: end;
+	    justify-content: flex-end;
 	    &:last-child > a {
 		border: solid $color__green-1 .15rem;
 		color: $color__green-1;
