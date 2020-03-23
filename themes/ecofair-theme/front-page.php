@@ -43,8 +43,7 @@ get_header(); ?>
 				<div class="sqr-dr-green-hidden">
 				</div>
 
-				<div class="light-green-bkgrd">
-				</div>
+				<div class="light-green-bkgrd"></div>
 
 				<div class="banner-widgets">
 					<?php dynamic_sidebar('Banner'); ?>
@@ -63,12 +62,13 @@ get_header(); ?>
 			<div class="mission-text">
 
 		</section>
-	
+
+		<section class="event-features">
+
+			<div class="light-green-bkgrd-ef"></div>
 			<div class="three-col-img-grid">
-
-				<div class="lions-gate-img"></div>
-				<div class="false-creek-img"></div>
-
+					<div class="lions-gate-img"></div>
+					<div class="false-creek-img"></div>
 			</div> <!-- 3-col-img-grid -->
 
 			<?php
@@ -76,20 +76,18 @@ get_header(); ?>
 				return; }
 			?>
 
-			<section class="event-feature-widget">
-
+			<div class="event-feature-widget">
 				<div id="secondary" class="widget-area" role="complementary">
 					<?php dynamic_sidebar( 'event-features' ); ?>
 				</div><!-- #secondary -->
-			
-			</section>
+			</div>
 
 			<div class="three-col-img-grid-drone">
-
 				<div class="drone-img-1"></div>
 				<div class="drone-img-2"></div>
-
 			</div> <!-- 3-col-img-grid -->
+
+		</section> <!-- end of event features -->
 
 		<section class="priorities">
 
