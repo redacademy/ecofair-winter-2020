@@ -64,12 +64,7 @@ get_header(); ?>
 		</section>
 
 		<section class="event-features">
-
 			<div class="light-green-bkgrd-ef"></div>
-			<div class="three-col-img-grid">
-					<div class="lions-gate-img"></div>
-					<div class="false-creek-img"></div>
-			</div> <!-- 3-col-img-grid -->
 
 			<?php
 				if ( ! is_active_sidebar( 'event-features' ) ) {
@@ -78,15 +73,26 @@ get_header(); ?>
 
 			<div class="event-feature-widget">
 				<div id="secondary" class="widget-area" role="complementary">
-					<?php dynamic_sidebar( 'event-features' ); ?>
-				</div><!-- #secondary -->
-			</div>
 
-			<div class="three-col-img-grid-drone">
-				<div class="drone-img-1"></div>
-				<div class="drone-img-2"></div>
-			</div> <!-- 3-col-img-grid -->
+				<div class="three-col-img-grid">
+						<div class="lions-gate-img"></div>
+						<div class="false-creek-img"></div>
+				</div> <!-- 3-col-img-grid -->
 
+				
+				<?php dynamic_sidebar( 'event-features' ); ?>
+
+				<div class="three-col-img-grid-drone">
+					<div class="drone-img-1"></div>
+					<div class="drone-img-2"></div>
+					<div class="drone-img-3"></div>
+				</div> <!-- 3-col-img-grid -->
+
+				</div><!-- widget-area -->
+
+			</div> <!--event-feature-widget -->
+			<div class="features-li"></div>
+			<div class="light-green-bkgrd-ef-btm"></div>
 		</section> <!-- end of event features -->
 
 		<section class="priorities">
