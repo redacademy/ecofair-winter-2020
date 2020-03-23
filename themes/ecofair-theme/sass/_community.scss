@@ -193,10 +193,14 @@
 	    .background-grey-box {
 		position: absolute;
 		background-color: $color__background-grey;
-		top: 50%;
-		height: 50%;
-		width: 100%;
 		z-index: 0;
+		top: 30%;
+		height: 70%;
+		width: 100%;
+		@include desktop {
+		    top: 50%;
+		    height: 50%;
+		}
 	    }
 	}
     }
