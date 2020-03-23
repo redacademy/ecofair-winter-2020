@@ -102,34 +102,38 @@ get_header(); ?>
 			<h4>Create an impact you can be proud of.</h4>
 			<p>We work to meet this goal by focusing on these important areas of conservation.</p>
 		</div>
-
-				<div class="priority-energy">
-					<img class="energy-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Energy.png" alt="energy icon" />
-					<h5>Energy Efficiencies</h5>
-				</div>
-
-				<div class="priority-transport">
-					<img class="transport-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Transport.png" alt="energy icon" />
-					<h5>Transport</h5>
-				</div>
-
-				<div class="priority-7rs">
-					<img class="rs-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/7Rs.png" alt="energy icon" />
-					<h5>7 Rs</h5>
-				</div>
-
-				<div class="volunteer-button">
-					<a class="volunteer-button-text" href="#">
-						<p>Volunteer</p>
-					</a>
-				</div>
-
-				<div class="donate-button">
-					<a class="donate-button-text" href="#">
-						<p>Donate</p>
-					</a>
-				</div>
 				
+				<div class="priority-icons">
+						<div class="priority-energy">
+							<img class="energy-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Energy.png" alt="energy icon" />
+							<h5>Energy Efficiencies</h5>
+						</div>
+
+						<div class="priority-transport">
+							<img class="transport-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/Transport.png" alt="energy icon" />
+							<h5>Transport</h5>
+						</div>
+
+						<div class="priority-7rs">
+							<img class="rs-icon" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/7Rs.png" alt="energy icon" />
+							<h5>7 Rs</h5>
+						</div>
+				</div>
+
+				<div class="priority-buttons">
+						<div class="volunteer-button">
+							<a class="volunteer-button-text" href="#">
+								<p>Volunteer</p>
+							</a>
+						</div>
+
+						<div class="donate-button">
+							<a class="donate-button-text" href="#">
+								<p>Donate</p>
+							</a>
+						</div>
+				</div>
+						
 		</section>		
 
 			<div class="hero-img-bkgd"></div>

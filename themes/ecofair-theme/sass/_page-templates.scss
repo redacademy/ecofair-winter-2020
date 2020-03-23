@@ -547,8 +547,6 @@
   background-color: $color__background-grey;
   padding-top: 2rem;
   padding-bottom: 4.5rem;
-  width: 98%;
-  margin: 0 auto;
 }
 
 .priority-header {
@@ -560,8 +558,43 @@
   }
 }
 
+.priority-icons {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  h5 {
+    margin: 0px;
+  }
+  }
+}
+
+.priority-buttons {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  margin: 1rem;
+  }
+}
+
 .priority-energy {
   text-align: center;
+  width: 200px;
+  height: 150px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .energy-icon {
@@ -570,6 +603,15 @@
 
 .priority-transport {
   text-align: center;
+  width: 200px;
+  height: 150px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .transport-icon {
@@ -578,6 +620,15 @@
 
 .priority-7rs {
   text-align: center;
+  width: 200px;
+  height: 150px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .rs-icon {
@@ -590,14 +641,22 @@
   text-align: center;
   padding: .4rem;
   margin-bottom: $base__space-unit; 
+
+  @include desktop {
+    width: 17.25rem;
+    margin-bottom: 0px;
+  }
 }
 
 .volunteer-button-text {
   text-transform: uppercase;
   text-decoration: none;
-  color: $color__background-white;;
+  color: $color__background-white;
     p {
     margin: 0px;
+    &:visited {
+      color: $color__background-white;
+    }
     }
 }
 
@@ -606,6 +665,11 @@
   width: 90%;
   text-align: center;
   padding: .4rem;
+  
+
+  @include desktop {
+    width: 17.25rem;
+  }
 }
 
 .donate-button-text {
