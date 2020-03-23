@@ -547,6 +547,8 @@
   background-color: $color__background-grey;
   padding-top: 2rem;
   padding-bottom: 4.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .priority-header {
@@ -561,6 +563,8 @@
 .priority-icons {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @include desktop {
   flex-direction: row;
   justify-content: space-between;
@@ -585,15 +589,21 @@
 }
 
 .priority-energy {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 200px;
-  height: 150px;
+  height: 200px;
+  margin: 1.25rem;
 
   @include desktop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 200px;
+    height: 150px;
   }
 }
 
@@ -602,15 +612,20 @@
 }
 
 .priority-transport {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 200px;
-  height: 150px;
+  height: 200px;
 
   @include desktop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 200px;
+    height: 150px;
   }
 }
 
@@ -619,15 +634,20 @@
 }
 
 .priority-7rs {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 200px;
-  height: 150px;
+  height: 200px;
 
   @include desktop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 200px;
+    height: 150px;
   }
 }
 
