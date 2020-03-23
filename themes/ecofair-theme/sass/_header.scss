@@ -45,7 +45,9 @@
 	@include desktop {
 	    width: auto;
 	    display: flex;
-	    position: relative
+	    position: relative;
+	    right: auto;
+	    flex-direction: row;
 	}
 	text-align: right;
 	a {
