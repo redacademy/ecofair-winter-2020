@@ -9,7 +9,7 @@
 
 <!-- Start the carousel cell -->
 <div class="carousel-cell" id="<?php echo 'carousel-cell' . $counter; ?>">
-    <article id="post-<?php the_ID(); ?>" <?php post_class('workshop-no-owner'); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class('workshop-with-owner'); ?>>
     <div class="workshop-order-number">
 	<p><?php echo $counter ;?></p>
     </div>
@@ -41,8 +41,7 @@
 	<?php the_content(); ?>
 	<a class="volunteer-button" href="#">Volunteer</a>
     </div><!-- .entry-content -->
-    <div class="light-green-box"></div>
-    <div class="dark-green-box"></div>
+    <div class="dark-blue-box"></div>
     <div class="light-grey-box"></div>
     <div class="orange-green-box"></div>
     <div class="green-line"></div>

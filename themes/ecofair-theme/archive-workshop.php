@@ -67,7 +67,12 @@ get_header(); ?>
 			    $counter = $counter + 1;
 			?>
 			<!-- Start the carousel cell -->
+
+			    <?php if( get_field("owner")):?>
+				<?php include( locate_template( 'template-parts/content-workshopwithowner.php', false) ); ?>
+			    <?php else : ?>
 				<?php include( locate_template( 'template-parts/content-workshopnoowner.php', false) ); ?>
+			    <?php endif; ?>
 			<!-- End ForEach -->
 			<?php endforeach ; ?>
 			</div>
