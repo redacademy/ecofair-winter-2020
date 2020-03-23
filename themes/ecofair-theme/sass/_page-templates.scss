@@ -402,6 +402,9 @@
   width: 98%;
   margin: 0 auto;
 
+  @include tablet {
+    width: 50%;
+  }
   @include desktop {
     width: 40%;
   }
@@ -432,10 +435,17 @@
     padding-bottom: 5rem;
   }
 
+  .widget {
+    margin: 0px;
+  }
+
+
   @include desktop {
     display: grid;
+    max-width: 1920px;
+    width: 100%;
     grid-gap: 5rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 37.5rem 37.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -490,12 +500,6 @@
     top: -40px;
     left: -20px;
   }
-
-  // @include desktop {
-  // width: 50%;
-  // height: 150px;
-  // position: absolute;
-  // }
 }
 
 .light-green-bkgrd-ef-btm {
@@ -579,6 +583,10 @@
   position: relative;
   @include desktop {
     grid-template-columns: 1fr 1fr 0.5fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     padding-top: 3rem;
     width: 100%;
     z-index: 5;
