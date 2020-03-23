@@ -703,6 +703,9 @@
     font-size: 4.5rem;
     margin: 0px;
   }
+  @include desktop {
+    padding-left: 10rem;
+  }
 }
 
 .speakers-carousel-cell {
@@ -727,6 +730,10 @@
   padding-bottom: 5rem;
   .carousel-pagination-buttons {
     display: flex;
+    @include desktop {
+      padding-left: 10rem;
+      padding-bottom: 1rem;
+    }
   }
   .carousel-pagination-prev {
     display: flex; 
