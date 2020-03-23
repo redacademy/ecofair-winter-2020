@@ -186,28 +186,32 @@ get_header(); ?>
 
 		</section> <!-- end of speaker section --> 
 
-		<section class="brought-by">
-		<?php if(get_field('host_logo_repeater')): ?>
-			<h3><?php the_field('brought_to_you_by'); ?></h3>
+		<div class="front-footer">
 
-				<?php while(has_sub_field('host_logo_repeater')): ?>
+				<section class="brought-by">
+				<?php if(get_field('host_logo_repeater')): ?>
+					<h3><?php the_field('brought_to_you_by'); ?></h3>
 
-						<div class="host-logo-img" style="background: url(<?php  echo the_sub_field('host_logo'); ?>); background-size: cover; background-position: center;"></div> 
+						<?php while(has_sub_field('host_logo_repeater')): ?>
 
-				<?php endwhile; ?>
+								<div class="host-logo-img" style="background: url(<?php  echo the_sub_field('host_logo'); ?>); background-size: cover; background-position: center;"></div> 
 
-				<?php endif; ?>
+						<?php endwhile; ?>
 
-		</section> <!-- end of host section -->
+						<?php endif; ?>
 
-		<section class="top-return">
-			<p>Back to top</p>
-			<div class="return-arrow-up">
-			<a href="#top">
-			<i class="fas fa-arrow-up"></i>
-				</div>
-			</a>
+				</section> <!-- end of host section -->
 
+				<section class="top-return">
+					<p>Back to top</p>
+					<div class="return-arrow-up">
+					<a href="#top">
+					<i class="fas fa-arrow-up"></i>
+						</div>
+					</a>
+				</section>
+		
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

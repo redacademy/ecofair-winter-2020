@@ -794,12 +794,27 @@
 
  // back to top section 
 
+ .front-footer {
+   @include desktop {
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+   margin: 0 auto;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   }
+ }
+
  .top-return {
    display: flex; 
    flex-direction: column;
    justify-content: center;
    align-items: center;
    padding-bottom: 3rem;
+
+   @include desktop {
+    justify-content: flex-end;
+   }
  }
 
  .return-arrow-up {
