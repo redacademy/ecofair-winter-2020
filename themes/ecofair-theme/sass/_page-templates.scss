@@ -32,7 +32,8 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: 1fr 1.5fr .5fr;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     padding-top: 10rem;
     padding-bottom: 0rem;
     margin: 0 auto;
