@@ -17,11 +17,10 @@
 	padding: 1.4rem;   
 	width: 100%;
 	justify-content: space-between;
-	i {
+	.hamburger {
 	    @include desktop {
 		display: none;
 	    }
-	    font-size: 3rem;
 	}
     }
     //position: relative;

@@ -27,8 +27,10 @@
 				</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
-				<div class="menu-icon-wrapper">
-				    <i class="fas fa-bars"></i>
+				<div class="hamburger hamburger--collapse">
+				    <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				      </span>
 				</div>
 				</div><!-- .site-branding -->
 
