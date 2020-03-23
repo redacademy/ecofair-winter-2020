@@ -1,6 +1,7 @@
 .post-type-archive-workshop{
     .hfeed{
 	.site-content {
+	    position: relative;
 	    // Classes for the pagination of Flickity
 	    .carousel-pagination {
 		grid-column: 1 / 4;
@@ -47,6 +48,7 @@
 		display: grid;
 		grid-template-columns: 1fr 6fr 5fr;
 		.workshop-page-content {
+		    z-index:1;
 		    grid-column: 2 / 3; 
 		    h2 {
 			font-size: 2.25rem;
@@ -373,10 +375,25 @@
 		    background-color: $color__background-grey;
 		    z-index: -1;
 		    @include desktop {
-			grid-column: 1/ 13;
+			display: none;
 		    }
 		}
 	    }
+	    .background-green-box {
+		position: absolute;
+		z-index: 0;
+		background-color: $color__background-green;
+		width: 50vw;
+		height: 100%;
+	    }
+	    .background-grey-box {
+		position: absolute;
+		z-index: 0;
+		background-color: $color__background-grey;
+		width: 100vw;
+		height: 70%;
+		top: 30%;
+	    }
 	}
-    } 
-}
+    }
+} 
