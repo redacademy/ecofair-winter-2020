@@ -351,7 +351,7 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 25vw 28vw;
   }
 }
 
@@ -363,7 +363,11 @@
   grid-row-start: 1;
   grid-row-end: 2;
   padding-left: 5rem;
-  padding-top: 8rem;
+  padding-top: 3rem;
+  width: 55%;
+  .features-widget-title {
+    width: 95%;
+  } 
 }
 }
 
@@ -374,13 +378,15 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  padding-left: 14rem;
+  width: 50vw;
 }
 }
 
 .light-green-bkgrd-ef {
   background-color: $color__background-green;
   width: 50%;
-  height: 100px;
+  height: 150px;
 }
 
 .three-col-img-grid {
