@@ -45,6 +45,10 @@ get_header(); ?>
 
 				<div class="light-green-bkgrd">
 				</div>
+
+				<div class="banner-widgets">
+					<?php dynamic_sidebar('Banner'); ?>
+				</div><!-- .widget-area -->
 				
 			</div> <!-- front-banner-grid -->
 		</header>
