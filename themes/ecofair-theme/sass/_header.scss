@@ -34,8 +34,9 @@
 	}
     }
     .menu {
-	display: none;
+	display: block;
 	position: absolute;
+	right: -100vw;
 	@include desktop {
 	    width: auto;
 	    display: flex;
@@ -43,6 +44,7 @@
 	}
 	text-align: right;
 	a {
+	    visibility: hidden;
 	    margin: 1.4rem;
 	    @include desktop {
 		margin: 1.4rem 2.25rem;
@@ -79,12 +81,16 @@
     .menu-show {
 	display: block;
 	width: 100vw;
+	right: 0;
 	background-color: $color__background-white;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 	transition-timing-function: ease-in-out;
 	transition-property: all;
-	transition-duration: 4s;
+	transition-duration: 1s;
+	a {
+	    visibility: visible;
+	}
     }
 }
