@@ -4,6 +4,7 @@
 	    position: relative;
 	    // Classes for the pagination of Flickity
 	    .carousel-pagination {
+		z-index:1;
 		grid-column: 1 / 4;
 		grid-row: 9 / 10;
 		@include desktop {
@@ -383,7 +384,8 @@
 		position: absolute;
 		z-index: 0;
 		background-color: $color__background-green;
-		width: 50vw;
+		left: 60%;
+		width: 40%;
 		height: 100%;
 	    }
 	    .background-grey-box {
