@@ -59,12 +59,10 @@ get_header(); ?>
 				<h4>We are positive-minded, result-driven, and community-caring.</h4>
 			
 				<div class="event-description"><?php the_field('event_description'); ?></div>
-			<div class="mission-text">
-
+			</div>
 		</section>
 
 		<section class="event-features">
-			<div class="light-green-bkgrd-ef"></div>
 
 			<?php
 				if ( ! is_active_sidebar( 'event-features' ) ) {
@@ -77,26 +75,25 @@ get_header(); ?>
 				<div class="three-col-img-grid">
 						<div class="lions-gate-img"></div>
 						<div class="false-creek-img"></div>
+						<div class="light-green-bkgrd-ef"></div>
 				</div> <!-- 3-col-img-grid -->
 
 				
 				<?php dynamic_sidebar( 'event-features' ); ?>
+				<div class="features-li"></div>
 
 				<div class="three-col-img-grid-drone">
 					<div class="drone-img-1"></div>
 					<div class="drone-img-2"></div>
 					<div class="drone-img-3"></div>
+					<div class="light-green-bkgrd-ef-btm"></div>
 				</div> <!-- 3-col-img-grid -->
-
 				</div><!-- widget-area -->
-
+	
 			</div> <!--event-feature-widget -->
-			<div class="features-li"></div>
-			<div class="light-green-bkgrd-ef-btm"></div>
 		</section> <!-- end of event features -->
 
 		<section class="priorities">
-
 		<div class="priority-header">
 			<h2>Our Priorities</h2>
 			<h4>Create an impact you can be proud of.</h4>

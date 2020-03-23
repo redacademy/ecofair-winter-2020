@@ -212,8 +212,12 @@
   border-bottom: $line_green;
   width: 75%;
 
+  @include tablet {
+    width: 28rem;
+  }
+
   @include desktop {
-  width: 750px;
+  width: 47rem;
   position: absolute;
   top: 235px;
   left: 0px;
@@ -415,13 +419,18 @@
   @include desktop {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    position: relative;
 }
 }
 
 .widget-area {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   padding-top: 4rem;
+
+  @include tablet {
+    padding-top: 2.5rem;
+    padding-bottom: 8rem;
+  }
+
   @include desktop {
     display: grid;
     grid-gap: 5rem;
@@ -432,8 +441,11 @@
   }
 }
 
-
 #event-feature-widget-2 {
+  border-bottom: $line_green;
+  @include tablet {
+    width: 80%;
+    }
   @include desktop {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -450,7 +462,10 @@
 
 
 #event-feature-widget-3 {
-  padding-top: 4.5rem;
+  padding-top: 1rem;
+  @include tablet {
+    width: 80%;
+    }
   @include desktop {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -464,24 +479,36 @@
 .light-green-bkgrd-ef { 
   background-color: $color__background-green;
   position: absolute;
-  top: 2037px;
+  top: -64px;
+  left: -20px;
   width: 64%;
   height: 280px;
   z-index: 1;
-  @include desktop {
-  width: 50%;
-  height: 150px;
-  position: absolute;
+
+  @include tablet {
+    top: -40px;
+    left: -20px;
   }
+
+  // @include desktop {
+  // width: 50%;
+  // height: 150px;
+  // position: absolute;
+  // }
 }
 
 .light-green-bkgrd-ef-btm {
   background-color: $color__background-green;
   position: absolute;
-  top: 3816px;
-  width: 64%;
+  top: 98px;
+  width: 67%;
   height: 350px;
   z-index: 1;
+  left: -10px;
+  @include tablet {
+    width: 63%;
+    top: 2982px;
+  }
   @include desktop {
   width: 50%;
   height: 150px;
@@ -496,6 +523,11 @@
   grid-gap: 1rem;
   width: 95%;
   padding-top: 5rem;
+  position: relative;
+
+  @include tablet {
+    padding-top: 2rem;
+  }
 
   @include desktop {
     grid-column-start: 1;
@@ -543,6 +575,7 @@
   width: 95%;
   padding-top: .5rem;
   z-index: 10;
+  position: relative;
   @include desktop {
     grid-template-columns: 1fr 1fr 0.5fr;
     padding-top: 3rem;
@@ -616,22 +649,21 @@
   }
 }
 
-.features-li {
-  border-bottom: $line_green;
-  width: 75%;
-  position: absolute;
-  top: 2980px;
-  left: 85px;
-  z-index: 5;
+// .features-li {
+//   width: 75%;
 
-  @include desktop {
-  width: 750px;
-  position: absolute;
-  top: 740px;
-  left: 500px;
-  z-index: 5;
-}
-}
+//   z-index: 5;
+
+//   @include tablet {
+ 
+//     }
+
+//   @include desktop {
+//   width: 750px;
+
+//   z-index: 5;
+// }
+// }
 
 // priority section
 
