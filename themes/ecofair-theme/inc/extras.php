@@ -37,3 +37,25 @@ function remove_archive_from_title($title){
 	}
 }
 add_filter('get_the_archive_title', 'remove_archive_from_title');
+
+// Adds custom logo to header 
+
+add_filter('login_headerurl','loginpage_custom_link');
+function loginpage_custom_link($url) {
+    return home_url();
+}
+
+add_action( 'login_head', 'new_login_logo' );
+function new_login_logo() { 
+echo '
+	<style>
+			#login h1 a, .login h1 a {
+			background-image: url('.get_template_directory_uri().'/build/assets/logos/GlobeLogo-compressed.png) !important;
+			background-size: 200px 200px !important; 
+			width: 200px !important;
+			height: 200px !important;
+			background-position: center !important;
+			}
+	</style>
+	';
+ } ?>
