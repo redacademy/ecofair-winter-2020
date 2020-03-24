@@ -119,7 +119,7 @@ get_header(); ?>
 
 				<div class="priority-buttons">
 						<div class="volunteer-button">
-							<a class="volunteer-button-text" href="#">
+							<a class="volunteer-button-text" href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>">
 								<p>Volunteer</p>
 							</a>
 						</div>
