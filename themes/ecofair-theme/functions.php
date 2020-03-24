@@ -122,7 +122,7 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'volunteer-dropdown-start-js', get_template_directory_uri() . '/build/js/volunteer-dropdown.min.js', array(), false, true );
 	wp_localize_script('volunteer-dropdown-start-js', 'projectsListVolunteer', array(
-	    'projects-lis' => get_posts(array(
+	    'projectsList' => get_posts(array(
 		'post_type'       => 'community_programs', 
 		'posts_per_page'  => -1,
 		'orderby'         => 'date',

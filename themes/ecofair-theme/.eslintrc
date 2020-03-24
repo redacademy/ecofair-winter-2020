@@ -23,7 +23,8 @@
     "jQuery": false,
     "$": false,
     "_": false,
-    "Flickity": false
+    "Flickity": false,
+    "projectsListVolunteer": false
   },
   "env": {
     "es6": true,
