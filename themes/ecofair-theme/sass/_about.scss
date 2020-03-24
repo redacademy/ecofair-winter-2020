@@ -1,0 +1,110 @@
+.page-about {
+  .site-header{
+    padding-bottom: 10px;
+  }
+  
+  .entry-header {
+    width: 100%;
+    display: flex;
+    .top-image1 {
+      padding-right: 10px;
+    }
+    .title-content {
+      
+      padding-right: 10px;
+
+    }
+    .top-image2 {
+      padding-right: 10px;
+
+    }
+    .top-image3 {
+
+    }
+  }
+
+  .page-content {
+    text-align: start;
+    h2{
+      font-size: 20px;
+    }
+  }
+  // priority section
+
+  .our-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+  width: 100%;
+  }
+
+  .values-title {
+   h2 {
+    font-size: 1.5rem;
+   }
+   h4 {
+    font-size: 2.25rem;
+   } 
+  }
+
+  .fist-icon {
+   text-align: center;
+  }
+
+  .graph {
+   width: 100px;
+  }
+
+  .second-icon {
+   text-align: center;
+  }
+
+  .books {
+   width: 100px;
+  }
+
+  .third-icon {
+   text-align: center;
+  }
+
+  .hands {
+   width: 100px;
+  }
+
+  .volunteer-button {
+   background-color: $color__green-1;
+   width: 90%;
+   text-align: center;
+   padding: .4rem;
+   margin-bottom: $base__space-unit; 
+  }
+
+  .volunteer-button-text {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: $color__background-white;;
+   p {
+    margin: 0px;
+   }
+  }
+
+  .donate-button {
+   border: solid $color__green-1 .15rem;
+   width: 90%;
+   text-align: center;
+   padding: .4rem;
+  }
+
+  .donate-button-text {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: $color__green-1;
+   p {
+    margin: 0px;
+   }
+  }
+}
