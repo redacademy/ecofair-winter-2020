@@ -39,7 +39,42 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			
+			@include desktop {
+			    display: grid;
+			    grid-template-columns: repeat(12, 1fr);
+			    grid-template-rows: repeat(4, 8rem);
+			    column-gap: 1%;
+			    p {
+				width: 100%;
+				flex-direction: row;
+				label {
+				    width: 100%;
+				    padding-left: 0;
+				}
+				&:nth-of-type(1) {
+				    grid-column: 1 / 6;
+				}
+				&:nth-of-type(2) {
+				    grid-column: 1 / 6;
+				}
+				&:nth-of-type(3) {
+				    grid-column: 1 / 6;
+				}
+				&:nth-of-type(4) {
+				    grid-column: 1 / 6;
+				}
+				&:nth-of-type(5) {
+				    grid-column: 7 / 12;
+				    grid-row: 1 / 4;
+				}
+				&:nth-of-type(6) {
+				    grid-column: 7 / 10;
+				}
+				input[type="submit"] {
+				    width: 100%;
+				}
+			    }
+			}
 		    }
 		}
 		form {
