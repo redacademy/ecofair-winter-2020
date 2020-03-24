@@ -200,6 +200,9 @@
   margin-bottom: .5rem;
   line-height: 1.2;
   width: 30%;
+  @include desktop {
+    font-size: 3.5rem;
+  }
 }
 .location {
   margin-bottom: 0px;
@@ -220,7 +223,7 @@
   @include desktop {
   width: 47rem;
   position: absolute;
-  top: 235px;
+  top: 205px;
   left: 0px;
   z-index: 5;
 }
@@ -258,8 +261,9 @@
     grid-row-start: 1;
     grid-row-end: 4;
     height: 776px;
-    width: 100%;
+    width: 90%;
     margin: 0px;
+    justify-self: right;
   }  
 }
 
@@ -358,6 +362,11 @@
 
     @include tablet {
       padding-left: 1rem;
+    }
+
+    @include desktop {
+      padding-left: 0rem;
+      width: 11rem;
     }
   }
 		.fa-facebook-square, 
