@@ -415,7 +415,7 @@
     width: 50%;
   }
   @include desktop {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -737,7 +737,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 40%;
-  margin: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
   }
 }
 
@@ -825,14 +825,16 @@
 
 .volunteer-button {
   background-color: $color__green-1;
+  border: solid $color__green-1 .15rem;
   width: 90%;
   text-align: center;
   padding: .4rem;
   margin-bottom: $base__space-unit; 
 
   @include desktop {
-    width: 17.25rem;
+    width: 40%;
     margin-bottom: 0px;
+    margin-right: 10%;
   }
 }
 
@@ -856,7 +858,8 @@
   
 
   @include desktop {
-    width: 17.25rem;
+    width: 40%;
+    margin-left: 10%;
   }
 }
 
