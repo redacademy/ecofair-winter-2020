@@ -24,7 +24,7 @@ input[type="tel"],
 textarea,
 select {
 	border: none;
-	color: #666;
+	color: $color__text-main;
 	border-bottom: .1rem solid #303030;
 	width: 100%;
 	line-height: 1;
@@ -40,8 +40,11 @@ input[type="search"] {
 
 textarea,
 select {
-	padding-left: .2rem;
 	border: .1rem solid #808080;
+}
+
+textarea {
+    padding: .4rem;
 }
 
 select {
