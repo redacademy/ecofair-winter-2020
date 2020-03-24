@@ -2,10 +2,9 @@
 .post-type-archive-community_programs{
     .hfeed{
 	.content-area {
-	    margin: 6.25rem auto 1rem;
+	    margin: 6.25rem auto 0rem;
 	    @include desktop {
 		max-width: 1176px;
-		margin: 6.25rem auto 1rem;
 	    }
 	    // Flickity Style
 	    .carousel-cell {
