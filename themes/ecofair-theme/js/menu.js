@@ -1,8 +1,16 @@
 (function() {
-    const menu = document.querySelector('.menu-icon-wrapper');
+    const menuBtn = document.querySelector('.hamburger');
     const menuList = document.getElementById('primary-menu');
+    const header = document.getElementById('masthead');
 
-    menu.addEventListener('click', () => {
+    menuBtn.addEventListener('click', () => {
+	menuBtn.classList.toggle('is-active');
 	menuList.classList.toggle('menu-show');
+    })
+    document.addEventListener('click', e => {
+	const menuElem = header.contains(e.target);
+	if(!menuElem){
+	    menuList.classList.remove('menu-show');
+	}
     })
 })();

@@ -12,6 +12,13 @@
   }
 }
 
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+
 // Center block
 @mixin center-block {
 	display: block;

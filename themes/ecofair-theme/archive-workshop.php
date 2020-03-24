@@ -7,11 +7,13 @@
 
 get_header(); ?>
 
+	<div class="background-green-box"></div>
+	<div class="background-grey-box"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<?php if (!wp_is_mobile()) : ?>
+			<?php //if (!wp_is_mobile()) : ?>
 			<?php
 			    $args = array( 
 				'post_type'       => 'page', 
@@ -24,9 +26,11 @@ get_header(); ?>
 			<div class='workshops-container'>
 				<?php foreach ( $workshop_page as $post ) : setup_postdata( $post ); ?>
 				<header class="page-header entry-content">		    
+				    <?php if (!wp_is_mobile()): ?>
 				    <div class="workshop-page-content">
 					<?php the_content(); ?>
 				    </div>
+				    <?php endif; ?>
 				    <div class="carousel-pagination">
 					<div class="carousel-pagination-numbers"></div>
 					<div class="carousel-pagination-buttons">
@@ -41,7 +45,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
-			<?php endif; ?>
+			<?php //endif; ?>
 
 			<?php /* Start the Loop */ ?>
 
@@ -67,7 +71,12 @@ get_header(); ?>
 			    $counter = $counter + 1;
 			?>
 			<!-- Start the carousel cell -->
+
+			    <?php if( get_field("owner")):?>
+				<?php include( locate_template( 'template-parts/content-workshopwithowner.php', false) ); ?>
+			    <?php else : ?>
 				<?php include( locate_template( 'template-parts/content-workshopnoowner.php', false) ); ?>
+			    <?php endif; ?>
 			<!-- End ForEach -->
 			<?php endforeach ; ?>
 			</div>
@@ -93,7 +102,6 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

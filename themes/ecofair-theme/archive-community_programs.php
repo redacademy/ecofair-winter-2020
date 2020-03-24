@@ -6,7 +6,8 @@
  */
 
 get_header(); ?>
-
+	<div class="background-green-box"></div>
+	<div class="background-grey-box"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
@@ -78,8 +79,6 @@ get_header(); ?>
 				    <?php the_content(); ?>
 				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
 				</div><!-- .entry-content -->
-				<div class="light-green-box"></div>
-				<div class="light-grey-box"></div>
 				<div class="green-line"></div>
 			    </article><!-- #post-## -->
 			</div>
