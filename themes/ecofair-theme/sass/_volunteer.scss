@@ -31,6 +31,13 @@
 		}
 		.wpcf7 {
 		    width: 90%;
+		    .wpcf7-form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			
+		    }
 		}
 	    }
 	}
