@@ -16,7 +16,7 @@
 					<?php dynamic_sidebar('footer_sidebar'); ?>
 				  </div><!-- .widget-area -->
 				</div><!-- .footer-container -->
-				<p class="rights-reserved" >© 2020 STEP UP 4 EARTH ALL RIGHTS RESERVED.</p>
+				<p class="rights-reserved" >© 2020 STEP UP 4 EARTH, ALL RIGHTS RESERVED.</p>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

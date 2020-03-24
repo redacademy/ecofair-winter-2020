@@ -93,6 +93,7 @@ function ecofair_widgets_init() {
 		'before_title'  => '<h2 class="banner-widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
 }
 add_action( 'widgets_init', 'ecofair_widgets_init' );
 
