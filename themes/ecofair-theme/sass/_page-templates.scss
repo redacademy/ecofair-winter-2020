@@ -10,7 +10,11 @@
   margin: 0 auto;
 }
 
-/* Front page */
+/* 
+*
+Front page 
+*
+*/
 
 // banner
 
@@ -1026,4 +1030,36 @@
     width: 76px;
     height: 76px;
    }
+}
+
+/* 
+*
+404 Error
+*
+*/
+
+.site-main-404 {
+  width: 70%;
+  margin: 0 auto;
+}
+.not-found {
+  display: flex;
+  padding: 10rem 5rem 5rem 5rem;
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-content {
+    font-size: 1.5rem;
+    font-family: 'montserratbold', sans-serif;
+  }
+}
+
+.error-img {
+  background-image: url(../assets/images/donate-img-01.png);
+  background-size: cover;
+  background-position: center;
+  height: 37.5rem;
+  width: 23.5rem;
 }
