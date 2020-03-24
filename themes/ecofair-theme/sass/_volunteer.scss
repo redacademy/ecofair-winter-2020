@@ -1,4 +1,7 @@
 .page-volunteer {
+    .site-content {
+	position: relative;
+    }
     .background-grey-box {
 	position: absolute;
 	width: 30vw;
@@ -12,7 +15,7 @@
 	width: 100%;
 	background: $color__background-green;
 	z-index: 0;
-	height: 60%;
+	height: 70%;
 	bottom: 0;
     }
     .content-area {
@@ -68,6 +71,7 @@
 			    display: flex;
 			    flex-direction: row-reverse;
 			    text-align: left;
+			    width: 100%;
 			    label {
 				padding-left: 1rem;
 			    }
@@ -86,9 +90,9 @@
 				text-transform: uppercase;
 				border: none;
 				padding: .6rem 4rem;
+				background-color: $color__green-1;
 			    }
 			    @include desktop {
-				width: 100%;
 				flex-direction: row;
 				label {
 				    width: 100%;
@@ -118,15 +122,19 @@
 				}
 			    }
 			}
+			.wpcf7-response-output {
+			    z-index: 1;
+			    background-color: #FFF;
+			    @include desktop {
+				grid-column: 1 / 13;
+				margin: 0;
+			    }
+			}
 			@include desktop {
 			    display: grid;
 			    grid-template-columns: repeat(12, 1fr);
 			    grid-template-rows: repeat(4, 8rem);
 			    column-gap: 1%;
-			    .wpcf7-response-output {
-				grid-column: 1 / 13;
-				margin: 0;
-			    }
 			}
 		    }
 		}
