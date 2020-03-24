@@ -8,23 +8,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
+	background-color: $color__green-1;
 	line-height: 1;
 	padding: .6rem 1rem .4rem;
-	&:hover {
-		border-color: #ccc #bbb #aaa;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
-
-	&:active,
-	&:focus {
-		border-color: #aaa #bbb #bbb;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
 }
 
 /* Fields */
@@ -37,10 +23,11 @@ input[type="search"],
 input[type="tel"],
 textarea,
 select {
+	border: none;
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border-bottom: .1rem solid #303030;
 	width: 100%;
+	line-height: 1;
 }
 
 input[type="text"],
@@ -51,6 +38,13 @@ input[type="search"] {
 	padding: 3px;
 }
 
-textarea {
-	padding-left: 3px;
+textarea,
+select {
+	padding-left: .2rem;
+	border: .1rem solid #808080;
+}
+
+select {
+    padding: .4rem 0 .3rem;
+    background-color: #FFF;
 }
