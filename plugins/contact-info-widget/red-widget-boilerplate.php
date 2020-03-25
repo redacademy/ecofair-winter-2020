@@ -1,23 +1,22 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
+ * Contact Info Widget
  *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   Contact-Info-Widget
- * @author    Sofonias Yohanes <sofoniasasefaw@gmail.com>
+ * @author    Sofonias Yohanes & Hillary McLean
  * @license   GPL-2.0+
  * @link      https://github.com/sofonias101
- * @copyright 2020 Sofonias Yohanes
+ * @copyright 2020 Sofonias Yohanes & Hillary McLean
  *
  * @wordpress-plugin
  * Plugin Name:       Contact Info Widget
  * Plugin URI:        https://github.com/sofonias101
- * Description:       @TODO
+ * Description:       A widget for displaying the organization's contact information on the website.
  * Version:           1.0.0
- * Author:            Sofonias
+ * Author:            Sofonias & Hillary
  * Author URI:        https://github.com/sofonias101
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -28,11 +27,11 @@ if ( ! defined ( 'ABSPATH' ) ) {
 	exit;
 }
 
-// TODO: change 'Widget_Name' to the name of your plugin
+// Contact Info Widget: change 'Widget_Name' to the name of your plugin
 class Contact_Info_Widget extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
+     * Contact Info Widget - Rename "widget-name" to the name your your widget
      *
      * Unique identifier for your widget.
      *
@@ -51,7 +50,7 @@ class Contact_Info_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
+		// Contact Info: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Contact-Info',
