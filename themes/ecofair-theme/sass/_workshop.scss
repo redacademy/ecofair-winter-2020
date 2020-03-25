@@ -171,11 +171,11 @@
 		    }
 		}
 		.light-green-box {
-		    grid-column: 3 / 4;
-		    grid-row: 1 / 5;
+		    display: none;
 		    z-index: -1;
 		    background-color: $color__background-green;
 		    @include desktop {
+			display: block;
 			grid-column: 4 / 5;
 			grid-row: 1;
 			height: 5.5rem;
@@ -337,11 +337,10 @@
 		    }
 		}
 		.light-green-box {
-		    grid-column: 3 / 4;
-		    grid-row: 1 / 5;
-		    z-index: -1;
+		    display: none;
 		    background-color: $color__background-green;
 		    @include desktop {
+			display: block;
 			grid-column: 4 / 5;
 			grid-row: 1;
 			height: 5.5rem;
@@ -358,6 +357,7 @@
 		    }
 		}
 	    }
+	    // Background boxes for all templates
 	    .background-green-box {
 		position: absolute;
 		z-index: 0;
@@ -371,8 +371,11 @@
 		z-index: 0;
 		background-color: $color__background-grey;
 		width: 100vw;
-		height: 70%;
-		top: 30%;
+		height: 61%;
+		bottom: 0;
+		@include desktop {
+		    height: 70%;
+		}
 	    }
 	}
     }

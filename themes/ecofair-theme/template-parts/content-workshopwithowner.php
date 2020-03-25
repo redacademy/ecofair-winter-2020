@@ -42,7 +42,6 @@
 	<a class="volunteer-button" href="#">Volunteer</a>
     </div><!-- .entry-content -->
     <div class="dark-blue-box"></div>
-    <div class="light-grey-box"></div>
     <div class="orange-green-box"></div>
     <div class="green-line"></div>
     </article><!-- #post-## -->
