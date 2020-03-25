@@ -6,7 +6,7 @@
   width: 98%;
    @include desktop {
      display: flex;
-     width: 65%;
+     width: 70%;
      flex-direction: row;
      padding-top: 1.5rem;
      padding-bottom: 5rem;
@@ -15,7 +15,11 @@
 
    .menu-container {
      width: 100%;
-     border-bottom: 1px solid #b8b8b8 ;
+     border-bottom: 1px solid #b8b8b8;
+     @include desktop {
+       width: 75%;
+       border-bottom: none;
+     }
    }
    .menu-footer-menu-container {
      width: 98%;
@@ -25,32 +29,28 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 21.25rem;
-    // border-top: 1px solid #b8b8b8; 
-    // border-bottom: 1px solid #b8b8b8; 
     list-style: none;
     text-transform: uppercase;
     padding-left: 0rem;
     padding-top: 2.5rem;
     @include desktop {
       display: grid;
+      grid-gap: 1rem;
       grid-template-columns: repeat(4, 25%);
       grid-template-rows: repeat(2, 25%);
-      width: 80%;
+      width: 90%;
       border-top: none; 
       border-bottom: none;
     }
      a {
        text-decoration: none;
        color: $color__border-abbr;
-       padding-right: 1rem;
-       padding-left: 1rem;
       }
       li {
         margin-bottom: 3rem; 
         @include desktop{
           display: inline;
           flex-direction: column;
-          padding-right: 10rem;
         }
      }
    }
@@ -59,7 +59,7 @@
       flex-direction: row;
       justify-content: space-between;
       padding-top: 1rem;
-      @include desktop{
+      @include desktop {
         display: flex;
         width: 25%;
         flex-direction: column;
@@ -70,6 +70,9 @@
     
       .Contact-Info-class{
         padding-left: 1rem;
+        @include desktop {
+          padding: 0rem;
+        }
         .widget-title {
           font-size: 1.25rem;
         }
