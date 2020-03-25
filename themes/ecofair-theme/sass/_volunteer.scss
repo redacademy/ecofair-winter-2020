@@ -1,4 +1,5 @@
-.page-volunteer {
+.page-volunteer,
+.page-donate {
     .site-content {
 	position: relative;
     }
@@ -29,7 +30,8 @@
 	@include desktop {
 	    max-width: 1176px;
 	}
-	.volunteer-content {
+	.volunteer-content,
+	.donate-content {
 	    display: grid;
 	    grid-template-columns: repeat(3, auto);
 	    column-gap: 4%;
@@ -166,6 +168,27 @@
 			    grid-template-rows: 6rem repeat(3, 6rem);
 			    column-gap: 1%;
 			}
+		    }
+		}
+	    }
+	}
+	.donate-content {
+	    .entry-content {
+		p {
+		    margin-bottom: 1rem;
+		    @include desktop {
+			width: 80%;
+		    }
+		}
+		.donate-button {
+		    z-index: 1;
+		    margin: 2rem 0 4rem;
+		    text-transform: uppercase;
+		    font-weight: 900;
+		    color: white;
+		    width: 60%;
+		    @include desktop {
+			width: 40%;
 		    }
 		}
 	    }

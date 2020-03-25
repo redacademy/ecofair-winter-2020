@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-			    <article id="post-<?php the_ID(); ?>" <?php post_class('volunteer-content'); ?>>
+			    <article id="post-<?php the_ID(); ?>" <?php post_class('donate-content'); ?>>
 				    <header class="entry-header">
 					    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				    </header><!-- .entry-header -->
@@ -23,8 +23,8 @@ get_header(); ?>
 						    wp_link_pages( array(
 							    'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 							    'after'  => '</div>',
-						    ) );
-					    ?>
+						    ) );?>
+					    <button class="donate-button">Donate</button>
 				    </div><!-- .entry-content -->
 			    </article><!-- #post-## -->
 			<?php endwhile; // End of the loop. ?>
