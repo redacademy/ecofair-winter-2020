@@ -32,7 +32,6 @@ Front page
   position: relative;
 
   @include tablet {
-    display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: .25fr 1.5fr .25fr;
@@ -40,16 +39,13 @@ Front page
   }
 
   @include desktop {
-    display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: 1fr 1.5fr .5fr;
     max-width: 1920px;
-    width: 100%;
     padding-top: 10rem;
     padding-bottom: 0rem;
     margin: 0 auto;
-
   }
 }
 
@@ -129,12 +125,6 @@ Front page
   }
 
   @include desktop {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-left: 1rem;
-    margin-right: 0rem;
     height: 176px;
     width: 176px;
   }  
@@ -161,7 +151,6 @@ Front page
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-right: 0rem;
   }  
 }
 
@@ -183,14 +172,6 @@ Front page
   grid-row-end: 4;
   position: relative;
  }
-
-  @include desktop {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    position: relative;
-  }  
 
 .site-title-heading {
   font-size: 1rem;
@@ -262,11 +243,7 @@ Front page
   @include desktop {
     grid-column-start: 9;
     grid-column-end: 17;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    height: 776px;
     width: 90%;
-    margin: 0px;
     justify-self: right;
   }  
 }
@@ -307,7 +284,6 @@ Front page
     grid-column-end: 17;
     top: -324px;
   }
-
 
   @include desktop {
   grid-column-start: 13;
@@ -418,9 +394,6 @@ Front page
   @include tablet {
     width: 50%;
   }
-  @include desktop {
-    width: 50%;
-  }
 }
 
 .event-description {
@@ -448,23 +421,20 @@ Front page
     padding-bottom: 5rem;
   }
 
-  .widget {
-    margin: 0px;
-  }
-
-
   @include desktop {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     display: grid;
-    max-width: 1920px;
-    width: 100%;
     grid-gap: 5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 37.5rem 37.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .widget {
+    margin: 0px;
   }
 }
 
@@ -512,7 +482,6 @@ Front page
 
   @include tablet {
     top: -40px;
-    left: -20px;
   }
 
   @include desktop{
@@ -689,12 +658,8 @@ Front page
   align-items: center;
   text-align: center;
   background-color: $color__background-grey;
-  padding-top: 2rem;
-  padding-bottom: 4.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 2rem 0.5rem 4.5rem 0.5rem;
 }
-
 .priority-header {
   h2 {
     font-size: 1.5rem;
@@ -762,10 +727,7 @@ Front page
   @include desktop {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 200px;
-    height: 150px;
   }
 }
 
@@ -787,12 +749,7 @@ Front page
   }
 
   @include desktop {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 150px;
   }
 }
 
@@ -814,12 +771,8 @@ Front page
   }
 
   @include desktop {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 150px;
   }
 }
 
@@ -1047,6 +1000,7 @@ Front page
   margin: 0 auto;
 }
 }
+
 .not-found {
   display: flex;
   justify-content: space-between;
