@@ -50,4 +50,8 @@ textarea {
 select {
     padding: .4rem 0 .3rem;
     background-color: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none; 
 }
