@@ -134,6 +134,7 @@
 				}
 				&:nth-of-type(4) {
 				    grid-column: 1 / 6;
+				    margin-bottom: 0;
 				}
 				&:nth-of-type(5) {
 				    grid-column: 7 / 12;
@@ -162,7 +163,7 @@
 			@include desktop {
 			    display: grid;
 			    grid-template-columns: repeat(12, 1fr);
-			    grid-template-rows: repeat(4, 8rem);
+			    grid-template-rows: 6rem repeat(3, 6rem);
 			    column-gap: 1%;
 			}
 		    }
