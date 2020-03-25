@@ -67,7 +67,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-
+@import "shared";
 //Import specific style files
 @import "header";
 @import "workshop";
@@ -77,4 +77,3 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "about";
 // Styles that could be shared and should be adjusted later
-@import "shared";
