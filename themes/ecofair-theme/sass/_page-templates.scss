@@ -1039,27 +1039,56 @@ Front page
 */
 
 .site-main-404 {
-  width: 70%;
+  width: 90%; 
   margin: 0 auto;
+
+  @include desktop {
+  width: 40%;
+  margin: 0 auto;
+}
 }
 .not-found {
   display: flex;
-  padding: 10rem 5rem 5rem 5rem;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  .page-header {
+    width: 50%;
+
+    @include tablet {
+      width: 40%;
+    }
+  }
 
   .page-title {
     font-size: 3rem;
   }
 
   .page-content {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'montserratbold', sans-serif;
+    margin-right: 1rem;
+    @include tablet {
+    font-size: 1.5rem;
   }
+}
 }
 
 .error-img {
   background-image: url(../assets/images/donate-img-01.png);
   background-size: cover;
   background-position: center;
+  width: 50%;
+  margin-top: 32.15px;
+
+  @include tablet {
+    height: 30rem;
+  }
+
+  @include desktop {
   height: 37.5rem;
   width: 23.5rem;
+  }
+
 }

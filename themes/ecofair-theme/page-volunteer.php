@@ -6,7 +6,8 @@
  */
 
 get_header(); ?>
-
+	<div class="background-grey-box"></div>
+	<div class="background-green-box"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
