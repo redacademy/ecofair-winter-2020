@@ -1,18 +1,17 @@
 /*Footer */
 .site-footer{
+  border-top: 1px solid #b8b8b8;
   .footer-container {
-    margin: 0 0 0rem 0rem; 
-   padding-inline-start: 0px;
-   margin: 0;
+  margin: 0rem; 
+  padding: 0px;
+  width: 65%;
    @include desktop {
      display: flex;
-     width: 100%;
+     width: 65%;
      flex-direction: row;
-     border-top: 1px solid #b8b8b8;
      margin-top: 30px;
      padding-top: 40px;
      padding-bottom: 50px;
-     width: 100%;
      margin: 0 auto;
 
    }
