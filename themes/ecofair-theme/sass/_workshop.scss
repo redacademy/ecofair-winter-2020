@@ -32,6 +32,7 @@
 		    }
 		}
 	    }
+	    // Template the workshop with no owner
 	    .workshop-no-owner {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr) ;
@@ -100,6 +101,7 @@
 			}
 		    }
 		}
+		// Template for the workshop with owner
 		.workshop-owner {
 		    grid-column: 1/ 4;
 		    grid-row: 3 / 4;
