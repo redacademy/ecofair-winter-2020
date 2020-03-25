@@ -20,6 +20,9 @@
 	z-index: 0;
 	height: 70%;
 	bottom: 0;
+	@include desktop {
+	    height: 63%;
+	}
     }
     .content-area {
 	margin: 6.25rem auto 0rem;
@@ -61,6 +64,7 @@
 		    margin: 0 auto 2rem;
 		    @include desktop {
 			width: 50%;
+			margin-bottom: 5rem;
 		    }
 		}
 		.wpcf7 {
@@ -94,6 +98,8 @@
 				background-color: $color__green-1;
 			    }
 			    @include desktop {
+				height: 100%;
+				margin-bottom: 0;
 				flex-direction: row;
 				label {
 				    width: 100%;
@@ -117,6 +123,8 @@
 				}
 				&:nth-of-type(6) {
 				    grid-column: 7 / 10;
+				    grid-row: 3 / 4;
+				    height: auto;
 				}
 				input[type="submit"] {
 				    width: 100%;
