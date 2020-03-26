@@ -1,18 +1,14 @@
 (function() {
-    const responseDiv = document.querySelector('.wpcf7-response-output');
-    const submitBtn = document.querySelector('.wpcf7-submit');
+    //const submitBtn = document.querySelector('.wpcf7-submit');
+    const wpcf7Elm = document.querySelector( '.wpcf7' );
     console.log(responseDiv);
-    submitBtn.addEventListener('click', () => {
-	console.log('listener workin');
-	console.log(responseDiv.classList);
+    wpcf7Elm.addEventListener('wpcf7mailsent', () => {
+	alert('test');
 	const p = document.createElement('p');
-	p.innerText = 'Test'
-	responseDiv.appendChild(p);
+	p.innerText = 'test';
+	const responseDiv = document.querySelector('.wpcf7-mail-sent-ok');
 	console.log(responseDiv);
-	console.log(responseDiv.classList.contains('wpcf7-mail-sent-ok'));
-	if(responseDiv.classList.contains('wpcf7-mail-sent-ok')){
-	    responseDiv.innerText = 'Working!';
-	    console.log('Is running');
-	}
+	responseDiv.style.display = 'none';
+	wpcf7Elm.appendChild(p);
     })
 })();
