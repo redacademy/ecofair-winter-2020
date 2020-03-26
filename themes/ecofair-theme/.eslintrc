@@ -24,7 +24,8 @@
     "$": false,
     "_": false,
     "Flickity": false,
-    "projectsListVolunteer": false
+    "projectsListVolunteer": false,
+    "seedUrl": false
   },
   "env": {
     "es6": true,
