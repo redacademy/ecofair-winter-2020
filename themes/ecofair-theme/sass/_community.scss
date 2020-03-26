@@ -1,6 +1,54 @@
 .post-type-archive-community_programs{
     .hfeed{
 	.site-content{
+	    .content-area{
+		// Carousel styles
+		.carousel-pagination {
+		    flex-direction: column-reverse;
+		    grid-column: 1 / 4;
+		    grid-row: 6;
+		    @include desktop {
+			flex-direction: column;
+			position: relative;
+			margin-bottom: -6%;
+			z-index: 2;
+		    }
+		    .carousel-pagination-numbers {
+			margin-top: 3rem;
+		    }
+		    .carousel-pagination-buttons {
+			align-items: center;
+			justify-content: center;
+			@include desktop {
+			    justify-content: flex-end;
+			}
+			.carousel-pagination-prev,
+			.carousel-pagination-next {
+			    margin: 0 auto;
+			    @include desktop {
+				margin: 0;
+			    }
+			    i {
+				padding: 1.5rem;
+				margin: .5rem;
+				border: .2rem solid $color__green-1;
+				border-radius: 100%;
+				background-color: white;
+			    }
+			}
+			.community-project-logo {
+			    height: 8rem;
+			    width: 80%;
+			    background-position: center;
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    @include desktop {
+				display: none;
+			    }
+			}
+		    }
+		}
+	    }
 	    .community_programs {
 		margin: 0 auto;
 		display: grid;
@@ -108,48 +156,6 @@
 			padding: .5rem;
 			width: 50%;
 			margin: .5rem 0 0 .5rem;
-		    }
-		}
-		.carousel-pagination {
-		    flex-direction: column-reverse;
-		    grid-column: 1 / 4;
-		    grid-row: 6;
-		    @include desktop {
-			grid-column: 7 / 13;
-			grid-row: 1 / 3;
-		    }
-		    .carousel-pagination-numbers {
-			margin-top: 3rem;
-		    }
-		    .carousel-pagination-buttons {
-			align-items: center;
-			justify-content: center;
-			@include desktop {
-			    justify-content: flex-end;
-			}
-			.carousel-pagination-prev,
-			.carousel-pagination-next {
-			    margin: 0 auto;
-			    @include desktop {
-				margin: 0;
-			    }
-			    i {
-				padding: 1.5rem;
-				margin: .5rem;
-				border: .2rem solid $color__green-1;
-				border-radius: 100%;
-			    }
-			}
-			.community-project-logo {
-			    height: 8rem;
-			    width: 80%;
-			    background-position: center;
-			    background-size: contain;
-			    background-repeat: no-repeat;
-			    @include desktop {
-				display: none;
-			    }
-			}
 		    }
 		}
 		.light-green-box {

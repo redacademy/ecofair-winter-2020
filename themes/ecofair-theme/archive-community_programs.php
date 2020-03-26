@@ -10,6 +10,21 @@ get_header(); ?>
 	<div class="background-grey-box"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		    <?php if (!wp_is_mobile()): ?>
+		    <header class="page-header entry-content">		    
+			<div class="carousel-pagination">
+			    <div class="carousel-pagination-numbers"></div>
+			    <div class="carousel-pagination-buttons">
+				<div class="carousel-pagination-prev">
+				    <i class="fas fa-arrow-left"></i>
+				</div>
+				<div class="carousel-pagination-next">
+				    <i class="fas fa-arrow-right"></i>
+				</div>
+			    </div>
+			</div>
+		    </header><!-- .page-header -->
+		    <?php endif; ?>
 		<?php if ( have_posts() ) : ?>
 			<?php /* Start the Loop */ ?>
 			<!-- Start the variables for carousel ids and counter -->
@@ -63,6 +78,7 @@ get_header(); ?>
 				<div class="community-third-image" style="background-image: url(<?php echo get_field("third_image") ?>)">
 				</div>
 				<!-- If is not mobile, hide pagination -->
+				<?php if( wp_is_mobile() ) : ?>
 				<div class="carousel-pagination">
 				    <div class="carousel-pagination-buttons">
 					<div class="carousel-pagination-prev">
@@ -75,6 +91,7 @@ get_header(); ?>
 				    </div>
 				    <div class="carousel-pagination-numbers"></div>
 				</div>
+				<?php endif; ?>
 				<div class="entry-content">
 				    <?php the_content(); ?>
 				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
