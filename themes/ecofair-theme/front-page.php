@@ -78,11 +78,12 @@ get_header(); ?>
 						<div class="light-green-bkgrd-ef"></div>
 				</div> <!-- 3-col-img-grid -->
 
-				
-				<?php dynamic_sidebar( 'event-features' ); ?>
-				<div class="features-li"></div>
+		
+					<?php dynamic_sidebar( 'event-features' ); ?>
+	
 
 				<div class="three-col-img-grid-drone">
+					<div class="features-li"></div>
 					<div class="drone-img-1"></div>
 					<div class="drone-img-2"></div>
 					<div class="drone-img-3"></div>
