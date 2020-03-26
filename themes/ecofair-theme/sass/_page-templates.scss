@@ -1068,7 +1068,8 @@
  *
  */
 .page-volunteer,
-.page-donate {
+.page-donate,
+.page-success {
     .site-content {
 	position: relative;
     }
@@ -1100,7 +1101,8 @@
 	    max-width: 1176px;
 	}
 	.volunteer-content,
-	.donate-content {
+	.donate-content,
+	.success-content {
 	    display: grid;
 	    grid-template-columns: repeat(3, auto);
 	    column-gap: 4%;
@@ -1137,6 +1139,9 @@
 			width: 50%;
 			margin-bottom: 5rem;
 		    }
+		}
+		h2 {
+		    z-index: 1;
 		}
 		.wpcf7 {
 		    position: relative;
@@ -1223,6 +1228,9 @@
 				grid-column: 1 / 13;
 			    }
 			}
+			.wpcf7-mail-sent-ok {
+			    display: none !important;
+			}
 		    }
 		}
 	    }
@@ -1245,6 +1253,16 @@
 		    @include desktop {
 			width: 40%;
 		    }
+		}
+	    }
+	}
+	.success-content {
+	    .entry-content {
+		background-size: contain;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		p {
+		    padding-bottom: 4rem;
 		}
 	    }
 	}

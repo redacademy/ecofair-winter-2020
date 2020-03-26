@@ -133,7 +133,7 @@ function red_starter_scripts() {
 	
 	wp_enqueue_script( 'volunteer-success-start-js', get_template_directory_uri() . '/build/js/volunteer-success-submit.min.js', array(), false, true );
 	wp_localize_script('volunteer-success-start-js', 'seedUrl', array(
-	    'url' => get_template_directory_uri() . '/build/assets/images/seed.jpg'
+	    'url' => get_permalink( get_page_by_title( 'Success' ) )
 	));
 
 	wp_enqueue_script( 'menu-js', get_template_directory_uri() . '/build/js/menu.min.js', array(), false, true );

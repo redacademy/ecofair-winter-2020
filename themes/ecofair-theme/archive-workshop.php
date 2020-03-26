@@ -13,7 +13,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<?php //if (!wp_is_mobile()) : ?>
 			<?php
 			    $args = array( 
 				'post_type'       => 'page', 
@@ -45,7 +44,6 @@ get_header(); ?>
 				</header><!-- .page-header -->
 				<?php endforeach; wp_reset_postdata(); ?>     
 			</div>
-			<?php //endif; ?>
 
 			<?php /* Start the Loop */ ?>
 
