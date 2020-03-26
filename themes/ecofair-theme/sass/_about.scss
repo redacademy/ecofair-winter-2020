@@ -6,14 +6,20 @@
     height: 100%;
     display: flex;
     .top-image1 {
-
+      
     }
 
     .title-content {
+      display: flex;
       align-self: center;
-      padding-right: 20px;
-      padding-left: 20px;
-      
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 200px;
+      h4 {
+        padding-right: 5px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #00b46e;
+      }
     }
 
     .top-image2 {
@@ -38,17 +44,21 @@
   }
 
   .our-values {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  padding-top: 2rem;
-  padding-bottom: 4.5rem;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    h5 {
+    margin-block-start: .7rem;
+    }
   }
 
   .values-title {
+   padding-bottom: 55px;
    h2 {
     font-size: 1.5rem;
    }
@@ -57,31 +67,34 @@
    } 
   }
 
-  .fist-icon {
+  .graph-icon {
    text-align: center;
+   padding-bottom: 35px;
   }
 
   .graph {
    width: 100px;
   }
 
-  .second-icon {
+  .books-icon {
    text-align: center;
+   padding-bottom: 35px;
   }
 
   .books {
    width: 100px;
   }
 
-  .third-icon {
-   text-align: center;
+  .unity-icon {
+    text-align: center;
+    padding-bottom: 35px;
   }
 
-  .hands {
+  .unity {
    width: 100px;
   }
 
-  .volunteer-button {
+  .volunteer-button-about {
    background-color: $color__green-1;
    width: 90%;
    text-align: center;
@@ -89,7 +102,7 @@
    margin-bottom: $base__space-unit; 
   }
 
-  .volunteer-button-text {
+  .volunteer-button-text-about {
    text-transform: uppercase;
    text-decoration: none;
    color: $color__background-white;;
@@ -98,14 +111,14 @@
    }
   }
 
-  .donate-button {
+  .donate-button-about {
    border: solid $color__green-1 .15rem;
    width: 90%;
    text-align: center;
    padding: .4rem;
   }
 
-  .donate-button-text {
+  .donate-button-text-about {
    text-transform: uppercase;
    text-decoration: none;
    color: $color__green-1;
@@ -115,10 +128,80 @@
   }
 
   .founders {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    background-color: $color__background-grey;
+    p {
+      background-color: $color__background-grey;
+      margin-block-end: 0em;
+    }
+    .founder1 {
+      .box {
+        background-color: #00b46e;
+        padding: 113px 85px 10px 25px;
+        background-position: top left;
+      }
+      padding-bottom: 4rem;
+      .image-name {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        .image {
+          width: 50%;
+        }
+        h5 {
+          width: 40%;
+          align-self: center;
+          padding-left: 8px;
+          background-color: #d9eee6;
+          border-bottom: 3px solid #00b46e;
 
-    .founders-content {
-      display: flex;
-      flex-direction: column;
+        }
+      }
+      
+    }
+    .founder2 {
+      padding-bottom: 4rem;
+      .image-name {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        .image {
+          width: 50%;
+        }
+        h5 {
+          width: 40%;
+          align-self: center;
+          padding-left: 8px;
+          border-bottom: 3px solid $color__green-light-3;
+
+        }
+      }
+        
+    }
+    .founder3 {
+      padding-bottom: 4rem;
+      .image-name {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        .image {
+          width: 50%;
+        }
+        h5 {
+          width: 35%;
+          align-self: center;
+          padding-left: 8px;
+          background-color: $color__mint-4;
+          border-bottom: 3px solid $color__cyan-4;
+
+        }
+      }
+        
     }
   }
+  
 }

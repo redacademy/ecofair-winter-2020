@@ -20,7 +20,8 @@ get_header(); ?>
 					</div>
 					
 					<div class="title-content">
-						<h4>About Us</h4>
+						<h4>About </h4>
+						<h4>Us</h4>
 					</div>
 
 					<div class="top-image2" >
@@ -45,29 +46,29 @@ get_header(); ?>
 			        <h2>Our Core Values </h2>
 		        </div>
 
-				    <div class="first-icon">
-					    <img class="graph" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/everyaction.png" alt="energy icon" />
+				    <div class="graph-icon">
+					    <img class="graph" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/everyaction.png" alt="graph icon" />
 					    <h5>Every Action Matters</h5>
 				    </div>
 
-				    <div class="second-icon">
-					    <img class="books" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/education.png" alt="energy icon" />
+				    <div class="books-icon">
+					    <img class="books" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/education.png" alt="books icon" />
 					    <h5>Education</h5>
 				    </div>
 
-				    <div class="third-icon">
-					    <img class="hands" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/community.png" alt="energy icon" />
+				    <div class="unity-icon">
+					    <img class="unity" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/community.png" alt="unity icon" />
 					    <h5>Community Caring</h5>
 				    </div>
 
-				    <div class="volunteer-button">
-					    <a class="volunteer-button-text" href="#">
+				    <div class="volunteer-button-about">
+					    <a class="volunteer-button-text-about" href="#">
 						    <p>Volunteer</p>
 					    </a>
 				    </div>
 
-				    <div class="donate-button">
-					    <a class="donate-button-text" href="#">
+				    <div class="donate-button-about">
+					    <a class="donate-button-text-about" href="#">
 						    <p>Donate</p>
 					    </a>
 				    </div>
@@ -77,7 +78,6 @@ get_header(); ?>
 				
 				<section class="founders">
 
-					<div class="founders-content">
 					
 					  <?php if( have_rows('founder1') ):?>
 
@@ -90,11 +90,14 @@ get_header(); ?>
 
 								?>
 								
-								<div id="founder1">
+								<div id="founder1" class="founder1">
+									<div class="image-name">
 										<div class="image">
 												<img src="<?php echo esc_url( $image1 ); ?>" alt="" />
-												<h2><?php the_sub_field('name1'); ?></h2>
+											</div>
+											<h5><?php the_sub_field('name1'); ?></h5>
 										</div>
+										<span class="box" ></span>
 
 										<div class="content">
 												<p><?php the_sub_field('prosopography1'); ?></p>
@@ -116,10 +119,12 @@ get_header(); ?>
 
 								?>
 								
-								<div id="founder2">
-										<div class="image">
+								<div id="founder2" class="founder2">
+										<div class="image-name">
+											<h5><?php the_sub_field('name2'); ?></h5>
+										  <div class="image">
 												<img src="<?php echo esc_url( $image2 ); ?>" alt="" />
-												<h2><?php the_sub_field('name2'); ?></h2>
+						          </div>
 										</div>
 
 										<div class="content">
@@ -143,10 +148,12 @@ get_header(); ?>
 
 								?>
 								
-								<div id="founder3">
-										<div class="image">
+								<div id="founder3" class="founder3">
+										<div class="image-name">
+										  <div class="image">
 												<img src="<?php echo esc_url( $image3 ); ?>" alt="" />
-												<h2><?php the_sub_field('name3'); ?></h2>
+					          	</div>
+											<h5><?php the_sub_field('name3'); ?></h5>
 										</div>
 
 										<div class="content">
@@ -160,7 +167,6 @@ get_header(); ?>
 
 						
 
-					</div>
 
 				</section>
 				
