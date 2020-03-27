@@ -56,11 +56,12 @@ get_header(); ?>
 				    $args = array( 
 					'post_type'       => 'page', 
 					'posts_per_page'  => 1,
-					'title'           => 'Community',
+					'name'           => 'community',
 				    );
 				    $community_page = get_posts( $args ); // returns an array of posts
 				
 				?>
+				<h2><?php echo $community_page[0]->post_title; ?></h2>
 				<?php echo $community_page[0]->post_content; ?>
 				<div class="community-first-image" style="background-image: url(<?php echo get_field("first_image") ?>)">
 				</div>
