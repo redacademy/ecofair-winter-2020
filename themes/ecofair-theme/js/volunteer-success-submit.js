@@ -1,3 +1,5 @@
+// creates success button 
+
 (function () {
     const url = homeUrl.url;
     const wpcf7Elm = document.querySelector('.wpcf7');
