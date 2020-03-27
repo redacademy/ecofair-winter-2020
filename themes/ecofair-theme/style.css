@@ -787,14 +787,13 @@ object {
 /* All pages */
 .site-content {
   background-color: #FDFDFD;
-  width: 100%;
-  margin: 0 auto; }
+  width: 100%; }
 
 /* 
-*
-Front page 
-*
-*/
+ *
+ Front page 
+ *
+ */
 .front-banner-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -803,8 +802,8 @@ Front page
   justify-self: right;
   padding-top: 5rem;
   padding-bottom: 3.8rem;
+  width: 95%;
   margin: 0 auto;
-  width: 98%;
   position: relative; }
   @media screen and (min-width: 768px) {
     .front-banner-grid {
@@ -917,7 +916,6 @@ Front page
       grid-row-end: 2; } }
 
 .event-info {
-  margin-left: 0.75rem;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 4;
@@ -956,7 +954,7 @@ Front page
 
 .event-info-li {
   border-bottom: 8px solid #00B46E;
-  width: 75%; }
+  width: 55%; }
   @media screen and (min-width: 768px) {
     .event-info-li {
       width: 28rem; } }
@@ -977,8 +975,7 @@ Front page
   background-size: cover;
   background-position: right;
   height: 351px;
-  width: 98%;
-  margin: 0 auto;
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 3rem;
   z-index: 1; }
@@ -989,7 +986,6 @@ Front page
       grid-row-start: 1;
       grid-row-end: 4;
       height: 776px;
-      width: 100%;
       margin: 0px; } }
   @media screen and (min-width: 1080px) {
     .hero-img-2 {
@@ -1024,18 +1020,20 @@ Front page
   grid-row-start: 1;
   grid-row-end: 6;
   position: absolute;
-  top: -20px; }
+  top: -20px;
+  left: 10px; }
   @media screen and (min-width: 768px) {
     .light-green-bkgrd {
       grid-column-start: 13;
       grid-column-end: 17;
-      top: -324px; } }
+      top: -324px;
+      left: 0px; } }
   @media screen and (min-width: 1080px) {
     .light-green-bkgrd {
       grid-column-start: 13;
       grid-column-end: 21;
       width: 100%;
-      height: 1080px;
+      height: 1200px;
       top: -207px; } }
 
 .sqr-dr-green-hidden {
@@ -1087,7 +1085,7 @@ Front page
     @media screen and (min-width: 1080px) {
       .banner-widgets .social-icons {
         padding-left: 0rem;
-        width: 11rem; } }
+        width: 10rem; } }
   .banner-widgets .fa-facebook-square,
   .banner-widgets .fa-instagram,
   .banner-widgets .fa-twitter {
@@ -1126,7 +1124,7 @@ Front page
     margin-top: 0px; }
 
 .mission-text {
-  width: 98%;
+  width: 95%;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .mission-text {
@@ -1162,7 +1160,9 @@ Front page
       padding-top: 5rem;
       padding-bottom: 5rem; } }
   .widget-area .widget {
-    margin: 0px; }
+    margin: 0px;
+    width: 95%;
+    margin: 0 auto; }
 
 #event-feature-widget-2 {
   border-bottom: 8px solid #00B46E; }
@@ -1171,12 +1171,12 @@ Front page
       width: 80%; } }
   @media screen and (min-width: 1080px) {
     #event-feature-widget-2 {
+      border-bottom: none;
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
-      padding-right: 1rem;
-      padding-top: 4rem; }
+      padding-top: 7rem; }
       #event-feature-widget-2 .features-widget-title {
         width: 95%; } }
 
@@ -1190,8 +1190,7 @@ Front page
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
-      grid-row-end: 3;
-      padding-left: 5rem; } }
+      grid-row-end: 3; } }
 
 .light-green-bkgrd-ef {
   background-color: #D9EEE6;
@@ -1199,7 +1198,7 @@ Front page
   top: -64px;
   left: -20px;
   width: 64%;
-  height: 280px;
+  height: 250px;
   z-index: 1; }
   @media screen and (min-width: 768px) {
     .light-green-bkgrd-ef {
@@ -1207,38 +1206,40 @@ Front page
   @media screen and (min-width: 1080px) {
     .light-green-bkgrd-ef {
       top: -80px;
-      width: 100%; } }
+      width: 65rem;
+      height: 16vh;
+      left: 0px; } }
 
 .light-green-bkgrd-ef-btm {
   background-color: #D9EEE6;
   position: absolute;
-  top: 98px;
-  width: 67%;
+  top: 106px;
+  width: 68%;
   height: 350px;
   z-index: 1;
   left: -10px; }
   @media screen and (min-width: 768px) {
     .light-green-bkgrd-ef-btm {
-      width: 63%;
-      top: 114px; } }
+      width: 67%;
+      top: 130px; } }
   @media screen and (min-width: 1080px) {
     .light-green-bkgrd-ef-btm {
-      width: 100%;
-      height: 280px;
-      position: absolute;
-      top: 512px;
-      left: 0px; } }
+      width: 70rem;
+      height: 20vh;
+      top: 550px;
+      left: -1000px; } }
 
 .three-col-img-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  width: 95%;
-  padding-top: 5rem;
+  width: 100%;
+  padding-top: 1.5rem;
   position: relative; }
   @media screen and (min-width: 768px) {
     .three-col-img-grid {
-      padding-top: 2rem; } }
+      padding-top: 2rem;
+      width: 98%; } }
   @media screen and (min-width: 1080px) {
     .three-col-img-grid {
       grid-column-start: 1;
@@ -1280,7 +1281,6 @@ Front page
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   width: 95%;
-  padding-top: .5rem;
   z-index: 10;
   position: relative; }
   @media screen and (min-width: 1080px) {
@@ -1298,8 +1298,9 @@ Front page
   .features-li {
     border-bottom: 8px solid #00B46E;
     position: absolute;
-    top: 10px;
-    width: 75%; } }
+    top: -20px;
+    width: 100%;
+    left: -180px; } }
 
 .drone-img-1 {
   background-image: url(../assets/images/droneshot01.jpeg);
@@ -1343,8 +1344,7 @@ Front page
     z-index: 5; } }
 
 .event-feature-widget {
-  width: 98%;
-  margin-left: 0.75rem; }
+  width: 100%; }
   .event-feature-widget h2 {
     font-size: 24px; }
   .event-feature-widget h4 {
@@ -1369,7 +1369,9 @@ Front page
           align-items: center;
   text-align: center;
   background-color: #F4F0ED;
-  padding: 2rem 0.5rem 4.5rem 0.5rem; }
+  padding: 2rem 0.5rem 4.5rem 0.5rem;
+  position: relative;
+  z-index: 10; }
 
 .priority-header h2 {
   font-size: 1.5rem; }
@@ -1430,7 +1432,11 @@ Front page
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%; }
+  width: 98%; }
+  @media screen and (min-width: 768px) {
+    .priority-buttons {
+      width: 40%;
+      padding-top: 1.5rem; } }
   @media screen and (min-width: 1080px) {
     .priority-buttons {
       -webkit-box-orient: horizontal;
@@ -1440,7 +1446,6 @@ Front page
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 40%;
       margin: 2rem 1rem 1rem 1rem; } }
 
 .priority-energy {
@@ -1755,10 +1760,10 @@ Front page
   height: 76px; }
 
 /* 
-*
-404 Error
-*
-*/
+ *
+ 404 Error
+ *
+ */
 .site-main-404 {
   width: 90%;
   margin: 0 auto; }
@@ -1806,20 +1811,23 @@ Front page
       width: 23.5rem; } }
 
 /* 
-*
-Volunteer and Donate page
-*
-*/
+ *
+ Volunteer and Donate page
+ *
+ */
 .page-volunteer .site-content,
-.page-donate .site-content {
+.page-donate .site-content,
+.page-success .site-content {
   position: relative; }
 
 .page-volunteer .hentry,
-.page-donate .hentry {
+.page-donate .hentry,
+.page-success .hentry {
   margin: 0; }
 
 .page-volunteer .background-grey-box,
-.page-donate .background-grey-box {
+.page-donate .background-grey-box,
+.page-success .background-grey-box {
   position: absolute;
   width: 30vw;
   background: #F4F0ED;
@@ -1828,7 +1836,8 @@ Volunteer and Donate page
   right: 0; }
 
 .page-volunteer .background-green-box,
-.page-donate .background-green-box {
+.page-donate .background-green-box,
+.page-success .background-green-box {
   position: absolute;
   width: 100%;
   background: #D9EEE6;
@@ -1837,265 +1846,215 @@ Volunteer and Donate page
   bottom: 0; }
   @media screen and (min-width: 1080px) {
     .page-volunteer .background-green-box,
-    .page-donate .background-green-box {
+    .page-donate .background-green-box,
+    .page-success .background-green-box {
       height: 63%; } }
 
 .page-volunteer .content-area,
-.page-donate .content-area {
+.page-donate .content-area,
+.page-success .content-area {
   margin: 6.25rem auto 0rem; }
   @media screen and (min-width: 1080px) {
     .page-volunteer .content-area,
-    .page-donate .content-area {
+    .page-donate .content-area,
+    .page-success .content-area {
       max-width: 1176px; } }
-  .page-volunteer .content-area .volunteer-content,
-  .page-volunteer .content-area .donate-content,
-  .page-donate .content-area .volunteer-content,
-  .page-donate .content-area .donate-content {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    -webkit-column-gap: 4%;
-       -moz-column-gap: 4%;
-            column-gap: 4%; }
-    .page-volunteer .content-area .volunteer-content .entry-header,
-    .page-volunteer .content-area .donate-content .entry-header,
-    .page-donate .content-area .volunteer-content .entry-header,
-    .page-donate .content-area .donate-content .entry-header {
-      grid-column: 1 / 4;
+
+.volunteer-content,
+.donate-content,
+.success-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 4%;
+     -moz-column-gap: 4%;
+          column-gap: 4%; }
+  .volunteer-content .entry-header,
+  .donate-content .entry-header,
+  .success-content .entry-header {
+    grid-column: 1 / 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .volunteer-content .entry-header h1,
+    .donate-content .entry-header h1,
+    .success-content .entry-header h1 {
+      z-index: 1;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 80%;
+      border-bottom: 0.25rem solid #00B46E;
+      padding-bottom: 1rem; }
+      @media screen and (min-width: 1080px) {
+        .volunteer-content .entry-header h1,
+        .donate-content .entry-header h1,
+        .success-content .entry-header h1 {
+          font-size: 2rem;
+          width: 50%; } }
+  .volunteer-content .entry-content,
+  .donate-content .entry-content,
+  .success-content .entry-content {
+    grid-column: 1/ 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0; }
+    .volunteer-content .entry-content p,
+    .donate-content .entry-content p,
+    .success-content .entry-content p {
+      z-index: 1;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto 2rem; }
+      @media screen and (min-width: 1080px) {
+        .volunteer-content .entry-content p,
+        .donate-content .entry-content p,
+        .success-content .entry-content p {
+          width: 50%;
+          margin-bottom: 5rem; } }
+    .volunteer-content .entry-content h2,
+    .donate-content .entry-content h2,
+    .success-content .entry-content h2 {
+      z-index: 1; }
+
+.wpcf7 {
+  position: relative;
+  width: 90%;
+  padding-bottom: 3rem; }
+  .wpcf7 .wpcf7-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (min-width: 1080px) {
+      .wpcf7 .wpcf7-form {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 6rem);
+        -webkit-column-gap: 1%;
+           -moz-column-gap: 1%;
+                column-gap: 1%; } }
+    .wpcf7 .wpcf7-form p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .page-volunteer .content-area .volunteer-content .entry-header h1,
-      .page-volunteer .content-area .donate-content .entry-header h1,
-      .page-donate .content-area .volunteer-content .entry-header h1,
-      .page-donate .content-area .donate-content .entry-header h1 {
-        z-index: 1;
-        font-size: 1.5rem;
-        text-align: center;
-        width: 80%;
-        border-bottom: 0.25rem solid #00B46E;
-        padding-bottom: 1rem; }
-        @media screen and (min-width: 1080px) {
-          .page-volunteer .content-area .volunteer-content .entry-header h1,
-          .page-volunteer .content-area .donate-content .entry-header h1,
-          .page-donate .content-area .volunteer-content .entry-header h1,
-          .page-donate .content-area .donate-content .entry-header h1 {
-            font-size: 2rem;
-            width: 50%; } }
-    .page-volunteer .content-area .volunteer-content .entry-content,
-    .page-volunteer .content-area .donate-content .entry-content,
-    .page-donate .content-area .volunteer-content .entry-content,
-    .page-donate .content-area .donate-content .entry-content {
-      grid-column: 1/ 4;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-items: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-top: 0; }
-      .page-volunteer .content-area .volunteer-content .entry-content p,
-      .page-volunteer .content-area .donate-content .entry-content p,
-      .page-donate .content-area .volunteer-content .entry-content p,
-      .page-donate .content-area .donate-content .entry-content p {
-        z-index: 1;
-        width: 80%;
-        text-align: center;
-        margin: 0 auto 2rem; }
-        @media screen and (min-width: 1080px) {
-          .page-volunteer .content-area .volunteer-content .entry-content p,
-          .page-volunteer .content-area .donate-content .entry-content p,
-          .page-donate .content-area .volunteer-content .entry-content p,
-          .page-donate .content-area .donate-content .entry-content p {
-            width: 50%;
-            margin-bottom: 5rem; } }
-      .page-volunteer .content-area .volunteer-content .entry-content .wpcf7,
-      .page-volunteer .content-area .donate-content .entry-content .wpcf7,
-      .page-donate .content-area .volunteer-content .entry-content .wpcf7,
-      .page-donate .content-area .donate-content .entry-content .wpcf7 {
-        width: 90%;
-        padding-bottom: 3rem; }
-        .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-        .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
-        .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-        .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      text-align: left;
+      width: 100%; }
+      .wpcf7 .wpcf7-form p label {
+        width: 100%; }
+      .wpcf7 .wpcf7-form p input {
+        background-color: transparent; }
+        .wpcf7 .wpcf7-form p input::-webkit-input-placeholder {
+          font-style: italic;
+          opacity: 1;
+          color: #000000; }
+        .wpcf7 .wpcf7-form p input::-moz-placeholder {
+          font-style: italic;
+          opacity: 1;
+          color: #000000; }
+        .wpcf7 .wpcf7-form p input::-ms-input-placeholder {
+          font-style: italic;
+          opacity: 1;
+          color: #000000; }
+        .wpcf7 .wpcf7-form p input::placeholder {
+          font-style: italic;
+          opacity: 1;
+          color: #000000; }
+      .wpcf7 .wpcf7-form p input[type="submit"] {
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        padding: .6rem 4rem;
+        background-color: #00B46E; }
+      .wpcf7 .wpcf7-form p:nth-of-type(1) {
+        position: relative; }
+        .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before {
+          font-family: 'Font Awesome 5 Free';
+          content: '\f107';
+          font-weight: 900;
+          margin: .1rem 95% 0;
+          color: black;
+          position: absolute; }
+      @media screen and (min-width: 1080px) {
+        .wpcf7 .wpcf7-form p {
+          height: 100%;
+          margin-bottom: 0;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
-          @media screen and (min-width: 1080px) {
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              grid-template-rows: repeat(5, 6rem);
-              -webkit-column-gap: 1%;
-                 -moz-column-gap: 1%;
-                      column-gap: 1%; } }
-          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: reverse;
-                -ms-flex-direction: row-reverse;
-                    flex-direction: row-reverse;
-            text-align: left;
-            width: 100%; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
-              padding-left: 1rem; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input {
-              background-color: transparent; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
-              color: #fff;
-              text-transform: uppercase;
-              border: none;
-              padding: .6rem 4rem;
-              background-color: #00B46E; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) {
-              position: relative; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before {
-                font-family: 'Font Awesome 5 Free';
-                content: '\f107';
-                font-weight: 900;
-                margin: .1rem 95% 0;
-                color: black;
-                position: absolute; }
-            @media screen and (min-width: 1080px) {
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
-                height: 100%;
-                margin-bottom: 0;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
-                grid-column: 1 / 6; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
-                  width: 100%;
-                  padding-left: 0; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6) {
-                  grid-column: 7 / 12;
-                  grid-row: 1 / 3; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:last-of-type {
-                  grid-column: 7 / 10;
-                  grid-row: 3 / 4;
-                  height: auto;
-                  margin-top: 3rem; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
-                  width: 100%; } }
-          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
-            z-index: 1;
-            background-color: #FFF;
-            margin: 1rem auto 2rem;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          grid-column: 1 / 6; }
+          .wpcf7 .wpcf7-form p label {
             width: 100%;
-            text-align: center; }
-            @media screen and (min-width: 1080px) {
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
-                grid-column: 1 / 13; } }
-  .page-volunteer .content-area .donate-content .entry-content p,
-  .page-donate .content-area .donate-content .entry-content p {
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 1080px) {
-      .page-volunteer .content-area .donate-content .entry-content p,
-      .page-donate .content-area .donate-content .entry-content p {
-        width: 80%; } }
-  .page-volunteer .content-area .donate-content .entry-content .donate-button,
-  .page-donate .content-area .donate-content .entry-content .donate-button {
-    z-index: 1;
-    margin: 2rem 0 4rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: white;
-    width: 60%; }
-    @media screen and (min-width: 1080px) {
-      .page-volunteer .content-area .donate-content .entry-content .donate-button,
-      .page-donate .content-area .donate-content .entry-content .donate-button {
-        width: 40%; } }
+            padding-left: 0; }
+          .wpcf7 .wpcf7-form p:nth-of-type(6) {
+            grid-column: 7 / 12;
+            grid-row: 1 / 3; }
+          .wpcf7 .wpcf7-form p:last-of-type {
+            grid-column: 7 / 10;
+            grid-row: 3 / 4;
+            height: auto;
+            margin-top: 3rem; }
+          .wpcf7 .wpcf7-form p input[type="submit"] {
+            width: 100%; } }
+    .wpcf7 .wpcf7-form .wpcf7-response-output {
+      z-index: 1;
+      background-color: #FFF;
+      margin: 1rem auto 2rem;
+      width: 100%;
+      text-align: center; }
+      @media screen and (min-width: 1080px) {
+        .wpcf7 .wpcf7-form .wpcf7-response-output {
+          grid-column: 1 / 13; } }
+    .wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+      display: none !important; }
+
+.donate-content .entry-content p {
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 1080px) {
+    .donate-content .entry-content p {
+      width: 80%; } }
+
+.donate-content .entry-content .donate-button {
+  z-index: 1;
+  margin: 2rem 0 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  width: 60%; }
+  @media screen and (min-width: 1080px) {
+    .donate-content .entry-content .donate-button {
+      width: 40%; } }
+
+.success-content .entry-content {
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .success-content .entry-content p {
+    padding-bottom: 4rem; }
 
 .post-type-archive-workshop .hfeed .site-content,
 .post-type-archive-community_programs .hfeed .site-content {
@@ -2337,339 +2296,6 @@ Volunteer and Donate page
     .post-type-archive-workshop .hfeed .site-content .page-header .workshop-page-content h2 {
       font-size: 2.25rem; }
 
-.post-type-archive-workshop .hfeed .site-content .workshop-no-owner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto) 0.6rem repeat(6, auto);
-  grid-column-gap: 4%; }
-  @media screen and (min-width: 1080px) {
-    .post-type-archive-workshop .hfeed .site-content .workshop-no-owner {
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(4, auto) 0.6rem repeat(5, auto);
-      grid-column-gap: 1%; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-order-number {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-order-number {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-order-number p {
-      font-size: 7.5rem;
-      text-align: center;
-      margin: 0;
-      font-weight: 900; }
-      @media screen and (min-width: 1080px) {
-        .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-order-number p {
-          line-height: .5;
-          margin: unset; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-title-image {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    height: 100%;
-    background-position: center;
-    background-size: cover; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-title-image {
-        grid-column: 1 / 7;
-        grid-row: 5 / 9;
-        height: 19rem; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-header {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-header {
-        grid-column: 2 / 7;
-        grid-row: 3 / 4; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-header h2 {
-      height: 100%;
-      margin: 0; }
-      @media screen and (min-width: 1080px) {
-        .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-header h2 {
-          word-wrap: break-word;
-          width: 70%;
-          margin: 0;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-header h2 a {
-        text-decoration: none;
-        color: #000000;
-        line-height: 1; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-owner {
-    grid-column: 1/ 4;
-    grid-row: 3 / 4; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-owner {
-        grid-column: 2 / 6;
-        grid-row: 4 / 5; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-owner h3 {
-      font-weight: 700;
-      font-size: 1.2rem;
-      line-height: 1;
-      margin: .5rem; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-secondary-image {
-    grid-column: 2 / 4;
-    grid-row: 4 / 9;
-    height: 11.25rem;
-    background-position: center;
-    background-size: cover; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .workshop-secondary-image {
-        grid-column: 8/13;
-        grid-row: 1 /4;
-        height: 19rem; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    grid-column: 1 / 4;
-    grid-row: 10 / 11;
-    padding: .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-content {
-        grid-column: 8/13;
-        grid-row: 6 / 8; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .entry-content .volunteer-button {
-      text-decoration: none;
-      text-align: center;
-      font-weight: 700;
-      color: white;
-      background-color: #00B46E;
-      padding: .5rem;
-      width: 70%;
-      margin-bottom: 2rem; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .dark-green-box {
-    grid-column: 1 / 2;
-    grid-row: 6 / 9;
-    background-color: #00B46E; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .dark-green-box {
-        grid-column: 5 /7;
-        grid-row: 1 / 3;
-        height: 11rem; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .green-line {
-    grid-column: 1 /  3;
-    grid-row: 5 / 6;
-    background-color: #00B46E;
-    height: .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .green-line {
-        grid-column: 2 / 10;
-        grid-row: 6 / 7; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .light-green-box {
-    display: none;
-    z-index: -1;
-    background-color: #D9EEE6; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .light-green-box {
-        display: block;
-        grid-column: 4 / 5;
-        grid-row: 1;
-        height: 5.5rem;
-        background-color: #C1D96D; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .light-grey-box {
-    grid-column: 1 / 4;
-    grid-row: 5 / 11;
-    background-color: #F4F0ED;
-    z-index: -1; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-no-owner .light-grey-box {
-        display: none; } }
-
-.post-type-archive-workshop .hfeed .site-content .workshop-with-owner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.6rem auto 1rem repeat(4, auto) 0.6rem auto 2rem repeat(2, auto);
-  grid-column-gap: 4%; }
-  @media screen and (min-width: 1080px) {
-    .post-type-archive-workshop .hfeed .site-content .workshop-with-owner {
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 1rem auto repeat(2, auto) 0.6rem repeat(5, auto);
-      grid-column-gap: 1%; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-order-number {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-order-number {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-order-number p {
-      font-size: 7.5rem;
-      text-align: center;
-      margin: 0;
-      font-weight: 900; }
-      @media screen and (min-width: 1080px) {
-        .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-order-number p {
-          line-height: .5;
-          margin: unset; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-header {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-header {
-        grid-column: 2 / 7;
-        grid-row: 3 / 4; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-header h2 {
-      height: 100%;
-      margin: 0; }
-      @media screen and (min-width: 1080px) {
-        .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-header h2 {
-          word-wrap: break-word;
-          width: 70%;
-          margin: 0;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-header h2 a {
-        text-decoration: none;
-        color: #000000;
-        line-height: 1; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-owner {
-    grid-column: 1/ 4;
-    grid-row: 6 / 7; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-owner {
-        grid-column: 2 / 6;
-        grid-row: 4 / 5; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-owner h3 {
-      font-weight: 700;
-      font-size: 1.2rem;
-      line-height: 1;
-      margin: .5rem; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-title-image {
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    height: 100%;
-    background-position: center;
-    background-size: cover; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-title-image {
-        grid-column: 1 / 7;
-        grid-row: 5 / 9;
-        height: 19rem; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-secondary-image {
-    grid-column: 2 / 4;
-    grid-row: 8 / 12;
-    height: 11.25rem;
-    background-position: center;
-    background-size: cover; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .workshop-secondary-image {
-        grid-column: 8/13;
-        grid-row: 1 /4;
-        height: 19rem; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    grid-column: 1 / 4;
-    grid-row: 13 / 14;
-    padding: .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-content {
-        grid-column: 8/13;
-        grid-row: 6 / 8; } }
-    .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .entry-content .volunteer-button {
-      text-decoration: none;
-      text-align: center;
-      font-weight: 700;
-      color: white;
-      background-color: #00B46E;
-      padding: .5rem;
-      width: 70%;
-      margin-bottom: 2rem; }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .carousel-pagination {
-    grid-column: 1 / 4;
-    grid-row: 12 / 13; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .carousel-pagination {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .dark-blue-box {
-    grid-column: 1 / 2;
-    grid-row: 10 / 12;
-    background-color: #00D4C5;
-    z-index: 1; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .dark-blue-box {
-        display: none; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .green-line {
-    grid-column: 1 /  3;
-    grid-row: 9 / 10;
-    background-color: #00B46E;
-    height: .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .green-line {
-        grid-column: 2 / 10;
-        grid-row: 6 / 7; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .light-green-box {
-    display: none;
-    background-color: #D9EEE6; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .light-green-box {
-        display: block;
-        grid-column: 4 / 5;
-        grid-row: 1;
-        height: 5.5rem;
-        background-color: #C1D96D; } }
-  .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .light-grey-box {
-    grid-column: 1 / 4;
-    grid-row: 3 / 14;
-    background-color: #F4F0ED;
-    z-index: -1; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-workshop .hfeed .site-content .workshop-with-owner .light-grey-box {
-        display: none; } }
-
 .post-type-archive-workshop .hfeed .site-content .background-green-box {
   position: absolute;
   z-index: 0;
@@ -2688,6 +2314,327 @@ Volunteer and Donate page
   @media screen and (min-width: 1080px) {
     .post-type-archive-workshop .hfeed .site-content .background-grey-box {
       height: 70%; } }
+
+.workshop-no-owner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto) 0.6rem repeat(6, auto);
+  grid-column-gap: 4%; }
+  @media screen and (min-width: 1080px) {
+    .workshop-no-owner {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(4, auto) 0.6rem repeat(5, auto);
+      grid-column-gap: 1%; } }
+  .workshop-no-owner .workshop-order-number {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .workshop-order-number {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; } }
+    .workshop-no-owner .workshop-order-number p {
+      font-size: 7.5rem;
+      text-align: center;
+      margin: 0;
+      font-weight: 900; }
+      @media screen and (min-width: 1080px) {
+        .workshop-no-owner .workshop-order-number p {
+          line-height: .5;
+          margin: unset; } }
+  .workshop-no-owner .workshop-title-image {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    height: 100%;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .workshop-title-image {
+        grid-column: 1 / 7;
+        grid-row: 5 / 9;
+        height: 19rem; } }
+  .workshop-no-owner .entry-header {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .entry-header {
+        grid-column: 2 / 7;
+        grid-row: 3 / 4; } }
+    .workshop-no-owner .entry-header h2 {
+      height: 100%;
+      margin: 0; }
+      @media screen and (min-width: 1080px) {
+        .workshop-no-owner .entry-header h2 {
+          word-wrap: break-word;
+          width: 70%;
+          margin: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      .workshop-no-owner .entry-header h2 a {
+        text-decoration: none;
+        color: #000000;
+        line-height: 1; }
+  .workshop-no-owner .workshop-secondary-image {
+    grid-column: 2 / 4;
+    grid-row: 4 / 9;
+    height: 11.25rem;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .workshop-secondary-image {
+        grid-column: 8/13;
+        grid-row: 1 /4;
+        height: 19rem; } }
+  .workshop-no-owner .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-column: 1 / 4;
+    grid-row: 10 / 11;
+    padding: .5rem; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .entry-content {
+        grid-column: 8/13;
+        grid-row: 6 / 8; } }
+    .workshop-no-owner .entry-content .volunteer-button {
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      background-color: #00B46E;
+      padding: .5rem;
+      width: 70%;
+      margin-bottom: 2rem; }
+  .workshop-no-owner .dark-green-box {
+    grid-column: 1 / 2;
+    grid-row: 6 / 9;
+    background-color: #00B46E; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .dark-green-box {
+        grid-column: 5 /7;
+        grid-row: 1 / 3;
+        height: 11rem; } }
+  .workshop-no-owner .green-line {
+    grid-column: 1 /  3;
+    grid-row: 5 / 6;
+    background-color: #00B46E;
+    height: .5rem; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .green-line {
+        grid-column: 2 / 10;
+        grid-row: 6 / 7; } }
+  .workshop-no-owner .light-green-box {
+    display: none;
+    z-index: -1;
+    background-color: #D9EEE6; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .light-green-box {
+        display: block;
+        grid-column: 4 / 5;
+        grid-row: 1;
+        height: 5.5rem;
+        background-color: #C1D96D; } }
+  .workshop-no-owner .light-grey-box {
+    grid-column: 1 / 4;
+    grid-row: 5 / 11;
+    background-color: #F4F0ED;
+    z-index: -1; }
+    @media screen and (min-width: 1080px) {
+      .workshop-no-owner .light-grey-box {
+        display: none; } }
+
+.workshop-with-owner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.6rem auto 1rem repeat(4, auto) 0.6rem auto 2rem repeat(2, auto);
+  grid-column-gap: 4%; }
+  @media screen and (min-width: 1080px) {
+    .workshop-with-owner {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1rem auto repeat(2, auto) 0.6rem repeat(5, auto);
+      grid-column-gap: 1%; } }
+  .workshop-with-owner .workshop-order-number {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .workshop-order-number {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; } }
+    .workshop-with-owner .workshop-order-number p {
+      font-size: 7.5rem;
+      text-align: center;
+      margin: 0;
+      font-weight: 900; }
+      @media screen and (min-width: 1080px) {
+        .workshop-with-owner .workshop-order-number p {
+          line-height: .5;
+          margin: unset; } }
+  .workshop-with-owner .entry-header {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .entry-header {
+        grid-column: 2 / 7;
+        grid-row: 3 / 4; } }
+    .workshop-with-owner .entry-header h2 {
+      height: 100%;
+      margin: 0; }
+      @media screen and (min-width: 1080px) {
+        .workshop-with-owner .entry-header h2 {
+          word-wrap: break-word;
+          width: 70%;
+          margin: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      .workshop-with-owner .entry-header h2 a {
+        text-decoration: none;
+        color: #000000;
+        line-height: 1; }
+  .workshop-with-owner .workshop-owner {
+    grid-column: 1/ 4;
+    grid-row: 6 / 7; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .workshop-owner {
+        grid-column: 2 / 6;
+        grid-row: 4 / 5; } }
+    .workshop-with-owner .workshop-owner h3 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1;
+      margin: .5rem; }
+  .workshop-with-owner .workshop-title-image {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    height: 100%;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .workshop-title-image {
+        grid-column: 1 / 7;
+        grid-row: 5 / 9;
+        height: 19rem; } }
+  .workshop-with-owner .workshop-secondary-image {
+    grid-column: 2 / 4;
+    grid-row: 8 / 12;
+    height: 11.25rem;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .workshop-secondary-image {
+        grid-column: 8/13;
+        grid-row: 1 /4;
+        height: 19rem; } }
+  .workshop-with-owner .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-column: 1 / 4;
+    grid-row: 13 / 14;
+    padding: .5rem; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .entry-content {
+        grid-column: 8/13;
+        grid-row: 6 / 8; } }
+    .workshop-with-owner .entry-content .volunteer-button {
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      background-color: #00B46E;
+      padding: .5rem;
+      width: 70%;
+      margin-bottom: 2rem; }
+  .workshop-with-owner .carousel-pagination {
+    grid-column: 1 / 4;
+    grid-row: 12 / 13; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .carousel-pagination {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; } }
+  .workshop-with-owner .dark-blue-box {
+    grid-column: 1 / 2;
+    grid-row: 10 / 12;
+    background-color: #00D4C5;
+    z-index: 1; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .dark-blue-box {
+        display: none; } }
+  .workshop-with-owner .green-line {
+    grid-column: 1 /  3;
+    grid-row: 9 / 10;
+    background-color: #00B46E;
+    height: .5rem; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .green-line {
+        grid-column: 2 / 10;
+        grid-row: 6 / 7; } }
+  .workshop-with-owner .light-green-box {
+    display: none;
+    background-color: #D9EEE6; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .light-green-box {
+        display: block;
+        grid-column: 4 / 5;
+        grid-row: 1;
+        height: 5.5rem;
+        background-color: #C1D96D; } }
+  .workshop-with-owner .light-grey-box {
+    grid-column: 1 / 4;
+    grid-row: 3 / 14;
+    background-color: #F4F0ED;
+    z-index: -1; }
+    @media screen and (min-width: 1080px) {
+      .workshop-with-owner .light-grey-box {
+        display: none; } }
 
 /*Footer */
 .site-footer {
@@ -2789,6 +2736,9 @@ Volunteer and Donate page
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         padding-top: 1rem;
         margin: 0rem; }
         .site-footer .footer-container .widget-area .social-info-class .social-icons,
@@ -2899,127 +2849,6 @@ Volunteer and Donate page
         .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .community-project-logo {
           display: none; } }
 
-.post-type-archive-community_programs .hfeed .site-content .community_programs {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8rem repeat(7, auto);
-  grid-column-gap: 4%; }
-  @media screen and (min-width: 1080px) {
-    .post-type-archive-community_programs .hfeed .site-content .community_programs {
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(2, auto) 1rem auto 1rem repeat(4, auto);
-      grid-column-gap: 1%; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs h2 {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-    font-size: 1.2rem;
-    border-bottom: solid 0.4rem #00B46E;
-    padding: 0 .5rem .8rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs h2 {
-        grid-column: 1 / 6;
-        grid-row: 2 / 3;
-        border-bottom: none;
-        font-size: 2rem;
-        padding: 0 .5rem;
-        margin: 0; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs p {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
-    font-size: 1rem;
-    padding: 0 .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs p {
-        grid-column: 1 / 7;
-        grid-row: 6 / 7;
-        font-size: 1.1rem; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .community-first-image {
-    height: 18rem;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    background-position: center;
-    background-size: cover; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .community-first-image {
-        grid-column: 1 / 8;
-        grid-row: 7 / 8; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .community-secondary-image {
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
-    background-position: center;
-    background-size: cover;
-    height: 14rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .community-secondary-image {
-        grid-column: 8 / 13;
-        grid-row: 6 / 8;
-        height: 100%; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .community-third-image {
-    display: none; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .community-third-image {
-        display: block;
-        grid-column: 9 / 13;
-        grid-row: 8 / 10;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        margin-top: 1rem; } }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-header {
-    grid-column: 1/4;
-    grid-row: 7/8; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-header {
-        grid-column: 1 / 9;
-        grid-row: 8 / 9; } }
-    .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-header h2 {
-      border-bottom: none;
-      padding: 0 .5rem;
-      margin-top: 1rem; }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-content {
-    grid-column: 1 / 4;
-    grid-row: 8 / 9;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-content {
-        grid-column: 1 / 9;
-        grid-row: 9 / 10; } }
-    .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-content p {
-      padding: 0 .5rem;
-      margin: 0; }
-    .post-type-archive-community_programs .hfeed .site-content .community_programs .entry-content a {
-      text-decoration: none;
-      text-align: center;
-      font-weight: 700;
-      color: white;
-      background-color: #00B46E;
-      padding: .5rem;
-      width: 50%;
-      margin: .5rem 0 0 .5rem; }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .light-green-box {
-    display: none; }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .light-grey-box {
-    grid-column: 1 / 4;
-    grid-row: 2 / 6;
-    background-color: #F4F0ED;
-    z-index: -1; }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .green-line {
-    display: none;
-    background-color: #00B46E;
-    height: .5rem; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .green-line {
-        display: block;
-        grid-column: 1 / 5;
-        grid-row: 4 / 5; } }
-
 .post-type-archive-community_programs .hfeed .site-content .background-green-box {
   position: absolute;
   background-color: #D9EEE6;
@@ -3038,6 +2867,127 @@ Volunteer and Donate page
     .post-type-archive-community_programs .hfeed .site-content .background-grey-box {
       top: 50%;
       height: 50%; } }
+
+.community_programs {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8rem repeat(7, auto);
+  grid-column-gap: 4%; }
+  @media screen and (min-width: 1080px) {
+    .community_programs {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(2, auto) 1rem auto 1rem repeat(4, auto);
+      grid-column-gap: 1%; } }
+  .community_programs h2 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    font-size: 1.2rem;
+    border-bottom: solid 0.4rem #00B46E;
+    padding: 0 .5rem .8rem; }
+    @media screen and (min-width: 1080px) {
+      .community_programs h2 {
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        border-bottom: none;
+        font-size: 2rem;
+        padding: 0 .5rem;
+        margin: 0; } }
+  .community_programs p {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    font-size: 1rem;
+    padding: 0 .5rem; }
+    @media screen and (min-width: 1080px) {
+      .community_programs p {
+        grid-column: 1 / 7;
+        grid-row: 6 / 7;
+        font-size: 1.1rem; } }
+  .community_programs .community-first-image {
+    height: 18rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .community-first-image {
+        grid-column: 1 / 8;
+        grid-row: 7 / 8; } }
+  .community_programs .community-secondary-image {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    background-position: center;
+    background-size: cover;
+    height: 14rem; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .community-secondary-image {
+        grid-column: 8 / 13;
+        grid-row: 6 / 8;
+        height: 100%; } }
+  .community_programs .community-third-image {
+    display: none; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .community-third-image {
+        display: block;
+        grid-column: 9 / 13;
+        grid-row: 8 / 10;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-top: 1rem; } }
+  .community_programs .entry-header {
+    grid-column: 1/4;
+    grid-row: 7/8; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .entry-header {
+        grid-column: 1 / 9;
+        grid-row: 8 / 9; } }
+    .community_programs .entry-header h2 {
+      border-bottom: none;
+      padding: 0 .5rem;
+      margin-top: 1rem; }
+  .community_programs .entry-content {
+    grid-column: 1 / 4;
+    grid-row: 8 / 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .entry-content {
+        grid-column: 1 / 9;
+        grid-row: 9 / 10; } }
+    .community_programs .entry-content p {
+      padding: 0 .5rem;
+      margin: 0; }
+    .community_programs .entry-content a {
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      background-color: #00B46E;
+      padding: .5rem;
+      width: 50%;
+      margin: .5rem 0 0 .5rem; }
+  .community_programs .light-green-box {
+    display: none; }
+  .community_programs .light-grey-box {
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+    background-color: #F4F0ED;
+    z-index: -1; }
+  .community_programs .green-line {
+    display: none;
+    background-color: #00B46E;
+    height: .5rem; }
+    @media screen and (min-width: 1080px) {
+      .community_programs .green-line {
+        display: block;
+        grid-column: 1 / 5;
+        grid-row: 4 / 5; } }
 
 .page-about .about-box {
   position: absolute;
@@ -3199,7 +3149,7 @@ Volunteer and Donate page
     .page-about .founders .founder1 .founder1-box1 {
       background-color: #00b46e;
       padding: .3rem 1.6em .2rem 0rem;
-      margin-left: 12.9rem; }
+      margin-left: 12.2rem; }
     .page-about .founders .founder1 .image-name {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3231,6 +3181,7 @@ Volunteer and Donate page
         margin-top: 3rem;
         margin-right: 9rem; }
     .page-about .founders .founder1 .content {
+      padding-left: 1rem;
       padding-left: 1rem; }
       .page-about .founders .founder1 .content .founder1-box3 {
         position: absolute;
@@ -3239,7 +3190,7 @@ Volunteer and Donate page
         height: 3.6rem;
         background-color: #00b46e;
         margin-top: 17rem;
-        margin-left: 23.6rem; }
+        margin-left: 22.3rem; }
   .page-about .founders .founder2 {
     padding-bottom: 4rem; }
     .page-about .founders .founder2 .founder2-box1 {
@@ -3248,7 +3199,7 @@ Volunteer and Donate page
       background-color: #c4da76;
       width: 3.7rem;
       height: 3.7rem;
-      margin-left: 11.1rem;
+      margin-left: 10.5rem;
       margin-top: .4rem; }
     .page-about .founders .founder2 .image-name {
       display: -webkit-box;
@@ -3280,7 +3231,7 @@ Volunteer and Donate page
         z-index: -1;
         background-color: #c4da76;
         width: 3.5rem;
-        height: 15rem;
+        height: 2rem;
         margin-right: -3rem; }
   .page-about .founders .founder3 {
     padding-bottom: 4rem; }
@@ -3322,12 +3273,13 @@ Volunteer and Donate page
         margin-right: 9rem;
         margin-top: 7rem; }
     .page-about .founders .founder3 .content {
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      padding-right: 1rem; }
       .page-about .founders .founder3 .content p .founder3-box3 {
         position: absolute;
         z-index: -3;
         background-color: #d3ebe2;
         width: 100%;
-        height: 5rem;
+        height: 6rem;
         margin-right: 9rem;
         margin-left: 0rem; }

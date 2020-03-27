@@ -137,7 +137,7 @@ get_header(); ?>
 										</div>
 
 										<div class="content">
-											<p><span class="founder2-box2" ></span><?php the_sub_field('prosopography2'); ?></p>
+											<p><span class="founder2-box2" ></span><?php echo get_sub_field('prosopograghy2');?></p>
 											
 										</div>
 								</div>
