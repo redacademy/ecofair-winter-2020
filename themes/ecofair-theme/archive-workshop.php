@@ -17,7 +17,7 @@ get_header(); ?>
 			    $args = array( 
 				'post_type'       => 'page', 
 				'posts_per_page'  => 1,
-				'title'           => 'Workshops',
+				'name'           => 'workshop',
 			    );
 			    $workshop_page = get_posts( $args ); // returns an array of posts
 			
@@ -27,6 +27,7 @@ get_header(); ?>
 				<header class="page-header entry-content">		    
 				    <?php if (!wp_is_mobile()): ?>
 				    <div class="workshop-page-content">
+					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 				    </div>
 				    <?php endif; ?>

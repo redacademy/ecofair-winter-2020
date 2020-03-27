@@ -35,12 +35,12 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: .4rem;
 }
 
 textarea,
 select {
-	border: .1rem solid #808080;
+	border: .05rem solid #808080;
 }
 
 textarea {
@@ -48,7 +48,7 @@ textarea {
 }
 
 select {
-    padding: .4rem 0 .3rem;
+    padding: .4rem .4rem .3rem;
     background-color: #FFF;
     -webkit-appearance: none;
     -moz-appearance: none;

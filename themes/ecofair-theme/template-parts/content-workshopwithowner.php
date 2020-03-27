@@ -39,7 +39,7 @@
     <?php endif; ?>
     <div class="entry-content">
 	<?php the_content(); ?>
-	<a class="volunteer-button" href="#">Volunteer</a>
+	<a class="volunteer-button" href="<?php echo get_permalink( get_page_by_path( 'volunteer' ) ); ?>">Volunteer</a>
     </div><!-- .entry-content -->
     <div class="dark-blue-box"></div>
     <div class="orange-green-box"></div>

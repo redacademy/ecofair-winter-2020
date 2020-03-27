@@ -56,6 +56,7 @@ function workshop() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest'          => true,
+		'menu_icon'             => 'dashicons-welcome-learn-more',
 	);
 	register_post_type( 'workshop', $args );
 }

@@ -57,6 +57,7 @@ function community_programs() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest'          => true,
+		'menu_icon'             => 'dashicons-universal-access-alt',
 	);
 	register_post_type( 'community_programs', $args );
 
