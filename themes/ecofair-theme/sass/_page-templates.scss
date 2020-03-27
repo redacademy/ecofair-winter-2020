@@ -1110,173 +1110,175 @@
 	@include desktop {
 	    max-width: 1176px;
 	}
-	.volunteer-content,
-	.donate-content,
-	.success-content {
+    }
+}
+// Shared styles between Volunteer, Donate and Success Page
+.volunteer-content,
+.donate-content,
+.success-content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 4%;
+    .entry-header {
+	grid-column: 1 / 4;
+	display: flex;
+	justify-content: center;
+	h1 {
+	    z-index: 1;
+	    font-size: 1.5rem;
+	    text-align: center;
+	    width: 80%;
+	    border-bottom: .25rem solid $color__green-1;
+	    padding-bottom: 1rem;
+	    @include desktop {
+		font-size: 2rem;
+		width: 50%;
+	    }
+	}
+    }
+    .entry-content{
+	grid-column: 1/ 4;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 0;
+	p {
+	    z-index: 1;
+	    width: 80%;
+	    text-align: center;
+	    margin: 0 auto 2rem;
+	    @include desktop {
+		width: 50%;
+		margin-bottom: 5rem;
+	    }
+	}
+	h2 {
+	    z-index: 1;
+	}
+    }
+}
+// Style for Contact Form 7
+.wpcf7 {
+    position: relative;
+    width: 90%;
+    padding-bottom: 3rem;
+    .wpcf7-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@include desktop {
 	    display: grid;
-	    grid-template-columns: repeat(3, auto);
-	    column-gap: 4%;
-	    .entry-header {
-		grid-column: 1 / 4;
-		display: flex;
-		justify-content: center;
-		h1 {
-		    z-index: 1;
-		    font-size: 1.5rem;
-		    text-align: center;
-		    width: 80%;
-		    border-bottom: .25rem solid $color__green-1;
-		    padding-bottom: 1rem;
-		    @include desktop {
-			font-size: 2rem;
-			width: 50%;
+	    grid-template-columns: repeat(12, 1fr);
+	    grid-template-rows: repeat(5, 6rem);
+	    column-gap: 1%;
+	}
+	p {
+	    display: flex;
+	    flex-direction: row-reverse;
+	    text-align: left;
+	    width: 100%;
+	    label {
+		width: 100%;
+	    }
+	    input{
+		background-color: transparent;
+		&::placeholder {
+		    font-style: italic;
+		    opacity: 1;
+		    color: $color__text-main;
+		}
+	    }
+	    input[type="submit"] {
+		color: #fff;
+		text-transform: uppercase;
+		border: none;
+		padding: .6rem 4rem;
+		background-color: $color__green-1;
+	    }
+	    &:nth-of-type(1) {
+		position: relative;
+		.wpcf7-form-control-wrap {
+		    &:before {
+			font-family: 'Font Awesome 5 Free';
+			content: '\f107';
+			font-weight: 900;
+			margin: .1rem 95% 0;
+			color: black;
+			position: absolute;
 		    }
 		}
 	    }
-	    .entry-content{
-		grid-column: 1/ 4;
-		display: flex;
-		justify-items: center;
-		align-items: center;
-		flex-direction: column;
-		margin-top: 0;
-		p {
-		    z-index: 1;
-		    width: 80%;
-		    text-align: center;
-		    margin: 0 auto 2rem;
-		    @include desktop {
-			width: 50%;
-			margin-bottom: 5rem;
-		    }
+	    @include desktop {
+		height: 100%;
+		margin-bottom: 0;
+		flex-direction: row;
+		label {
+		    width: 100%;
+		    padding-left: 0;
 		}
-		h2 {
-		    z-index: 1;
+		grid-column: 1 / 6;
+		&:nth-of-type(6) {
+		    grid-column: 7 / 12;
+		    grid-row: 1 / 3;
 		}
-		.wpcf7 {
-		    position: relative;
-		    width: 90%;
-		    padding-bottom: 3rem;
-		    .wpcf7-form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			@include desktop {
-			    display: grid;
-			    grid-template-columns: repeat(12, 1fr);
-			    grid-template-rows: repeat(5, 6rem);
-			    column-gap: 1%;
-			}
-			p {
-			    display: flex;
-			    flex-direction: row-reverse;
-			    text-align: left;
-			    width: 100%;
-			    label {
-				padding-left: 1rem;
-			    }
-			    input{
-				background-color: transparent;
-				&::placeholder {
-				    font-style: italic;
-				    opacity: 1;
-				    color: $color__text-main;
-				}
-			    }
-			    input[type="submit"] {
-				color: #fff;
-				text-transform: uppercase;
-				border: none;
-				padding: .6rem 4rem;
-				background-color: $color__green-1;
-			    }
-			    &:nth-of-type(1) {
-				position: relative;
-				.wpcf7-form-control-wrap {
-				    &:before {
-					font-family: 'Font Awesome 5 Free';
-					content: '\f107';
-					font-weight: 900;
-					margin: .1rem 95% 0;
-					color: black;
-					position: absolute;
-				    }
-				}
-			    }
-			    @include desktop {
-				height: 100%;
-				margin-bottom: 0;
-				flex-direction: row;
-				label {
-				    width: 100%;
-				    padding-left: 0;
-				}
-				grid-column: 1 / 6;
-				&:nth-of-type(6) {
-				    grid-column: 7 / 12;
-				    grid-row: 1 / 3;
-				}
-				&:last-of-type {
-				    grid-column: 7 / 10;
-				    grid-row: 3 / 4;
-				    height: auto;
-				    margin-top: 3rem;
-				}
-				input[type="submit"] {
-				    width: 100%;
-				}
-			    }
-			}
-			.wpcf7-response-output {
-			    z-index: 1;
-			    background-color: #FFF;
-			    margin: 1rem auto 2rem;
-			    width: 100%;
-			    text-align: center;
-			    @include desktop {
-				grid-column: 1 / 13;
-			    }
-			}
-			.wpcf7-mail-sent-ok {
-			    display: none !important;
-			}
-		    }
+		&:last-of-type {
+		    grid-column: 7 / 10;
+		    grid-row: 3 / 4;
+		    height: auto;
+		    margin-top: 3rem;
+		}
+		input[type="submit"] {
+		    width: 100%;
 		}
 	    }
 	}
-	.donate-content {
-	    .entry-content {
-		p {
-		    margin-bottom: 1rem;
-		    @include desktop {
-			width: 80%;
-		    }
-		}
-		.donate-button {
-		    z-index: 1;
-		    margin: 2rem 0 4rem;
-		    text-transform: uppercase;
-		    font-weight: 900;
-		    color: white;
-		    width: 60%;
-		    @include desktop {
-			width: 40%;
-		    }
-		}
+	.wpcf7-response-output {
+	    z-index: 1;
+	    background-color: #FFF;
+	    margin: 1rem auto 2rem;
+	    width: 100%;
+	    text-align: center;
+	    @include desktop {
+		grid-column: 1 / 13;
 	    }
 	}
-	.success-content {
-	    .entry-content {
-		background-size: contain;
-		background-position: bottom;
-		background-repeat: no-repeat;
-		p {
-		    padding-bottom: 4rem;
-		}
+	.wpcf7-mail-sent-ok {
+	    display: none !important;
+	}
+    }
+}
+// Donate Styles
+.donate-content {
+    .entry-content {
+	p {
+	    margin-bottom: 1rem;
+	    @include desktop {
+		width: 80%;
+	    }
+	}
+	.donate-button {
+	    z-index: 1;
+	    margin: 2rem 0 4rem;
+	    text-transform: uppercase;
+	    font-weight: 900;
+	    color: white;
+	    width: 60%;
+	    @include desktop {
+		width: 40%;
 	    }
 	}
     }
 }
-
-
+// Success Styles
+.success-content {
+    .entry-content {
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	p {
+	    padding-bottom: 4rem;
+	}
+    }
+}
