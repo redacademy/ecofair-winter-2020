@@ -7,7 +7,6 @@
 .site-content {
     background-color: $color__background-white;
     width: 100%;
-    margin: 0 auto;
 }
 
 /* 
@@ -20,133 +19,132 @@
 
 
 .front-banner-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0;
-    grid-template-rows: 7vh 12vh 25vh 44vh 45vh;
-    justify-self: right;
-    padding-top: 5rem;
-    padding-bottom: 3.8rem;
-    margin: 0 auto;
-    width: 98%;
-    position: relative;
-
-    @include tablet {
-	grid-gap: 1rem;
-	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: .25fr 1.5fr .25fr;
-	width: 100%;
-    }
-
-    @include desktop {
-	grid-gap: 1rem;
-	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: 1fr 1.5fr .5fr;
-	max-width: 1920px;
-	padding-top: 10rem;
-	padding-bottom: 0rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0;
+	grid-template-rows: 7vh 12vh 25vh 44vh 45vh;
+	justify-self: right;
+	padding-top: 5rem;
+	padding-bottom: 3.8rem;
+	width: 95%;
 	margin: 0 auto;
-    }
+	position: relative;
+
+	@include tablet {
+		grid-gap: 1rem;
+		grid-template-columns: repeat(16, 1fr);
+		grid-template-rows: .25fr 1.5fr .25fr;
+		width: 100%;
+		}
+
+	@include desktop {
+		grid-gap: 1rem;
+		grid-template-columns: repeat(20, 1fr);
+		grid-template-rows: 1fr 1.5fr .5fr;
+		max-width: 1920px;
+		padding-top: 10rem;
+		padding-bottom: 0rem;
+		margin: 0 auto;
+		}
 }
 
 .front-banner-img {
-    background-image: url(../assets/images/heroimage01.jpeg);
-    background-size: cover;
-    background-position: right;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    width: 100%;
-    z-index: 2;
-
-    @include tablet {
-	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-row-start: 2;
+	background-image: url(../assets/images/heroimage01.jpeg);
+	background-size: cover;
+	background-position: right;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
 	grid-row-end: 4;
-    }  
+	width: 100%;
+	z-index: 2;
 
-    @include desktop {
-	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-row-start: 2;
-	grid-row-end: 4;
-    }  
+	@include tablet {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}  
 
+	@include desktop {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}  
 }
 
 .sqr-orange {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-self: right;
-    height: 6vh;
-    width: 6vh;
-    background-color: $color__orange-1;
-    margin-right: 1rem;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	justify-self: right;
+	height: 6vh;
+	width: 6vh;
+	background-color: $color__orange-1;
+	margin-right: 1rem;
 
-    @include tablet {
-	display: none;
-    }  
+	@include tablet {
+		display: none;
+	}  
 
-    @include desktop {
-	display: grid;
-	grid-column-start: 19;
-	grid-column-end: 20;
-	z-index: 2;
-	margin-right: 0rem;
-	justify-self: left;
-    }  
+	@include desktop {
+		display: grid;
+		grid-column-start: 19;
+		grid-column-end: 20;
+		z-index: 2;
+		margin-right: 0rem;
+		justify-self: left;
+		}  
 }
 
 .sqr-dr-green {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: right;
-    align-self: flex-start;
-    height: 11vh;
-    width: 11vh;
-    background-color: $color__green-1;
-    margin-right: 1rem;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	justify-self: right;
+	align-self: flex-start;
+	height: 11vh;
+	width: 11vh;
+	background-color: $color__green-1;
+	margin-right: 1rem;
 
-    @include tablet {
-	grid-column-start: 3;
-	grid-column-end: 5;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	margin-left: 1rem;
-	margin-right: 0rem;
-	height: 8.125rem;
-	width: 8.125rem;
-    }
+	@include tablet {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin-left: 1rem;
+		margin-right: 0rem;
+		height: 8.125rem;
+		width: 8.125rem;
+	}
 
-    @include desktop {
-	height: 176px;
-	width: 176px;
-    }  
+	@include desktop {
+		height: 176px;
+		width: 176px;
+	}  
 }
 
 .sqr-light-green {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: right;
-    align-self: flex-start;
-    height: 6vh;
-    width: 6vh;
-    background-color: $color__green-light-1;
-    margin-right: 1rem;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	justify-self: right;
+	align-self: flex-start;
+	height: 6vh;
+	width: 6vh;
+	background-color: $color__green-light-1;
+	margin-right: 1rem;
 
-    @include tablet {
+   @include tablet {
 	margin-right: 0rem;
-    }  
+  }  
 
-    @include desktop {
+  @include desktop {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
@@ -155,44 +153,46 @@
 }
 
 .event-info {
-    margin-left: $base__space-unit / 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    z-index: 2;
-    width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	z-index: 2;
+	width: 100%;
 
-    @include tablet {
+  @include tablet {
 	grid-column-start: 5;
 	grid-column-end: 9;
 	grid-row-start: 2;
 	grid-row-end: 4;
 	position: relative;
-    }
+  }
 
-    .site-title-heading {
+  .site-title-heading {
 	font-size: 1rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
-    }
+  }
 
-    .event-title {
+  .event-title {
 	font-size: 4.5rem;
 	margin-top: .5rem;
 	margin-bottom: .5rem;
 	line-height: 1.2;
+
 	@include tablet {
-	    width: 30%;
+	 width: 30%;
 	}
 	@include desktop {
-	    font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
     }
-    .location {
+	
+	.location {
 	margin-bottom: 0px;
+
 	@include desktop {
 	    margin-top: 3rem;
 	}
@@ -201,7 +201,7 @@
 
 .event-info-li {
     border-bottom: $line_green;
-    width: 75%;
+    width: 55%;
 
     @include tablet {
 	width: 28rem;
@@ -226,27 +226,25 @@
     background-size: cover;
     background-position: right;
     height: 351px;
-    width: 98%;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 3rem;
     z-index: 1;
 
     @include tablet {
-	grid-column-start: 12;
-	grid-column-end: 17;
-	grid-row-start: 1;
-	grid-row-end: 4;
-	height: 776px;
-	width: 100%;
-	margin: 0px;
+		grid-column-start: 12;
+		grid-column-end: 17;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		height: 776px;
+		margin: 0px;
     }  
 
     @include desktop {
-	grid-column-start: 9;
-	grid-column-end: 17;
-	width: 90%;
-	justify-self: right;
+		grid-column-start: 9;
+		grid-column-end: 17;
+		width: 90%;
+		justify-self: right;
     }  
 }
 
@@ -254,19 +252,18 @@
     display: none;
 
     @include desktop {
-	background-image: url(../assets/images/heroimage03.png);
-	background-size: cover;
-	background-position: right;
-	display: grid;
-	grid-column-start: 17;
-	grid-column-end: 21;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	height: 504px;
-	width: 100%;
-	margin: 0px;
-	z-index: 2;
-
+		background-image: url(../assets/images/heroimage03.png);
+		background-size: cover;
+		background-position: right;
+		display: grid;
+		grid-column-start: 17;
+		grid-column-end: 21;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		height: 504px;
+		width: 100%;
+		margin: 0px;
+		z-index: 2;
     }  
 }
 
@@ -282,17 +279,17 @@
     top: -20px;
 
     @include tablet {
-	grid-column-start: 13;
-	grid-column-end: 17;
-	top: -324px;
+		grid-column-start: 13;
+		grid-column-end: 17;
+		top: -324px;
     }
 
     @include desktop {
-	grid-column-start: 13;
-	grid-column-end: 21;
-	width: 100%;
-	height: 1080px;
-	top: -207px;
+		grid-column-start: 13;
+		grid-column-end: 21;
+		width: 100%;
+		height: 1200px;
+		top: -207px;
     }
 }
 
@@ -521,7 +518,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    width: 95%;
+    width: 100%;
     padding-top: 5rem;
     position: relative;
 
@@ -572,7 +569,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    width: 95%;
+    width: 100%;
     padding-top: .5rem;
     z-index: 10;
     position: relative;
@@ -647,7 +644,6 @@
 
 .event-feature-widget {
     width: 98%;
-    margin-left: $base__space-unit / 2;
 
     h2 {
 	font-size: 24px;
