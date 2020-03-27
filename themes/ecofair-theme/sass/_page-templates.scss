@@ -1112,7 +1112,6 @@
 	}
     }
 }
-// Shared styles between Volunteer, Donate and Success Page
 .volunteer-content,
 .donate-content,
 .success-content {
@@ -1236,20 +1235,20 @@
 		}
 	    }
 	}
-	.wpcf7-response-output {
-	    z-index: 1;
-	    background-color: #FFF;
-	    margin: 1rem auto 2rem;
-	    width: 100%;
-	    text-align: center;
-	    @include desktop {
-		grid-column: 1 / 13;
-	    }
-	}
-	.wpcf7-mail-sent-ok {
-	    display: none !important;
-	}
     }
+}
+.wpcf7-response-output {
+    z-index: 1;
+    background-color: #FFF;
+    margin: 1rem auto 2rem;
+    width: 100%;
+    text-align: center;
+    @include desktop {
+	grid-column: 1 / 13;
+    }
+}
+.wpcf7-mail-sent-ok {
+    display: none !important;
 }
 // Donate Styles
 .donate-content {
