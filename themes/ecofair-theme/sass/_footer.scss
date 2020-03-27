@@ -81,6 +81,7 @@
       .social-info-class,
       .banner-widgets {
         display: flex;
+        justify-content: flex-end;
         padding-top: 1rem;
         margin: 0rem;
         .social-icons {

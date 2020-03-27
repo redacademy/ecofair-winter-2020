@@ -277,6 +277,7 @@
     grid-row-end: 6;
     position: absolute;
     top: -20px;
+		left: 10px;
 
     @include tablet {
 		grid-column-start: 13;
@@ -389,7 +390,7 @@
 }
 
 .mission-text {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
 
     @include tablet {
@@ -436,7 +437,9 @@
     }
 
     .widget {
-	margin: 0px;
+		margin: 0px;
+		width: 95%;
+		margin: 0 auto;
     }
 }
 
@@ -479,7 +482,7 @@
     top: -64px;
     left: -20px;
     width: 64%;
-    height: 280px;
+    height: 250px;
     z-index: 1;
 
     @include tablet {
@@ -495,8 +498,8 @@
 .light-green-bkgrd-ef-btm {
     background-color: $color__background-green;
     position: absolute;
-    top: 98px;
-    width: 67%;
+    top: 106px;
+    width: 68%;
     height: 350px;
     z-index: 1;
     left: -10px;
@@ -519,7 +522,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 1.5rem;
     position: relative;
 
     @include tablet {
@@ -569,8 +572,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    width: 100%;
-    padding-top: .5rem;
+    width: 95%;
     z-index: 10;
     position: relative;
     @include desktop {
@@ -643,7 +645,7 @@
 }
 
 .event-feature-widget {
-    width: 98%;
+    width: 100%;
 
     h2 {
 	font-size: 24px;
@@ -668,7 +670,9 @@
     align-items: center;
     text-align: center;
     background-color: $color__background-grey;
-    padding: 2rem 0.5rem 4.5rem 0.5rem;
+		padding: 2rem 0.5rem 4.5rem 0.5rem;
+		position: relative;
+		z-index: 10;
 }
 .priority-header {
     h2 {
@@ -711,7 +715,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 98%;
     @include desktop {
 	flex-direction: row;
 	justify-content: space-between;
