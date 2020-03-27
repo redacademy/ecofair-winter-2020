@@ -1197,6 +1197,7 @@
 		padding: .6rem 4rem;
 		background-color: $color__green-1;
 	    }
+	    //Drop down styles
 	    &:nth-of-type(1) {
 		position: relative;
 		.wpcf7-form-control-wrap {
@@ -1207,6 +1208,7 @@
 			margin: .1rem 95% 0;
 			color: black;
 			position: absolute;
+			pointer-events: none;
 		    }
 		}
 	    }
