@@ -57,6 +57,7 @@ function sponsor_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'menu_icon'             => 'dashicons-megaphone',
 	);
 	register_post_type( 'sponsor_type', $args );
 
