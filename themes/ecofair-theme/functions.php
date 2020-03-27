@@ -115,30 +115,29 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style('flickity-css', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
-
-	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), false, true );
-	wp_enqueue_script( 'flickity-hash-js', 'https://unpkg.com/flickity-hash@1/hash.js', array(), false, true );
-	wp_enqueue_script( 'flickity-start-js', get_template_directory_uri() . '/build/js/start-carousel.min.js', array('flickity-js'), false, true );
-
-	wp_enqueue_script( 'volunteer-dropdown-start-js', get_template_directory_uri() . '/build/js/volunteer-dropdown.min.js', array(), false, true );
-	wp_localize_script('volunteer-dropdown-start-js', 'projectsListVolunteer', array(
-	    'projectsList' => get_posts(array(
-		'post_type'       => 'community_programs', 
-		'posts_per_page'  => -1,
-		'orderby'         => 'date',
-		'order'           => 'ASC',
-		'tag'             => 'volunteer'
-	    )),
-	));
 	
-	wp_enqueue_script( 'volunteer-success-start-js', get_template_directory_uri() . '/build/js/volunteer-success-submit.min.js', array(), false, true );
-	wp_localize_script('volunteer-success-start-js', 'homeUrl', array(
-	    'url' => get_permalink( get_page_by_title( 'Submitted!' ) )
-	));
+	if( is_front_page() || is_archive('workshop') || is_archive('volunteer') ) {
+	    wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), false, true );
+	    wp_enqueue_script( 'flickity-hash-js', 'https://unpkg.com/flickity-hash@1/hash.js', array(), false, true );
+	    wp_enqueue_script( 'flickity-start-js', get_template_directory_uri() . '/build/js/start-carousel.min.js', array('flickity-js'), false, true );
+	} elseif ( is_page('volunteer') ) {
+	    wp_enqueue_script( 'volunteer-dropdown-start-js', get_template_directory_uri() . '/build/js/volunteer-dropdown.min.js', array(), false, true );
+	    wp_localize_script('volunteer-dropdown-start-js', 'projectsListVolunteer', array(
+		'projectsList' => get_posts(array(
+		    'post_type'       => 'community_programs', 
+		    'posts_per_page'  => -1,
+		    'orderby'         => 'date',
+		    'order'           => 'ASC',
+		    'tag'             => 'volunteer'
+		)),
+	    ));
+	    wp_enqueue_script( 'volunteer-success-start-js', get_template_directory_uri() . '/build/js/volunteer-success-submit.min.js', array(), false, true );
+	    wp_localize_script('volunteer-success-start-js', 'homeUrl', array(
+		'url' => get_permalink( get_page_by_title( 'Submitted!' ) )
+	    ));
+	} 
 
 	wp_enqueue_script( 'menu-js', get_template_directory_uri() . '/build/js/menu.min.js', array(), false, true );
-	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
