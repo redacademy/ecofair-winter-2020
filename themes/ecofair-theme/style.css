@@ -941,8 +941,10 @@ Front page
     font-size: 4.5rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    line-height: 1.2;
-    width: 30%; }
+    line-height: 1.2; }
+    @media screen and (min-width: 768px) {
+      .event-info .event-title {
+        width: 30%; } }
     @media screen and (min-width: 1080px) {
       .event-info .event-title {
         font-size: 3.5rem; } }
@@ -1110,7 +1112,9 @@ Front page
   background-color: #F4F0ED;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 5; }
   @media screen and (min-width: 1080px) {
     .mission-statement {
       padding-top: 5rem;
@@ -1140,7 +1144,8 @@ Front page
 
 .widget-area {
   padding-bottom: 4rem;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  width: 98%; }
   @media screen and (min-width: 768px) {
     .widget-area {
       padding-top: 2.5rem;
@@ -1288,6 +1293,13 @@ Front page
       padding-top: 3rem;
       width: 100%;
       z-index: 5; } }
+
+@media screen and (min-width: 1080px) {
+  .features-li {
+    border-bottom: 8px solid #00B46E;
+    position: absolute;
+    top: 10px;
+    width: 75%; } }
 
 .drone-img-1 {
   background-image: url(../assets/images/droneshot01.jpeg);
@@ -1792,6 +1804,298 @@ Front page
     .error-img {
       height: 37.5rem;
       width: 23.5rem; } }
+
+/* 
+*
+Volunteer and Donate page
+*
+*/
+.page-volunteer .site-content,
+.page-donate .site-content {
+  position: relative; }
+
+.page-volunteer .hentry,
+.page-donate .hentry {
+  margin: 0; }
+
+.page-volunteer .background-grey-box,
+.page-donate .background-grey-box {
+  position: absolute;
+  width: 30vw;
+  background: #F4F0ED;
+  z-index: 0;
+  height: 100%;
+  right: 0; }
+
+.page-volunteer .background-green-box,
+.page-donate .background-green-box {
+  position: absolute;
+  width: 100%;
+  background: #D9EEE6;
+  z-index: 0;
+  height: 65%;
+  bottom: 0; }
+  @media screen and (min-width: 1080px) {
+    .page-volunteer .background-green-box,
+    .page-donate .background-green-box {
+      height: 63%; } }
+
+.page-volunteer .content-area,
+.page-donate .content-area {
+  margin: 6.25rem auto 0rem; }
+  @media screen and (min-width: 1080px) {
+    .page-volunteer .content-area,
+    .page-donate .content-area {
+      max-width: 1176px; } }
+  .page-volunteer .content-area .volunteer-content,
+  .page-volunteer .content-area .donate-content,
+  .page-donate .content-area .volunteer-content,
+  .page-donate .content-area .donate-content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    -webkit-column-gap: 4%;
+       -moz-column-gap: 4%;
+            column-gap: 4%; }
+    .page-volunteer .content-area .volunteer-content .entry-header,
+    .page-volunteer .content-area .donate-content .entry-header,
+    .page-donate .content-area .volunteer-content .entry-header,
+    .page-donate .content-area .donate-content .entry-header {
+      grid-column: 1 / 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page-volunteer .content-area .volunteer-content .entry-header h1,
+      .page-volunteer .content-area .donate-content .entry-header h1,
+      .page-donate .content-area .volunteer-content .entry-header h1,
+      .page-donate .content-area .donate-content .entry-header h1 {
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 80%;
+        border-bottom: 0.25rem solid #00B46E;
+        padding-bottom: 1rem; }
+        @media screen and (min-width: 1080px) {
+          .page-volunteer .content-area .volunteer-content .entry-header h1,
+          .page-volunteer .content-area .donate-content .entry-header h1,
+          .page-donate .content-area .volunteer-content .entry-header h1,
+          .page-donate .content-area .donate-content .entry-header h1 {
+            font-size: 2rem;
+            width: 50%; } }
+    .page-volunteer .content-area .volunteer-content .entry-content,
+    .page-volunteer .content-area .donate-content .entry-content,
+    .page-donate .content-area .volunteer-content .entry-content,
+    .page-donate .content-area .donate-content .entry-content {
+      grid-column: 1/ 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 0; }
+      .page-volunteer .content-area .volunteer-content .entry-content p,
+      .page-volunteer .content-area .donate-content .entry-content p,
+      .page-donate .content-area .volunteer-content .entry-content p,
+      .page-donate .content-area .donate-content .entry-content p {
+        z-index: 1;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 2rem; }
+        @media screen and (min-width: 1080px) {
+          .page-volunteer .content-area .volunteer-content .entry-content p,
+          .page-volunteer .content-area .donate-content .entry-content p,
+          .page-donate .content-area .volunteer-content .entry-content p,
+          .page-donate .content-area .donate-content .entry-content p {
+            width: 50%;
+            margin-bottom: 5rem; } }
+      .page-volunteer .content-area .volunteer-content .entry-content .wpcf7,
+      .page-volunteer .content-area .donate-content .entry-content .wpcf7,
+      .page-donate .content-area .volunteer-content .entry-content .wpcf7,
+      .page-donate .content-area .donate-content .entry-content .wpcf7 {
+        width: 90%;
+        padding-bottom: 3rem; }
+        .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
+        .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
+        .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
+        .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          @media screen and (min-width: 1080px) {
+            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
+            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
+            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
+            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
+              display: grid;
+              grid-template-columns: repeat(12, 1fr);
+              grid-template-rows: repeat(5, 6rem);
+              -webkit-column-gap: 1%;
+                 -moz-column-gap: 1%;
+                      column-gap: 1%; } }
+          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
+          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
+          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
+          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+            text-align: left;
+            width: 100%; }
+            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
+            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
+            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
+            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
+              padding-left: 1rem; }
+            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
+            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input,
+            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
+            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input {
+              background-color: transparent; }
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder {
+                font-style: italic;
+                opacity: 1;
+                color: #000000; }
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder {
+                font-style: italic;
+                opacity: 1;
+                color: #000000; }
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder {
+                font-style: italic;
+                opacity: 1;
+                color: #000000; }
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder {
+                font-style: italic;
+                opacity: 1;
+                color: #000000; }
+            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
+              color: #fff;
+              text-transform: uppercase;
+              border: none;
+              padding: .6rem 4rem;
+              background-color: #00B46E; }
+            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
+            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
+            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
+            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) {
+              position: relative; }
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before {
+                font-family: 'Font Awesome 5 Free';
+                content: '\f107';
+                font-weight: 900;
+                margin: .1rem 95% 0;
+                color: black;
+                position: absolute; }
+            @media screen and (min-width: 1080px) {
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
+                height: 100%;
+                margin-bottom: 0;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                grid-column: 1 / 6; }
+                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
+                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
+                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
+                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
+                  width: 100%;
+                  padding-left: 0; }
+                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
+                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
+                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
+                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6) {
+                  grid-column: 7 / 12;
+                  grid-row: 1 / 3; }
+                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
+                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
+                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:last-of-type,
+                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:last-of-type {
+                  grid-column: 7 / 10;
+                  grid-row: 3 / 4;
+                  height: auto;
+                  margin-top: 3rem; }
+                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
+                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
+                  width: 100%; } }
+          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
+            z-index: 1;
+            background-color: #FFF;
+            margin: 1rem auto 2rem;
+            width: 100%;
+            text-align: center; }
+            @media screen and (min-width: 1080px) {
+              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
+              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
+                grid-column: 1 / 13; } }
+  .page-volunteer .content-area .donate-content .entry-content p,
+  .page-donate .content-area .donate-content .entry-content p {
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 1080px) {
+      .page-volunteer .content-area .donate-content .entry-content p,
+      .page-donate .content-area .donate-content .entry-content p {
+        width: 80%; } }
+  .page-volunteer .content-area .donate-content .entry-content .donate-button,
+  .page-donate .content-area .donate-content .entry-content .donate-button {
+    z-index: 1;
+    margin: 2rem 0 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    width: 60%; }
+    @media screen and (min-width: 1080px) {
+      .page-volunteer .content-area .donate-content .entry-content .donate-button,
+      .page-donate .content-area .donate-content .entry-content .donate-button {
+        width: 40%; } }
 
 .post-type-archive-workshop .hfeed .site-content,
 .post-type-archive-community_programs .hfeed .site-content {
@@ -2541,6 +2845,60 @@ Front page
       .site-footer .rights-reserved {
         text-align: center; } }
 
+.post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  grid-column: 1 / 4;
+  grid-row: 6; }
+  @media screen and (min-width: 1080px) {
+    .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative;
+      margin-bottom: -6%;
+      z-index: 2; } }
+  .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-numbers {
+    margin-top: 3rem; }
+  .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (min-width: 1080px) {
+      .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+    .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev,
+    .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next {
+      margin: 0 auto; }
+      @media screen and (min-width: 1080px) {
+        .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev,
+        .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next {
+          margin: 0; } }
+      .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev i,
+      .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next i {
+        padding: 1.5rem;
+        margin: .5rem;
+        border: 0.2rem solid #00B46E;
+        border-radius: 100%;
+        background-color: white; }
+    .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .community-project-logo {
+      height: 8rem;
+      width: 80%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      @media screen and (min-width: 1080px) {
+        .post-type-archive-community_programs .hfeed .site-content .content-area .carousel-pagination .carousel-pagination-buttons .community-project-logo {
+          display: none; } }
+
 .post-type-archive-community_programs .hfeed .site-content .community_programs {
   margin: 0 auto;
   display: grid;
@@ -2645,53 +3003,6 @@ Front page
       padding: .5rem;
       width: 50%;
       margin: .5rem 0 0 .5rem; }
-  .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    grid-column: 1 / 4;
-    grid-row: 6; }
-    @media screen and (min-width: 1080px) {
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination {
-        grid-column: 7 / 13;
-        grid-row: 1 / 3; } }
-    .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-numbers {
-      margin-top: 3rem; }
-    .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      @media screen and (min-width: 1080px) {
-        .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons {
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev,
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next {
-        margin: 0 auto; }
-        @media screen and (min-width: 1080px) {
-          .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev,
-          .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next {
-            margin: 0; } }
-        .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-prev i,
-        .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .carousel-pagination-next i {
-          padding: 1.5rem;
-          margin: .5rem;
-          border: 0.2rem solid #00B46E;
-          border-radius: 100%; }
-      .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .community-project-logo {
-        height: 8rem;
-        width: 80%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media screen and (min-width: 1080px) {
-          .post-type-archive-community_programs .hfeed .site-content .community_programs .carousel-pagination .carousel-pagination-buttons .community-project-logo {
-            display: none; } }
   .post-type-archive-community_programs .hfeed .site-content .community_programs .light-green-box {
     display: none; }
   .post-type-archive-community_programs .hfeed .site-content .community_programs .light-grey-box {
@@ -2728,319 +3039,17 @@ Front page
       top: 50%;
       height: 50%; } }
 
-.page-volunteer .site-content,
-.page-donate .site-content {
-  position: relative; }
-
-.page-volunteer .hentry,
-.page-donate .hentry {
-  margin: 0; }
-
-.page-volunteer .background-grey-box,
-.page-donate .background-grey-box {
+.page-about .about-box {
   position: absolute;
-  width: 30vw;
-  background: #F4F0ED;
   z-index: 0;
-  height: 100%;
-  right: 0; }
-
-.page-volunteer .background-green-box,
-.page-donate .background-green-box {
-  position: absolute;
   width: 100%;
-  background: #D9EEE6;
-  z-index: 0;
-  height: 62%;
-  bottom: 0; }
-  @media screen and (min-width: 1080px) {
-    .page-volunteer .background-green-box,
-    .page-donate .background-green-box {
-      height: 63%; } }
-
-.page-volunteer .content-area,
-.page-donate .content-area {
-  margin: 6.25rem auto 0rem; }
-  @media screen and (min-width: 1080px) {
-    .page-volunteer .content-area,
-    .page-donate .content-area {
-      max-width: 1176px; } }
-  .page-volunteer .content-area .volunteer-content,
-  .page-volunteer .content-area .donate-content,
-  .page-donate .content-area .volunteer-content,
-  .page-donate .content-area .donate-content {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    -webkit-column-gap: 4%;
-       -moz-column-gap: 4%;
-            column-gap: 4%; }
-    .page-volunteer .content-area .volunteer-content .entry-header,
-    .page-volunteer .content-area .donate-content .entry-header,
-    .page-donate .content-area .volunteer-content .entry-header,
-    .page-donate .content-area .donate-content .entry-header {
-      grid-column: 1 / 4;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .page-volunteer .content-area .volunteer-content .entry-header h1,
-      .page-volunteer .content-area .donate-content .entry-header h1,
-      .page-donate .content-area .volunteer-content .entry-header h1,
-      .page-donate .content-area .donate-content .entry-header h1 {
-        z-index: 1;
-        font-size: 1.5rem;
-        text-align: center;
-        width: 80%;
-        border-bottom: 0.25rem solid #00B46E;
-        padding-bottom: 1rem; }
-        @media screen and (min-width: 1080px) {
-          .page-volunteer .content-area .volunteer-content .entry-header h1,
-          .page-volunteer .content-area .donate-content .entry-header h1,
-          .page-donate .content-area .volunteer-content .entry-header h1,
-          .page-donate .content-area .donate-content .entry-header h1 {
-            font-size: 2rem;
-            width: 50%; } }
-    .page-volunteer .content-area .volunteer-content .entry-content,
-    .page-volunteer .content-area .donate-content .entry-content,
-    .page-donate .content-area .volunteer-content .entry-content,
-    .page-donate .content-area .donate-content .entry-content {
-      grid-column: 1/ 4;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-items: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-top: 0; }
-      .page-volunteer .content-area .volunteer-content .entry-content p,
-      .page-volunteer .content-area .donate-content .entry-content p,
-      .page-donate .content-area .volunteer-content .entry-content p,
-      .page-donate .content-area .donate-content .entry-content p {
-        z-index: 1;
-        width: 80%;
-        text-align: center;
-        margin: 0 auto 2rem; }
-        @media screen and (min-width: 1080px) {
-          .page-volunteer .content-area .volunteer-content .entry-content p,
-          .page-volunteer .content-area .donate-content .entry-content p,
-          .page-donate .content-area .volunteer-content .entry-content p,
-          .page-donate .content-area .donate-content .entry-content p {
-            width: 50%;
-            margin-bottom: 5rem; } }
-      .page-volunteer .content-area .volunteer-content .entry-content .wpcf7,
-      .page-volunteer .content-area .donate-content .entry-content .wpcf7,
-      .page-donate .content-area .volunteer-content .entry-content .wpcf7,
-      .page-donate .content-area .donate-content .entry-content .wpcf7 {
-        width: 90%; }
-        .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-        .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
-        .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-        .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
-          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: reverse;
-                -ms-flex-direction: row-reverse;
-                    flex-direction: row-reverse;
-            text-align: left;
-            width: 100%; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
-              padding-left: 1rem; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input {
-              background-color: transparent; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-webkit-input-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-moz-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::-ms-input-placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input::placeholder,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input::placeholder {
-                font-style: italic;
-                opacity: 1;
-                color: #000000; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
-              color: #fff;
-              text-transform: uppercase;
-              border: none;
-              padding: .6rem 4rem;
-              background-color: #00B46E; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) {
-              margin-bottom: 1rem;
-              position: relative; }
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) .wpcf7-form-control-wrap:before {
-                font-family: 'Font Awesome 5 Free';
-                content: '\f107';
-                font-weight: 900;
-                margin: .1rem 95% 0;
-                color: black;
-                position: absolute; }
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4) {
-              margin-bottom: 3rem; }
-            @media screen and (min-width: 1080px) {
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p {
-                height: 100%;
-                margin-bottom: 0;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p label,
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p label {
-                  width: 100%;
-                  padding-left: 0; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(1) {
-                  grid-column: 1 / 6;
-                  margin-bottom: 0; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(2),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(2),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(2),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(2) {
-                  grid-column: 1 / 6; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(3),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(3),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(3),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(3) {
-                  grid-column: 1 / 6; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(4) {
-                  grid-column: 1 / 6;
-                  margin-bottom: 0; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(5),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(5),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(5),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(5) {
-                  grid-column: 7 / 12;
-                  grid-row: 1 / 3; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6),
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p:nth-of-type(6) {
-                  grid-column: 7 / 10;
-                  grid-row: 3 / 4;
-                  height: auto; }
-                .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"],
-                .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form p input[type="submit"] {
-                  width: 100%; } }
-          .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-          .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
-            z-index: 1;
-            background-color: #FFF;
-            margin: 1rem auto 2rem;
-            width: 100%;
-            text-align: center; }
-            @media screen and (min-width: 1080px) {
-              .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output,
-              .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form .wpcf7-response-output {
-                grid-column: 1 / 13; } }
-          @media screen and (min-width: 1080px) {
-            .page-volunteer .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-            .page-volunteer .content-area .donate-content .entry-content .wpcf7 .wpcf7-form,
-            .page-donate .content-area .volunteer-content .entry-content .wpcf7 .wpcf7-form,
-            .page-donate .content-area .donate-content .entry-content .wpcf7 .wpcf7-form {
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              grid-template-rows: 6rem repeat(3, 6rem);
-              -webkit-column-gap: 1%;
-                 -moz-column-gap: 1%;
-                      column-gap: 1%; } }
-  .page-volunteer .content-area .donate-content .entry-content p,
-  .page-donate .content-area .donate-content .entry-content p {
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 1080px) {
-      .page-volunteer .content-area .donate-content .entry-content p,
-      .page-donate .content-area .donate-content .entry-content p {
-        width: 80%; } }
-  .page-volunteer .content-area .donate-content .entry-content .donate-button,
-  .page-donate .content-area .donate-content .entry-content .donate-button {
-    z-index: 1;
-    margin: 2rem 0 4rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: white;
-    width: 60%; }
-    @media screen and (min-width: 1080px) {
-      .page-volunteer .content-area .donate-content .entry-content .donate-button,
-      .page-donate .content-area .donate-content .entry-content .donate-button {
-        width: 40%; } }
+  height: 44.9rem;
+  background-color: #F4F0ED;
+  margin-top: 16.2rem; }
 
 .page-about .entry-header {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3052,27 +3061,30 @@ Front page
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 200px; }
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    width: 12.5rem; }
     .page-about .entry-header .title-content h4 {
-      padding-right: 5px;
-      padding-bottom: 8px;
-      border-bottom: 3px solid #00b46e; }
+      padding-right: 0.3125rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1875rem solid #00b46e; }
   .page-about .entry-header .top-image2 {
-    padding-right: 8px; }
+    padding-right: 0.5rem; }
 
 .page-about .our-mission {
+  position: relative;
+  z-index: 2;
   text-align: start;
   margin: 0 auto;
-  padding-left: 8px;
-  padding-right: 7px;
-  background-color: #F4F0ED; }
+  padding-left: 0.5rem;
+  padding-right: 0.4375rem; }
   .page-about .our-mission h2 {
-    padding-bottom: 20px;
-    font-size: 20px; }
+    padding-bottom: 1.25rem;
+    font-size: 1.25rem; }
 
 .page-about .our-values {
+  position: relative;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3084,41 +3096,63 @@ Front page
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: white;
   padding-top: 2rem;
   padding-bottom: 1rem;
   width: 100%; }
   .page-about .our-values h5 {
     -webkit-margin-before: .7rem;
             margin-block-start: .7rem; }
-
-.page-about .values-title {
-  padding-bottom: 55px; }
-  .page-about .values-title h2 {
-    font-size: 1.5rem; }
-  .page-about .values-title h4 {
-    font-size: 2.25rem; }
-
-.page-about .graph-icon {
-  text-align: center;
-  padding-bottom: 35px; }
-
-.page-about .graph {
-  width: 100px; }
-
-.page-about .books-icon {
-  text-align: center;
-  padding-bottom: 35px; }
-
-.page-about .books {
-  width: 100px; }
-
-.page-about .unity-icon {
-  text-align: center;
-  padding-bottom: 35px; }
-
-.page-about .unity {
-  width: 100px; }
+  .page-about .our-values .values-title {
+    padding-bottom: 3.4375rem; }
+    .page-about .our-values .values-title h2 {
+      font-size: 1.5rem; }
+    .page-about .our-values .values-title h4 {
+      font-size: 2.25rem; }
+  .page-about .our-values .graph-icon {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 2.1875rem; }
+    .page-about .our-values .graph-icon .graph-box {
+      position: absolute;
+      z-index: -1;
+      width: 5.4rem;
+      height: 5.4rem;
+      background-color: #d9eee6;
+      margin-left: 3.5rem;
+      margin-top: -2rem; }
+  .page-about .our-values .graph {
+    width: 6.25rem; }
+  .page-about .our-values .books-icon {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 2.1875rem; }
+    .page-about .our-values .books-icon .books-box {
+      position: absolute;
+      z-index: -1;
+      width: 5.4rem;
+      height: 5.4rem;
+      background-color: #d9eee6;
+      margin-left: 4.2rem;
+      margin-top: 3rem; }
+  .page-about .our-values .books {
+    width: 6.25rem; }
+  .page-about .our-values .unity-icon {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 2.1875rem; }
+    .page-about .our-values .unity-icon .unity-box {
+      position: absolute;
+      z-index: -1;
+      width: 5.4rem;
+      height: 5.4rem;
+      background-color: #d9eee6;
+      margin-left: -2.42rem;
+      margin-top: 3rem; }
+  .page-about .our-values .unity {
+    width: 6.25rem; }
 
 .page-about .volunteer-button-about {
   background-color: #00B46E;
@@ -3132,7 +3166,7 @@ Front page
   text-decoration: none;
   color: #FDFDFD; }
   .page-about .volunteer-button-text-about p {
-    margin: 0px; }
+    margin: 0rem; }
 
 .page-about .donate-button-about {
   border: solid #00B46E 0.15rem;
@@ -3145,22 +3179,27 @@ Front page
   text-decoration: none;
   color: #00B46E; }
   .page-about .donate-button-text-about p {
-    margin: 0px; }
+    margin: 0rem; }
 
 .page-about .founders {
   padding-top: 3.5rem;
   padding-bottom: 1rem;
-  background-color: #F4F0ED; }
+  background-color: #F4F0ED;
+  position: relative;
+  z-index: 0; }
   .page-about .founders p {
+    position: relative;
+    z-index: 2;
     background-color: #F4F0ED;
-    -webkit-margin-after: 0em;
-            margin-block-end: 0em; }
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem; }
   .page-about .founders .founder1 {
-    padding-bottom: 4rem; }
-    .page-about .founders .founder1 .box {
+    padding-right: 1rem;
+    padding-bottom: 2rem; }
+    .page-about .founders .founder1 .founder1-box1 {
       background-color: #00b46e;
-      padding: 113px 85px 10px 25px;
-      background-position: top left; }
+      padding: .3rem 1.6em .2rem 0rem;
+      margin-left: 12.9rem; }
     .page-about .founders .founder1 .image-name {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3171,35 +3210,88 @@ Front page
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .page-about .founders .founder1 .image-name .image {
+        padding-left: 1rem;
+        position: relative;
+        z-index: 2;
         width: 50%; }
       .page-about .founders .founder1 .image-name h5 {
+        position: relative;
+        z-index: 2;
         width: 40%;
         -ms-flex-item-align: center;
             align-self: center;
-        padding-left: 8px;
+        padding-left: 0.5rem;
+        border-bottom: 0.1875rem solid #00b46e; }
+      .page-about .founders .founder1 .image-name .founder1-box2 {
+        position: absolute;
+        z-index: 0;
         background-color: #d9eee6;
-        border-bottom: 3px solid #00b46e; }
+        width: 100%;
+        height: 13rem;
+        margin-top: 3rem;
+        margin-right: 9rem; }
+    .page-about .founders .founder1 .content {
+      padding-left: 1rem; }
+      .page-about .founders .founder1 .content .founder1-box3 {
+        position: absolute;
+        z-index: -1;
+        width: 2rem;
+        height: 3.6rem;
+        background-color: #00b46e;
+        margin-top: 17rem;
+        margin-left: 23.6rem; }
   .page-about .founders .founder2 {
     padding-bottom: 4rem; }
+    .page-about .founders .founder2 .founder2-box1 {
+      position: absolute;
+      z-index: 1;
+      background-color: #c4da76;
+      width: 3.7rem;
+      height: 3.7rem;
+      margin-left: 11.1rem;
+      margin-top: .4rem; }
     .page-about .founders .founder2 .image-name {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
       height: auto;
+      padding-right: 1rem;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .page-about .founders .founder2 .image-name .image {
+        padding-top: 2rem;
+        position: relative;
+        z-index: 0;
         width: 50%; }
       .page-about .founders .founder2 .image-name h5 {
         width: 40%;
         -ms-flex-item-align: center;
             align-self: center;
-        padding-left: 8px;
-        border-bottom: 3px solid #99B240; }
+        padding-left: 0.5rem;
+        border-bottom: 0.1875rem solid #c4da76; }
+    .page-about .founders .founder2 .content p {
+      padding-left: 1rem;
+      position: relative;
+      z-index: 2; }
+      .page-about .founders .founder2 .content p .founder2-box2 {
+        position: absolute;
+        z-index: -1;
+        background-color: #c4da76;
+        width: 3.5rem;
+        height: 15rem;
+        margin-right: -3rem; }
   .page-about .founders .founder3 {
     padding-bottom: 4rem; }
+    .page-about .founders .founder3 .founder3-box1 {
+      position: absolute;
+      z-index: 3;
+      background-color: #2AD8CC;
+      width: 3.7rem;
+      height: 3.7rem;
+      margin-left: 11.4rem;
+      margin-top: -1.5rem; }
     .page-about .founders .founder3 .image-name {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3210,11 +3302,32 @@ Front page
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .page-about .founders .founder3 .image-name .image {
+        padding-left: 1rem;
+        position: relative;
+        z-index: 2;
         width: 50%; }
       .page-about .founders .founder3 .image-name h5 {
         width: 35%;
         -ms-flex-item-align: center;
             align-self: center;
-        padding-left: 8px;
-        background-color: #C8FCE8;
-        border-bottom: 3px solid #2AD8CC; }
+        padding-left: 0.5rem;
+        background-color: #d3ebe2;
+        border-bottom: 0.1875rem solid #2AD8CC; }
+      .page-about .founders .founder3 .image-name .founder3-box2 {
+        position: absolute;
+        z-index: -1;
+        background-color: #d3ebe2;
+        width: 100%;
+        height: 18.6rem;
+        margin-right: 9rem;
+        margin-top: 7rem; }
+    .page-about .founders .founder3 .content {
+      padding-left: 1rem; }
+      .page-about .founders .founder3 .content p .founder3-box3 {
+        position: absolute;
+        z-index: -3;
+        background-color: #d3ebe2;
+        width: 100%;
+        height: 5rem;
+        margin-right: 9rem;
+        margin-left: 0rem; }

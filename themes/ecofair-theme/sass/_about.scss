@@ -1,99 +1,143 @@
 .page-about {
+ 
+  .about-box {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 44.9rem;
+    background-color: $color__background-grey;
+    margin-top: 16.2rem;
 
+  }
   
   .entry-header {
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 100%;
     display: flex;
-    .top-image1 {
-      
-    }
 
     .title-content {
       display: flex;
       align-self: center;
-      padding-right: 10px;
-      padding-left: 10px;
-      width: 200px;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      width: 12.5rem;
       h4 {
-        padding-right: 5px;
-        padding-bottom: 8px;
-        border-bottom: 3px solid #00b46e;
+        padding-right: 0.3125rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1875rem solid #00b46e;
       }
     }
-
+    
     .top-image2 {
-      padding-right: 8px;
+      padding-right: 0.5rem;
     }
-
-    .top-image3 {
-
-    }
+    
   }
 
   .our-mission {
+    position: relative;
+    z-index: 2;
     text-align: start;
     margin: 0 auto;
-    padding-left: 8px;
-    padding-right: 7px;
-    background-color: $color__background-grey;
+    padding-left: 0.5rem;
+    padding-right: 0.4375rem;
     h2{
-      padding-bottom: 20px;
-      font-size: 20px;
+      padding-bottom: 1.25rem;
+      font-size: 1.25rem;
     }
   }
 
   .our-values {
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: white;
     padding-top: 2rem;
     padding-bottom: 1rem;
     width: 100%;
     h5 {
     margin-block-start: .7rem;
     }
-  }
+  
 
-  .values-title {
-   padding-bottom: 55px;
-   h2 {
-    font-size: 1.5rem;
-   }
-   h4 {
-    font-size: 2.25rem;
-   } 
-  }
+    .values-title {
+    padding-bottom: 3.4375rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 2.25rem;
+    } 
+    }
 
-  .graph-icon {
-   text-align: center;
-   padding-bottom: 35px;
-  }
+    .graph-icon {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-bottom: 2.1875rem;
+      .graph-box {
+        position: absolute;
+        z-index: -1;
+        width: 5.4rem;
+        height: 5.4rem;
+        background-color:  #d9eee6;
+        margin-left: 3.5rem;    
+        margin-top: -2rem;    
+      
+      }
+    }
 
-  .graph {
-   width: 100px;
-  }
+    .graph {
+      width: 6.25rem;
+    }
 
-  .books-icon {
-   text-align: center;
-   padding-bottom: 35px;
-  }
+    .books-icon {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-bottom: 2.1875rem;
+      .books-box {
+        position: absolute;
+        z-index: -1;
+        width: 5.4rem;
+        height: 5.4rem;
+        background-color:  #d9eee6;
+        margin-left: 4.2rem;    
+        margin-top: 3rem;    
+      
+      }
+    }
 
-  .books {
-   width: 100px;
-  }
+    .books {
+      width: 6.25rem;
+    }
 
-  .unity-icon {
-    text-align: center;
-    padding-bottom: 35px;
-  }
+    .unity-icon {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-bottom: 2.1875rem;
+      .unity-box {
+        position: absolute;
+        z-index: -1;
+        width: 5.4rem;
+        height: 5.4rem;
+        background-color:  #d9eee6;
+        margin-left: -2.42rem;    
+        margin-top: 3rem;    
+      
+      }
+    }
 
-  .unity {
-   width: 100px;
-  }
+    .unity {
+      width: 6.25rem;
+    }
 
+  }
   .volunteer-button-about {
    background-color: $color__green-1;
    width: 90%;
@@ -107,7 +151,7 @@
    text-decoration: none;
    color: $color__background-white;;
    p {
-    margin: 0px;
+    margin: 0rem;
    }
   }
 
@@ -123,7 +167,7 @@
    text-decoration: none;
    color: $color__green-1;
    p {
-    margin: 0px;
+    margin: 0rem;
    }
   }
 
@@ -131,76 +175,173 @@
     padding-top: 3.5rem;
     padding-bottom: 1rem;
     background-color: $color__background-grey;
+    position: relative;
+    z-index: 0;
     p {
+      position: relative;
+      z-index: 2;
       background-color: $color__background-grey;
-      margin-block-end: 0em;
+      margin-block-end: 0rem;
     }
     .founder1 {
-      .box {
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+      .founder1-box1 {
         background-color: #00b46e;
-        padding: 113px 85px 10px 25px;
-        background-position: top left;
+        padding: .3rem 1.6em .2rem 0rem;
+        margin-left: 12.9rem;
       }
-      padding-bottom: 4rem;
       .image-name {
         display: flex;
         width: 100%;
         height: auto;
         justify-content: space-between;
         .image {
+          padding-left: 1rem;
+          position: relative;
+          z-index: 2;
           width: 50%;
         }
         h5 {
+          position: relative;
+          z-index: 2;
           width: 40%;
           align-self: center;
-          padding-left: 8px;
-          background-color: #d9eee6;
-          border-bottom: 3px solid #00b46e;
+          padding-left: 0.5rem;
+          border-bottom: 0.1875rem solid #00b46e;
 
         }
+        .founder1-box2 {
+          position: absolute;
+          z-index: 0;
+          background-color: #d9eee6;
+          width: 100%;
+          height: 13rem;
+          margin-top: 3rem;
+          margin-right:9rem;
+        }
       }
-      
+      .content {
+        padding-left: 1rem;
+        .founder1-box3 {
+          position: absolute;
+          z-index: -1;
+          width: 2rem;
+          height: 3.6rem;
+          background-color: #00b46e;
+          margin-top: 17rem;
+          margin-left: 23.6rem;
+        }
+      }
     }
+
     .founder2 {
       padding-bottom: 4rem;
+      
+      .founder2-box1 {
+        position: absolute;
+        z-index: 1;
+        background-color: #c4da76;
+        width: 3.7rem;
+        height: 3.7rem;
+        margin-left: 11.1rem;
+        margin-top: .4rem;
+      }
       .image-name {
         display: flex;
         width: 100%;
         height: auto;
+        padding-right: 1rem;
         justify-content: space-between;
         .image {
+          padding-top: 2rem;
+          position: relative;
+          z-index: 0;
           width: 50%;
         }
         h5 {
           width: 40%;
           align-self: center;
-          padding-left: 8px;
-          border-bottom: 3px solid $color__green-light-3;
+          padding-left: 0.5rem;
+          border-bottom: 0.1875rem solid #c4da76;
 
         }
       }
-        
+      .content {
+        p {
+          padding-left: 1rem;
+          position: relative;
+          z-index: 2;
+          .founder2-box2 {
+            position: absolute;
+            z-index: -1;
+            background-color: #c4da76;
+            width: 3.5rem;
+            height: 15rem;
+            margin-right: -3rem;
+            
+          }
+        }
+      }
     }
+
     .founder3 {
       padding-bottom: 4rem;
+      .founder3-box1 {
+        position: absolute;
+        z-index: 3;
+        background-color: $color__cyan-4;
+        width: 3.7rem;
+        height: 3.7rem;
+        margin-left: 11.4rem;
+        margin-top: -1.5rem;
+      }
       .image-name {
         display: flex;
         width: 100%;
         height: auto;
         justify-content: space-between;
+        
         .image {
+          padding-left: 1rem;
+          position: relative;
+          z-index: 2;
           width: 50%;
         }
         h5 {
           width: 35%;
           align-self: center;
-          padding-left: 8px;
-          background-color: $color__mint-4;
-          border-bottom: 3px solid $color__cyan-4;
+          padding-left: 0.5rem;
+          background-color: #d3ebe2;
+          border-bottom: 0.1875rem solid $color__cyan-4;
 
         }
+        .founder3-box2 {
+          position: absolute;
+          z-index: -1;
+          background-color: #d3ebe2;
+          width: 100%;
+          height: 18.6rem;
+          margin-right: 9rem;
+          margin-top: 7rem;
+        }
       }
-        
+      .content {
+        padding-left: 1rem;
+        p {
+          .founder3-box3 {
+            position: absolute;
+            z-index: -3;
+            background-color: #d3ebe2;
+            width: 100%;
+            height: 5rem;
+            margin-right: 9rem;
+            margin-left: 0rem;
+          
+          }
+      
+        }
+      }
     }
   }
   

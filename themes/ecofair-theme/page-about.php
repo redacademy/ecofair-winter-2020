@@ -12,11 +12,13 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<span class="about-box" ></span>
 	    	<header class="entry-header">
 
 					
 					<div class="top-image1" >
 						<img class="left" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/wavemobile1.png" alt="shore picture" />
+						
 					</div>
 					
 					<div class="title-content">
@@ -47,16 +49,19 @@ get_header(); ?>
 		        </div>
 
 				    <div class="graph-icon">
+						  <span class="graph-box" ></span>
 					    <img class="graph" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/everyaction.png" alt="graph icon" />
 					    <h5>Every Action Matters</h5>
 				    </div>
 
-				    <div class="books-icon">
+				    <div class="books-icon" >
+						<span class="books-box" ></span>
 					    <img class="books" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/education.png" alt="books icon" />
 					    <h5>Education</h5>
 				    </div>
 
 				    <div class="unity-icon">
+						<span class="unity-box" ></span>
 					    <img class="unity" src="<?php echo get_template_directory_uri(); ?>/build/assets/icons/community.png" alt="unity icon" />
 					    <h5>Community Caring</h5>
 				    </div>
@@ -91,16 +96,19 @@ get_header(); ?>
 								?>
 								
 								<div id="founder1" class="founder1">
+									<span class="founder1-box1" ></span>
 									<div class="image-name">
 										<div class="image">
-												<img src="<?php echo esc_url( $image1 ); ?>" alt="" />
-											</div>
-											<h5><?php the_sub_field('name1'); ?></h5>
+											<img src="<?php echo esc_url( $image1 ); ?>" alt="" />
 										</div>
-										<span class="box" ></span>
+										<span class="founder1-box2" ></span>
+										<h5><?php the_sub_field('name1'); ?></h5>
+										</div>
 
 										<div class="content">
-												<p><?php the_sub_field('prosopography1'); ?></p>
+											<p><span class="founder1-box3" ></span><?php the_sub_field('prosopography1'); ?></p>
+											
+
 										</div>
 								</div>
 								
@@ -120,15 +128,17 @@ get_header(); ?>
 								?>
 								
 								<div id="founder2" class="founder2">
-										<div class="image-name">
-											<h5><?php the_sub_field('name2'); ?></h5>
-										  <div class="image">
-												<img src="<?php echo esc_url( $image2 ); ?>" alt="" />
+									<span class="founder2-box1" ></span>
+									<div class="image-name">
+										<h5><?php the_sub_field('name2'); ?></h5>
+										<div class="image">
+											<img src="<?php echo esc_url( $image2 ); ?>" alt="" />
 						          </div>
 										</div>
 
 										<div class="content">
-												<p><?php the_sub_field('prosopography2'); ?></p>
+											<p><span class="founder2-box2" ></span><?php the_sub_field('prosopography2'); ?></p>
+											
 										</div>
 								</div>
 								
@@ -149,15 +159,18 @@ get_header(); ?>
 								?>
 								
 								<div id="founder3" class="founder3">
+								<span class="founder3-box1" ></span>
 										<div class="image-name">
 										  <div class="image">
 												<img src="<?php echo esc_url( $image3 ); ?>" alt="" />
-					          	</div>
+											</div>
+											<span class="founder3-box2" ></span>
 											<h5><?php the_sub_field('name3'); ?></h5>
 										</div>
 
 										<div class="content">
-												<p><?php the_sub_field('prosopography3'); ?></p>
+											
+												<p><span class="founder3-box3" ></span><?php the_sub_field('prosopography3'); ?></p>
 										</div>
 								</div>
 								
