@@ -2,6 +2,7 @@
     .hfeed{
 	.site-content{
 	    .content-area{
+				padding-bottom: 2rem;
 		// Carousel styles
 		.carousel-pagination {
 				display: flex;
@@ -74,11 +75,12 @@
 		position: absolute;
 		background-color: $color__background-grey;
 		z-index: 0;
-		top: 11%;
-		height: 32%;
+		top: 100px;
+		height: 33%;
 		width: 100%;
+
 		@include tablet {
-			height: 38%;
+			height: 35%;
 		}
 		@include desktop {
 		    top: 50%;
@@ -187,14 +189,15 @@
 	    margin: 0;
 	}
 	a {
-	    text-decoration: none;
+			text-decoration: none;
+			font-family: $font__bold;
 	    text-align: center;
 	    font-weight: 700;
 	    color: white;
 	    background-color: $color__green-1;
 	    padding: .5rem;
 	    width: 50%;
-			margin: .5rem 0 0 .5rem;
+			margin: 1rem 0 0 .5rem;
 			text-transform: uppercase;
 	}
     }
