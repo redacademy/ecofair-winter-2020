@@ -12,16 +12,19 @@
 				grid-row: 6;
 
 				@include tablet {
+					// grid-column: 5 / 13;
+					// grid-row: 1;
 					align-items: flex-start;
 				}
 
 		    @include desktop {
 					grid-column: 5 / 13;
-		    grid-row: 1;
-			position: relative;
-			margin-bottom: -6%;
-			z-index: 2;
-			justify-self: right;
+					grid-row: 1;
+					position: relative;
+					margin-bottom: -6%;
+					z-index: 2;
+					align-items: flex-end;
+					flex-direction: column;
 		    }
 		    .carousel-pagination-numbers {
 			margin-top: 3rem;
