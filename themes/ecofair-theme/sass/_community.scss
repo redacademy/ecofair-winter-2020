@@ -4,16 +4,23 @@
 	    .content-area{
 		// Carousel styles
 		.carousel-pagination {
-		    flex-direction: column-reverse;
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: center;
 		    grid-column: 1 / 4;
-		    grid-row: 6;
+				grid-row: 6;
+
+				@include tablet {
+					align-items: flex-start;
+				}
+
 		    @include desktop {
-					grid-column: 5 / 12;
-		    grid-row: 6;
-			flex-direction: column;
+					grid-column: 5 / 13;
+		    grid-row: 1;
 			position: relative;
 			margin-bottom: -6%;
 			z-index: 2;
+			justify-self: right;
 		    }
 		    .carousel-pagination-numbers {
 			margin-top: 3rem;
@@ -21,6 +28,7 @@
 		    .carousel-pagination-buttons {
 			align-items: center;
 			justify-content: center;
+			width: 22rem;
 			@include desktop {
 			    justify-content: flex-end;
 			}
@@ -40,7 +48,7 @@
 			}
 			.community-project-logo {
 			    height: 8rem;
-			    width: 80%;
+			    width: 100%;
 			    background-position: center;
 			    background-size: contain;
 			    background-repeat: no-repeat;
@@ -52,19 +60,26 @@
 		}
 	    }
 	    .background-green-box {
+				display: none;
+				@include desktop {
+					display: flex;
 		position: absolute;
 		background-color: $color__background-green;
 		height: 100%;
 		width: 30vw;
 		z-index: 0;
+				}
 	    }
 	    .background-grey-box {
 		position: absolute;
 		background-color: $color__background-grey;
 		z-index: 0;
-		top: 30%;
-		height: 70%;
+		top: 11%;
+		height: 32%;
 		width: 100%;
+		@include tablet {
+			height: 38%;
+		}
 		@include desktop {
 		    top: 50%;
 		    height: 50%;
@@ -179,7 +194,8 @@
 	    background-color: $color__green-1;
 	    padding: .5rem;
 	    width: 50%;
-	    margin: .5rem 0 0 .5rem;
+			margin: .5rem 0 0 .5rem;
+			text-transform: uppercase;
 	}
     }
     .light-green-box {

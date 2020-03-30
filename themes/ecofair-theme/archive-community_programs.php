@@ -95,7 +95,7 @@ get_header(); ?>
 				<?php endif; ?>
 				<div class="entry-content">
 				    <?php the_content(); ?>
-				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Learn More</a>
+				    <a class="learn-more-button" href="<?php echo get_field("link"); ?>">Go To Site</a>
 				</div><!-- .entry-content -->
 				<div class="green-line"></div>
 			    </article><!-- #post-## -->
