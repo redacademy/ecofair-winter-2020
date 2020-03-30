@@ -8,6 +8,8 @@
 		    grid-column: 1 / 4;
 		    grid-row: 6;
 		    @include desktop {
+					grid-column: 5 / 12;
+		    grid-row: 6;
 			flex-direction: column;
 			position: relative;
 			margin-bottom: -6%;
