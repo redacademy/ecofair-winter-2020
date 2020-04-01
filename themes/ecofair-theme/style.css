@@ -2972,6 +2972,9 @@ object {
       background-color: #F4F0ED;
       margin-top: 6.1rem; } }
 
+.page-about .entry-header .entry-header-desktop {
+  display: none; }
+
 .page-about .entry-header .entry-header-mobile {
   position: relative;
   z-index: 2;
@@ -2980,8 +2983,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .page-about .entry-header .entry-header-mobile .entry-header-desktop {
-    display: none; }
   .page-about .entry-header .entry-header-mobile .title-content {
     display: -webkit-box;
     display: -ms-flexbox;
