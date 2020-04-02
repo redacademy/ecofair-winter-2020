@@ -25,6 +25,8 @@ get_header(); ?>
 							<h4>About </h4>
 							<h4>Us</h4>
 						</div>
+
+						
 						
 						<div class="top-image-2" >
 							<img class="middle" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/wavemobile2.png" alt="shore picture2" />
@@ -39,7 +41,7 @@ get_header(); ?>
 					<section class="entry-header-desktop">
 						
 						<div class="top-image1" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture1 " />
+							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/wavedesktop1.png" alt="shore picture1 " />
 						</div>
 						
 						<div class="top-image2" >
@@ -61,7 +63,7 @@ get_header(); ?>
 					
 				</header><!-- .entry-header -->
 
-				<sectio class="page-content">
+				<section class="page-content">
 				
 				  <div class="our-mission">
 						<?php the_content(); ?>
