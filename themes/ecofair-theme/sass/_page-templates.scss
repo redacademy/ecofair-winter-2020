@@ -1198,9 +1198,11 @@
 	.donate-button {
 	    z-index: 1;
 	    margin: 2rem 0 4rem;
-	    text-transform: uppercase;
+			text-transform: uppercase;
+			text-decoration: none;
 	    font-weight: 900;
-	    color: white;
+			color: white;
+			background-color: $color__green-1;
 	    width: 60%;
 	    @include desktop {
 		width: 40%;
