@@ -2659,7 +2659,7 @@ object {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
-          padding-left: 5rem;
+          padding-left: 2rem;
           border-left: 1px solid #b8b8b8; } }
       .site-footer .footer-container .widget-area .Contact-Info-class {
         padding-left: 1rem; }
@@ -2678,6 +2678,12 @@ object {
                 justify-content: flex-end;
         padding-top: 1rem;
         margin: 0rem; }
+        @media screen and (min-width: 1080px) {
+          .site-footer .footer-container .widget-area .social-info-class,
+          .site-footer .footer-container .widget-area .banner-widgets {
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start; } }
         .site-footer .footer-container .widget-area .social-info-class .social-icons,
         .site-footer .footer-container .widget-area .banner-widgets .social-icons {
           -webkit-padding-start: 0px;
@@ -3008,7 +3014,6 @@ object {
     display: flex;
     position: relative;
     z-index: 2;
-    width: 100%;
     height: auto; }
     .page-about .entry-header .entry-header-desktop .our-mission-dkp {
       position: relative;
@@ -3018,19 +3023,20 @@ object {
       margin: 0 auto;
       padding-left: 0.5rem;
       padding-right: 0.4375rem;
-      margin-top: 10rem; }
+      margin-top: 10rem;
+      font-size: 18px; }
       .page-about .entry-header .entry-header-desktop .our-mission-dkp h2 {
         padding-bottom: 1.25rem;
         font-size: 1.25rem;
         border-bottom: 0.1875rem solid #00b46e; }
     .page-about .entry-header .entry-header-desktop .top-image1 {
-      width: 30rem; }
+      width: 20%; }
     .page-about .entry-header .entry-header-desktop .top-image2 {
-      width: 30rem; }
+      width: 20%; }
     .page-about .entry-header .entry-header-desktop .top-image3 {
-      width: 30rem; }
-    .page-about .entry-header .entry-header-desktop .top-image3 {
-      width: 30rem; } }
+      width: 20%; }
+    .page-about .entry-header .entry-header-desktop .top-image4 {
+      width: 20%; } }
 
 .page-about .our-mission {
   position: relative;
@@ -3225,7 +3231,7 @@ object {
     .page-about .founders .mobile-desktop .founder1-mobile .founder1-box1 {
       background-color: #00b46e;
       padding: .3rem 1.6em .2rem 0rem;
-      margin-left: 12.2rem; }
+      margin-left: 11.4rem; }
     .page-about .founders .mobile-desktop .founder1-mobile .image-name {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3243,11 +3249,19 @@ object {
       .page-about .founders .mobile-desktop .founder1-mobile .image-name h5 {
         position: relative;
         z-index: 2;
-        width: 40%;
+        width: 42%;
         -ms-flex-item-align: center;
             align-self: center;
         padding-left: 0.5rem;
-        border-bottom: 0.1875rem solid #00b46e; }
+        padding-bottom: 4rem; }
+        .page-about .founders .mobile-desktop .founder1-mobile .image-name h5 .founder1-nameline {
+          position: absolute;
+          z-index: 2;
+          background-color: #00b46e;
+          width: 10rem;
+          height: .2rem;
+          margin-top: 3.5rem;
+          margin-left: -6rem; }
       .page-about .founders .mobile-desktop .founder1-mobile .image-name .founder1-box2 {
         position: absolute;
         z-index: -1;
@@ -3262,11 +3276,11 @@ object {
       .page-about .founders .mobile-desktop .founder1-mobile .content .founder1-box3 {
         position: absolute;
         z-index: -1;
-        width: 2rem;
+        width: 2.1rem;
         height: 3.6rem;
         background-color: #00b46e;
         margin-top: 17rem;
-        margin-left: 22.3rem; }
+        margin-left: 20.3rem; }
   @media screen and (min-width: 1080px) {
     .page-about .founders .mobile-desktop .founder1-mobile {
       display: none; }
@@ -3308,18 +3322,27 @@ object {
         margin-left: 4rem; }
       .page-about .founders .mobile-desktop .image-content .content {
         width: 50%;
-        padding-top: 6rem; }
+        padding-top: 2rem; }
         .page-about .founders .mobile-desktop .image-content .content h5 {
           position: relative;
           z-index: 2;
-          width: 40%;
+          width: 70%;
           -ms-flex-item-align: center;
               align-self: center;
           padding-left: 0.5rem;
-          border-bottom: 0.1875rem solid #00b46e; }
+          font-size: 48px; }
+          .page-about .founders .mobile-desktop .image-content .content h5 .founder1-nameline {
+            position: absolute;
+            z-index: 2;
+            background-color: #00b46e;
+            width: 22rem;
+            height: .4rem;
+            margin-top: 4rem;
+            margin-left: -36rem; }
         .page-about .founders .mobile-desktop .image-content .content p {
           width: 60%;
-          padding-left: 6rem; }
+          padding-left: 6rem;
+          font-size: 18px; }
         .page-about .founders .mobile-desktop .image-content .content .founder1-box3 {
           position: absolute;
           z-index: -1;
@@ -3338,7 +3361,7 @@ object {
       background-color: #c4da76;
       width: 3.7rem;
       height: 3.7rem;
-      margin-left: 10.5rem;
+      margin-left: 9.5rem;
       margin-top: .4rem; }
     .page-about .founders .mobile-desktop .founder2-mobile .image-name {
       display: -webkit-box;
@@ -3359,8 +3382,15 @@ object {
         width: 40%;
         -ms-flex-item-align: center;
             align-self: center;
-        padding-left: 0.5rem;
-        border-bottom: 0.1875rem solid #c4da76; }
+        padding-left: 2.5rem; }
+        .page-about .founders .mobile-desktop .founder2-mobile .image-name h5 .founder2-nameline {
+          position: absolute;
+          z-index: 2;
+          background-color: #c4da76;
+          width: 8rem;
+          height: .2rem;
+          margin-top: 2rem;
+          margin-left: 3.6rem; }
     .page-about .founders .mobile-desktop .founder2-mobile .content p {
       padding-left: 1rem;
       position: relative;
@@ -3369,8 +3399,8 @@ object {
         position: absolute;
         z-index: -1;
         background-color: #c4da76;
-        width: 3.5rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 3rem;
         margin-right: -3rem; }
   @media screen and (min-width: 1080px) {
     .page-about .founders .mobile-desktop .founder2-mobile {
@@ -3400,15 +3430,24 @@ object {
           padding-top: 6rem; }
           .page-about .founders .mobile-desktop .founder2-desktop .content-image .content h5 {
             text-align: end;
-            width: 10rem;
-            margin-left: 47rem;
-            border-bottom: 0.1875rem solid #c4da76; }
+            width: 20rem;
+            margin-left: 37rem;
+            font-size: 48px; }
+            .page-about .founders .mobile-desktop .founder2-desktop .content-image .content h5 .founder2-nameline {
+              position: absolute;
+              z-index: 2;
+              background-color: #c4da76;
+              width: 23rem;
+              height: .4rem;
+              margin-top: 4rem;
+              margin-left: -18rem; }
           .page-about .founders .mobile-desktop .founder2-desktop .content-image .content p {
             text-align: end;
             width: 90%;
             padding-left: 16rem;
             position: relative;
-            z-index: 2; }
+            z-index: 2;
+            font-size: 18px; }
           .page-about .founders .mobile-desktop .founder2-desktop .content-image .content .founder2-box4 {
             position: absolute;
             z-index: 1;
@@ -3416,7 +3455,7 @@ object {
             width: 4rem;
             height: 3.9rem;
             margin-left: 4rem;
-            margin-top: -7rem; }
+            margin-top: -15rem; }
           .page-about .founders .mobile-desktop .founder2-desktop .content-image .content .founder2-box2 {
             position: absolute;
             z-index: -1;
@@ -3424,7 +3463,7 @@ object {
             width: 3.3rem;
             height: 8rem;
             margin-right: -3rem;
-            margin-top: -3rem; }
+            margin-top: -11rem; }
         .page-about .founders .mobile-desktop .founder2-desktop .content-image .image {
           position: relative;
           z-index: 0;
@@ -3448,7 +3487,7 @@ object {
       background-color: #2AD8CC;
       width: 3.7rem;
       height: 3.7rem;
-      margin-left: 11.4rem;
+      margin-left: 10rem;
       margin-top: -1.5rem; }
     .page-about .founders .mobile-desktop .founder3-mobile .image-name {
       display: -webkit-box;
@@ -3468,9 +3507,15 @@ object {
         width: 35%;
         -ms-flex-item-align: center;
             align-self: center;
-        padding-left: 0.5rem;
-        background-color: #d3ebe2;
-        border-bottom: 0.1875rem solid #2AD8CC; }
+        background-color: #d3ebe2; }
+        .page-about .founders .mobile-desktop .founder3-mobile .image-name h5 .founder3-nameline {
+          position: absolute;
+          z-index: 2;
+          background-color: #2AD8CC;
+          width: 10rem;
+          height: 0.2rem;
+          margin-top: 3.5rem;
+          margin-left: -6rem; }
       .page-about .founders .mobile-desktop .founder3-mobile .image-name .founder3-box2 {
         position: absolute;
         z-index: -1;
@@ -3478,7 +3523,7 @@ object {
         width: 100%;
         height: 18.6rem;
         margin-right: 9rem;
-        margin-top: 7rem; }
+        margin-top: 6rem; }
     .page-about .founders .mobile-desktop .founder3-mobile .content {
       padding-left: 1rem;
       padding-right: 1rem; }
@@ -3528,19 +3573,28 @@ object {
         width: 5rem;
         height: 5rem;
         margin-left: 27rem;
-        margin-top: 3rem; }
+        margin-top: 12rem; }
       .page-about .founders .mobile-desktop .founder3-desktop .content {
         width: 55%;
-        padding-top: 6rem; }
+        padding-top: 3rem; }
         .page-about .founders .mobile-desktop .founder3-desktop .content h5 {
-          width: 40%;
+          width: 70%;
           -ms-flex-item-align: center;
               align-self: center;
           padding-left: 0.5rem;
-          border-bottom: 0.1875rem solid #2AD8CC; }
+          font-size: 48px; }
+          .page-about .founders .mobile-desktop .founder3-desktop .content h5 .founder3-nameline {
+            position: absolute;
+            z-index: 2;
+            background-color: #2AD8CC;
+            width: 20rem;
+            height: .4rem;
+            margin-top: 4.5rem;
+            margin-left: -30rem; }
         .page-about .founders .mobile-desktop .founder3-desktop .content p {
           width: 60%;
-          padding-left: 6rem; }
+          padding-left: 6rem;
+          font-size: 18px; }
           .page-about .founders .mobile-desktop .founder3-desktop .content p .founder3-box3 {
             position: absolute;
             z-index: -3;

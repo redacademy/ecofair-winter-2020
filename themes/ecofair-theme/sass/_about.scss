@@ -56,7 +56,6 @@
         display: flex;
         position: relative;
         z-index: 2;
-        width: 100%;
         height: auto;
         .our-mission-dkp {
           position: relative;
@@ -67,6 +66,7 @@
           padding-left: 0.5rem;
           padding-right: 0.4375rem;
           margin-top: 10rem;
+          font-size: 18px;
           h2{
             padding-bottom: 1.25rem;
             font-size: 1.25rem;
@@ -74,16 +74,19 @@
           }
         }
         .top-image1 {
-          width: 30rem;
+          width: 20%;
         }
         .top-image2 {
-          width: 30rem;
+          width: 20%;
+
         }
         .top-image3 {
-          width: 30rem;
+          width: 20%;
+
         }
-        .top-image3 {
-          width: 30rem;
+        .top-image4 {
+          width: 20%;
+
         }
       }
     } 
@@ -304,7 +307,7 @@
         .founder1-box1 {
           background-color: #00b46e;
           padding: .3rem 1.6em .2rem 0rem;
-          margin-left: 12.2rem;
+          margin-left: 11.4rem;
         }
         .image-name {
           display: flex;
@@ -321,11 +324,20 @@
           h5 {
             position: relative;
             z-index: 2;
-            width: 40%;
+            width: 42%;
             align-self: center;
             padding-left: 0.5rem;
-            border-bottom: 0.1875rem solid #00b46e;
+            padding-bottom: 4rem;
 
+            .founder1-nameline {
+              position: absolute;
+              z-index: 2;
+              background-color: #00b46e;
+              width: 10rem;
+              height: .2rem;
+              margin-top: 3.5rem;
+              margin-left: -6rem;
+            }
           }
           .founder1-box2 {
             position: absolute;
@@ -344,11 +356,12 @@
           .founder1-box3 {
             position: absolute;
             z-index: -1;
-            width: 2rem;
+            width: 2.1rem;
             height: 3.6rem;
             background-color: #00b46e;
             margin-top: 17rem;
-            margin-left: 22.3rem;
+            margin-left: 20.3rem;
+        
           }
         }
       }
@@ -398,18 +411,30 @@
         
           .content {
             width: 50%;
-            padding-top: 6rem;
+            padding-top: 2rem;
             h5 {
               position: relative;
               z-index: 2;
-              width: 40%;
+              width: 70%;
               align-self: center;
               padding-left: 0.5rem;
-              border-bottom: 0.1875rem solid #00b46e;
+              font-size: 48px;
+
+              .founder1-nameline {
+                position: absolute;
+                z-index: 2;
+                background-color: #00b46e;
+                width: 22rem;
+                height: .4rem;
+                margin-top: 4rem;
+                margin-left: -36rem;
+            
+              }
             }
             p {
               width: 60%;
               padding-left: 6rem;
+              font-size: 18px;
             }
             .founder1-box3 {
               position: absolute;
@@ -440,7 +465,7 @@
           background-color: #c4da76;
           width: 3.7rem;
           height: 3.7rem;
-          margin-left: 10.5rem;
+          margin-left: 9.5rem;
           margin-top: .4rem;
         }
         .image-name {
@@ -458,9 +483,16 @@
           h5 {
             width: 40%;
             align-self: center;
-            padding-left: 0.5rem;
-            border-bottom: 0.1875rem solid #c4da76;
-
+            padding-left: 2.5rem;
+            .founder2-nameline {
+              position: absolute;
+              z-index: 2;
+              background-color: #c4da76;
+              width: 8rem;
+              height: .2rem;
+              margin-top: 2rem;
+              margin-left: 3.6rem;
+            }
           }
         }
         .content {
@@ -472,8 +504,8 @@
               position: absolute;
               z-index: -1;
               background-color: #c4da76;
-              width: 3.5rem;
-              height: 2rem;
+              width: 1.5rem;
+              height: 3rem;
               margin-right: -3rem;
               
             }
@@ -510,11 +542,20 @@
 
               h5 {
                 text-align: end;
-                width: 10rem;
-                margin-left: 47rem;
-                border-bottom: 0.1875rem solid #c4da76;
-    
+                width: 20rem;
+                margin-left: 37rem;
+                font-size: 48px;
+                .founder2-nameline {
+                  position: absolute;
+                  z-index: 2;
+                  background-color: #c4da76;
+                  width: 23rem;
+                  height: .4rem;
+                  margin-top: 4rem;
+                  margin-left: -18rem;
+                }
               }
+            
 
               p {
                 text-align: end;
@@ -522,6 +563,7 @@
                 padding-left: 16rem;
                 position: relative;
                 z-index: 2;
+                font-size: 18px;
               }
               .founder2-box4 {
                 position: absolute;
@@ -530,7 +572,7 @@
                 width: 4rem;
                 height: 3.9rem;
                 margin-left: 4rem;
-                margin-top: -7rem;
+                margin-top: -15rem;
               }
               .founder2-box2 {
                 position: absolute;
@@ -539,7 +581,7 @@
                 width: 3.3rem;
                 height: 8rem;
                 margin-right: -3rem;
-                margin-top: -3rem;
+                margin-top: -11rem;
                 
               }
 
@@ -579,7 +621,7 @@
           background-color: $color__cyan-4;
           width: 3.7rem;
           height: 3.7rem;
-          margin-left: 11.4rem;
+          margin-left: 10rem;
           margin-top: -1.5rem;
         }
         .image-name {
@@ -597,10 +639,16 @@
           h5 {
             width: 35%;
             align-self: center;
-            padding-left: 0.5rem;
             background-color: #d3ebe2;
-            border-bottom: 0.1875rem solid $color__cyan-4;
-
+            .founder3-nameline {
+              position: absolute;
+              z-index: 2;
+              background-color: $color__cyan-4;
+              width: 10rem;
+              height: 0.2rem;
+              margin-top: 3.5rem;
+              margin-left: -6rem;
+            }
           }
           .founder3-box2 {
             position: absolute;
@@ -609,7 +657,7 @@
             width: 100%;
             height: 18.6rem;
             margin-right: 9rem;
-            margin-top: 7rem;
+            margin-top: 6rem;
           }
         }
         .content {
@@ -671,21 +719,30 @@
             width: 5rem;
             height: 5rem;
             margin-left: 27rem;
-            margin-top: 3rem
+            margin-top: 12rem
           }
           .content {
             width: 55%;
-            padding-top: 6rem;
+            padding-top: 3rem;
             h5 {
-              width: 40%;
+              width: 70%;
               align-self: center;
               padding-left: 0.5rem;
-              border-bottom: 0.1875rem solid $color__cyan-4;
-  
+              font-size: 48px;
+              .founder3-nameline {
+                position: absolute;
+                z-index: 2;
+                background-color: $color__cyan-4;
+                width: 20rem;
+                height: .4rem;
+                margin-top: 4.5rem;
+                margin-left: -30rem;
+              }
             }
             p {
               width: 60%;
               padding-left: 6rem;
+              font-size: 18px;
               .founder3-box3 {
                 position: absolute;
                 z-index: -3;

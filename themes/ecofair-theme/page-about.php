@@ -39,11 +39,11 @@ get_header(); ?>
 					<section class="entry-header-desktop">
 						
 						<div class="top-image1" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/lighthouse.png" alt="shore picture1 " />
+							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture1 " />
 						</div>
 						
 						<div class="top-image2" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/lighthouse1.png" alt="shore picture2" />
+							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture2" />
 						</div>
 						
 						<div class="our-mission-dkp">
@@ -51,10 +51,10 @@ get_header(); ?>
 					  </div>
 
 						<div class="top-image3" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/lighthouse2.png" alt="shore picture3" />
+							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture3" />
 						</div>
 						<div class="top-image4" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/lighthouse3.png" alt="shore picture4" />
+							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture4" />
 						</div>
 						
 					</section><!--.entry-header-desktop -->
@@ -134,7 +134,7 @@ get_header(); ?>
 											<img src="<?php echo esc_url( $image1 ); ?>" alt="" />
 										</div>
 										<span class="founder1-box2" ></span>
-										<h5><?php the_sub_field('name1'); ?></h5>
+										<h5><span class="founder1-nameline" ></span><?php the_sub_field('name1'); ?></h5>
 									</div>
 
 										<div class="content">
@@ -145,15 +145,16 @@ get_header(); ?>
 								</div>
 
 								<div id="founder1" class="founder1-desktop">
-									<div class="image-content">
-										<span class="founder1-box1" ></span>
-										<div class="image">
+									  <div class="image-content">
+										  <span class="founder1-box1" ></span>
+										  <div class="image">
 												<img src="<?php echo esc_url( $image1 ); ?>" alt="" />
 											 </div>
 
 											 <span class="founder1-box2" ></span>
 											 <div class="content">
-												<h5><?php the_sub_field('name1'); ?></h5>
+											  
+												<h5><?php the_sub_field('name1'); ?><span class="founder1-nameline" ></span></h5>
 												<p><span class="founder1-box3" ></span><?php the_sub_field('prosopography1'); ?></p>
 											 </div>
 						        </div>
@@ -181,7 +182,7 @@ get_header(); ?>
 									<span class="founder2-box1" ></span>
 									<div class="image-name">
 
-										<h5><?php the_sub_field('name2'); ?></h5>
+										<h5><span class="founder2-nameline" ></span><?php the_sub_field('name2'); ?></h5>
 										<div class="image">
 											<img src="<?php echo esc_url( $image2 ); ?>" alt="" />
 										</div>
@@ -200,7 +201,7 @@ get_header(); ?>
 									<span class="founder2-box3" ></span>
 
 										<div class="content">
-											<h5><?php the_sub_field('name2'); ?></h5>
+											<h5><?php the_sub_field('name2'); ?><span class="founder2-nameline" ></span></h5>
 											<p><?php echo get_sub_field('prosopograghy2');?></p>
 											<span class="founder2-box4" ></span>
 											<span class="founder2-box2" ></span>
@@ -240,7 +241,7 @@ get_header(); ?>
 												<img src="<?php echo esc_url( $image3 ); ?>" alt="" />
 											</div>
 											<span class="founder3-box2" ></span>
-											<h5><?php the_sub_field('name3'); ?></h5>
+											<h5><span class="founder3-nameline" ></span><?php the_sub_field('name3'); ?></h5>
 										</div>
 
 										<div class="content">
@@ -259,7 +260,7 @@ get_header(); ?>
 											
 											<div class="content">
 												<span class="founder3-box2" ></span>
-												<h5><?php the_sub_field('name3'); ?></h5>
+												<h5><?php the_sub_field('name3'); ?><span class="founder3-nameline" ></span></h5>
 												<p><span class="founder3-box3" ></span><?php the_sub_field('prosopography3'); ?></p>
 										 </div>
 									</div>
