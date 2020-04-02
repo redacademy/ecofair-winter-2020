@@ -126,7 +126,7 @@ get_header(); ?>
 						</div>
 
 						<div class="donate-button">
-							<a class="donate-button-text" href="#">
+							<a class="donate-button-text" href="<?php echo esc_url( home_url( '/donate' ) ); ?>">
 								<p>Donate</p>
 							</a>
 						</div>
