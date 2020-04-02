@@ -24,7 +24,7 @@ get_header(); ?>
 							    'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 							    'after'  => '</div>',
 						    ) );?>
-					    <button class="donate-button">Donate</button>
+					    <a class="donate-button" href="<?php echo get_field("donation_link"); ?>" target=”_blank”>Donate</a>
 				    </div><!-- .entry-content -->
 			    </article><!-- #post-## -->
 			<?php endwhile; // End of the loop. ?>
