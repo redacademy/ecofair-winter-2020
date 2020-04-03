@@ -16,7 +16,7 @@
 						<?php wp_nav_menu();?>
 					</div>
 				  <div class="widget-area">
-					<?php dynamic_sidebar('footer_sidebar'); ?>
+					<?php dynamic_sidebar('sidebar-2'); ?>
 				  </div><!-- .widget-area -->
 				</div><!-- .footer-container -->
 
