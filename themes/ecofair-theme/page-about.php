@@ -107,7 +107,7 @@ get_header(); ?>
 									<p>Donate</p>
 								</a>
 							</div>
-						</section><!-- .buttons -->
+						</section><!-- .buttons-end -->
 				
           </div>
 				</section>
