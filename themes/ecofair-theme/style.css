@@ -1979,8 +1979,10 @@ object {
   z-index: 1;
   margin: 2rem 0 4rem;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 900;
   color: white;
+  background-color: #00B46E;
   width: 60%; }
   @media screen and (min-width: 1080px) {
     .donate-content .entry-content .donate-button {
@@ -3066,8 +3068,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem 0rem 1rem 0rem;
   width: 100%; }
   .page-about .our-values h5 {
     -webkit-margin-before: .7rem;
@@ -3338,7 +3339,7 @@ object {
             width: 22rem;
             height: .4rem;
             margin-top: 4rem;
-            margin-left: -36rem; }
+            margin-left: -13rem; }
         .page-about .founders .mobile-desktop .image-content .content p {
           width: 60%;
           padding-left: 6rem;
@@ -3431,7 +3432,7 @@ object {
           .page-about .founders .mobile-desktop .founder2-desktop .content-image .content h5 {
             text-align: end;
             width: 20rem;
-            margin-left: 37rem;
+            margin-left: 30rem;
             font-size: 48px; }
             .page-about .founders .mobile-desktop .founder2-desktop .content-image .content h5 .founder2-nameline {
               position: absolute;
