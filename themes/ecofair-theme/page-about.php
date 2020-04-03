@@ -95,7 +95,7 @@ get_header(); ?>
 						
 						<section class="buttons">
 							<div class="volunteer-button-about">
-								<a class="volunteer-button-text-about" href="#">
+								<a class="volunteer-button-text-about" href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>">
 									<p>Volunteer</p>
 								</a>
 							</div>
@@ -103,7 +103,7 @@ get_header(); ?>
 							<span class="button-box" ></span>
 
 							<div class="donate-button-about">
-								<a class="donate-button-text-about" href="#">
+								<a class="donate-button-text-about" href="<?php echo esc_url( home_url( '/donate' ) ); ?>">
 									<p>Donate</p>
 								</a>
 							</div>
