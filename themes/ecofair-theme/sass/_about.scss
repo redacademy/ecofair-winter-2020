@@ -431,11 +431,8 @@
             width: 90%;
             height: 32rem;
             margin-top: 4rem;
-<<<<<<< HEAD
-=======
             margin-left: 4rem;
             left: 10px; 
->>>>>>> e81a2c96358cb841a3784861d4dc87695830a121
 
           }
         
@@ -445,7 +442,7 @@
             h5 {
               position: relative;
               z-index: 2;
-              width: 70%;
+              width: 100%;
               align-self: center;
               padding-left: 0.5rem;
               font-size: 48px;
@@ -456,8 +453,7 @@
                 background-color: #00b46e;
                 width: 22rem;
                 height: .4rem;
-                margin-top: 4rem;
-                margin-left: -13rem;
+                left: -50px;
             
               }
             }
@@ -571,19 +567,9 @@
               padding-top: 6rem;
 
               h5 {
-                text-align: end;
-                width: 20rem;
-                margin-left: 30rem;
+                text-align: right;
+                width: 90%;
                 font-size: 48px;
-                .founder2-nameline {
-                  position: absolute;
-                  z-index: 2;
-                  background-color: #c4da76;
-                  width: 23rem;
-                  height: .4rem;
-                  margin-top: 4rem;
-                  margin-left: -18rem;
-                }
               }
             
 
@@ -623,6 +609,15 @@
               width: 26rem;
               height: auto;
               padding-top: 2rem;
+            }
+            .founder2-nameline {
+              position: absolute;
+              z-index: 2;
+              background-color: #c4da76;
+              width: 23rem;
+              height: .4rem;
+              left: -300px;
+              top: 250px;
             }
             .founder2-box3 {
               position: absolute;
@@ -732,7 +727,7 @@
             display: flex;
             width: 100%;
             height: auto;
-            
+
             .image {
               position: relative;
               z-index: 2;
@@ -755,7 +750,7 @@
             width: 55%;
             padding-top: 3rem;
             h5 {
-              width: 70%;
+              width: 100%;
               align-self: center;
               padding-left: 0.5rem;
               font-size: 48px;
@@ -780,7 +775,7 @@
                 width: 5rem;
                 height: 5rem;
                 margin-left: -1rem;
-                margin-top: 32rem;
+                margin-top: 25rem;
               
               }
           

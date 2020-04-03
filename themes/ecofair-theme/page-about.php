@@ -153,7 +153,8 @@ get_header(); ?>
 											 <span class="founder1-box2" ></span>
 											 <div class="content">
 											  
-												<h5><?php the_sub_field('name1'); ?><span class="founder1-nameline" ></span></h5>
+												<h5><?php the_sub_field('name1'); ?>
+												<div class="founder1-nameline" ></div></h5>
 												<p><span class="founder1-box3" ></span><?php the_sub_field('prosopography1'); ?></p>
 											 </div>
 						        </div>
@@ -181,7 +182,7 @@ get_header(); ?>
 									<span class="founder2-box1" ></span>
 									<div class="image-name">
 
-										<h5><span class="founder2-nameline" ></span><?php the_sub_field('name2'); ?></h5>
+										<h5><div class="founder2-nameline" ></div><?php the_sub_field('name2'); ?></h5>
 										<div class="image">
 											<img src="<?php echo esc_url( $image2 ); ?>" alt="" />
 										</div>
@@ -200,7 +201,7 @@ get_header(); ?>
 									<span class="founder2-box3" ></span>
 
 										<div class="content">
-											<h5><?php the_sub_field('name2'); ?><span class="founder2-nameline" ></span></h5>
+											<h5><?php the_sub_field('name2'); ?></h5>
 											<p><?php echo get_sub_field('prosopograghy2');?></p>
 											<span class="founder2-box4" ></span>
 											<span class="founder2-box2" ></span>
@@ -208,6 +209,7 @@ get_header(); ?>
 										
 										<div class="image">
 										 <span class="founder2-box1" ></span>
+										 <div class="founder2-nameline" ></div>
 										 <img src="<?php echo esc_url( $image2 ); ?>" alt="" />
 									  </div>
 										
