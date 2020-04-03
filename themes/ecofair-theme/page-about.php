@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- <span class="about-box" ></span> -->
+			<span class="about-box" ></span>
 	    	<header class="entry-header">
 
 					<section class="entry-header-mobile">
