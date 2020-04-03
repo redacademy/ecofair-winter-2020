@@ -53,15 +53,17 @@
         display: none;
       }
       .entry-header-desktop {
+        display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: 1fr 1.5fr .5fr;
+        grid-template-rows: repeat(3, 1fr);
         max-width: 1920px;
-        padding-top: 10rem;
+        // padding-top: 10rem;
         padding-bottom: 0rem;
         margin: 0 auto;
         z-index: 2;
-        height: auto;
+  
+        // height: auto;
 
         .our-mission-dkp {
           position: relative;
@@ -109,7 +111,7 @@
           background-size: cover;
           background-position: right;
           grid-row: 1 / 4; 
-          grid-column: 18 / 20;
+          grid-column: 18 / 21;
           width: 100%;
 
         }
