@@ -41,11 +41,9 @@ get_header(); ?>
 					<section class="entry-header-desktop">
 						
 						<div class="top-image1" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/wavedesktop1.png" alt="shore picture1 " />
 						</div>
 						
 						<div class="top-image2" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture2" />
 						</div>
 						
 						<div class="our-mission-dkp">
@@ -53,10 +51,9 @@ get_header(); ?>
 					  </div>
 
 						<div class="top-image3" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture3" />
 						</div>
+						
 						<div class="top-image4" >
-							<img class="desktop-pic" src="<?php echo get_template_directory_uri(); ?>/build/assets/images/" alt="shore picture4" />
 						</div>
 						
 					</section><!--.entry-header-desktop -->
