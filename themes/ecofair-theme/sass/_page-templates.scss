@@ -1188,6 +1188,23 @@
 }
 // Donate Styles
 .donate-content {
+	form {
+		z-index: 100;
+		padding: 4rem;
+	}
+
+	input[type="image"], input[type="radio"] {
+    width: auto;
+}
+input, select, textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 16px;
+		width: 100%;
+}
     .entry-content {
 	p {
 	    margin-bottom: 1rem;
